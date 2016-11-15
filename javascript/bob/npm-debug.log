@@ -1,0 +1,173 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'jasmine-node',
+1 verbose cli   '-g' ]
+2 info using npm@2.15.8
+3 info using node@v4.4.7
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'jasmine-node', null ]
+7 verbose cache add spec jasmine-node
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'jasmine-node',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'jasmine-node',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed jasmine-node@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for jasmine-node
+11 info addNameTag [ 'jasmine-node', 'latest' ]
+12 silly mapToRegistry name jasmine-node
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry data Result {
+15 silly mapToRegistry   raw: 'jasmine-node',
+15 silly mapToRegistry   scope: null,
+15 silly mapToRegistry   name: 'jasmine-node',
+15 silly mapToRegistry   rawSpec: '',
+15 silly mapToRegistry   spec: 'latest',
+15 silly mapToRegistry   type: 'tag' }
+16 silly mapToRegistry uri https://registry.npmjs.org/jasmine-node
+17 verbose addNameTag registry:https://registry.npmjs.org/jasmine-node not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/jasmine-node
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 9:18:09 PM
+21 verbose request id 034d5941722250a5
+22 verbose etag "53TG5FTU6R5ZFUHMBVJMXU1V1"
+23 http request GET https://registry.npmjs.org/jasmine-node
+24 http 200 https://registry.npmjs.org/jasmine-node
+25 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+25 verbose headers   etag: '"7CTLS1O7WE9NIHQB3Z5MAYIEN"',
+25 verbose headers   'content-type': 'application/json',
+25 verbose headers   'content-encoding': 'gzip',
+25 verbose headers   'cache-control': 'max-age=300',
+25 verbose headers   'content-length': '13318',
+25 verbose headers   'accept-ranges': 'bytes',
+25 verbose headers   date: 'Tue, 23 Aug 2016 03:18:01 GMT',
+25 verbose headers   via: '1.1 varnish',
+25 verbose headers   age: '0',
+25 verbose headers   connection: 'keep-alive',
+25 verbose headers   'x-served-by': 'cache-den6020-DEN',
+25 verbose headers   'x-cache': 'MISS',
+25 verbose headers   'x-cache-hits': '0',
+25 verbose headers   'x-timer': 'S1471922281.337449,VS0,VE153',
+25 verbose headers   vary: 'Accept-Encoding' }
+26 silly get cb [ 200,
+26 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 silly get     etag: '"7CTLS1O7WE9NIHQB3Z5MAYIEN"',
+26 silly get     'content-type': 'application/json',
+26 silly get     'content-encoding': 'gzip',
+26 silly get     'cache-control': 'max-age=300',
+26 silly get     'content-length': '13318',
+26 silly get     'accept-ranges': 'bytes',
+26 silly get     date: 'Tue, 23 Aug 2016 03:18:01 GMT',
+26 silly get     via: '1.1 varnish',
+26 silly get     age: '0',
+26 silly get     connection: 'keep-alive',
+26 silly get     'x-served-by': 'cache-den6020-DEN',
+26 silly get     'x-cache': 'MISS',
+26 silly get     'x-cache-hits': '0',
+26 silly get     'x-timer': 'S1471922281.337449,VS0,VE153',
+26 silly get     vary: 'Accept-Encoding' } ]
+27 verbose get saving jasmine-node to /Users/alirezaandersen/.npm/registry.npmjs.org/jasmine-node/.cache.json
+28 verbose correctMkdir /Users/alirezaandersen/.npm correctMkdir not in flight; initializing
+29 silly addNameTag next cb for jasmine-node with tag latest
+30 silly addNamed jasmine-node@1.14.5
+31 verbose addNamed "1.14.5" is a plain semver version for jasmine-node
+32 silly cache afterAdd jasmine-node@1.14.5
+33 verbose afterAdd /Users/alirezaandersen/.npm/jasmine-node/1.14.5/package/package.json not in flight; writing
+34 verbose correctMkdir /Users/alirezaandersen/.npm correctMkdir not in flight; initializing
+35 verbose afterAdd /Users/alirezaandersen/.npm/jasmine-node/1.14.5/package/package.json written
+36 silly install resolved [ { name: 'jasmine-node',
+36 silly install resolved     version: '1.14.5',
+36 silly install resolved     description: 'DOM-less simple JavaScript BDD testing framework for Node',
+36 silly install resolved     contributors: [ [Object] ],
+36 silly install resolved     homepage: 'https://github.com/mhevery/jasmine-node',
+36 silly install resolved     repository:
+36 silly install resolved      { type: 'git',
+36 silly install resolved        url: 'git+https://github.com/mhevery/jasmine-node.git' },
+36 silly install resolved     keywords: [ 'testing', 'bdd' ],
+36 silly install resolved     author: { name: 'Misko Hevery', email: 'misko@hevery.com' },
+36 silly install resolved     maintainers: [ [Object], [Object] ],
+36 silly install resolved     licenses: [ 'MIT' ],
+36 silly install resolved     dependencies:
+36 silly install resolved      { 'coffee-script': '>=1.0.1',
+36 silly install resolved        'jasmine-reporters': '~1.0.0',
+36 silly install resolved        'jasmine-growl-reporter': '~0.0.2',
+36 silly install resolved        requirejs: '>=0.27.1',
+36 silly install resolved        walkdir: '>= 0.0.1',
+36 silly install resolved        underscore: '>= 1.3.1',
+36 silly install resolved        gaze: '~0.3.2',
+36 silly install resolved        mkdirp: '~0.3.5' },
+36 silly install resolved     bin: { 'jasmine-node': 'bin/jasmine-node' },
+36 silly install resolved     preferGlobal: true,
+36 silly install resolved     main: 'lib/jasmine-node',
+36 silly install resolved     scripts: { test: 'node lib/jasmine-node/cli.js spec' },
+36 silly install resolved     devDependencies: {},
+36 silly install resolved     bugs: { url: 'https://github.com/mhevery/jasmine-node/issues' },
+36 silly install resolved     _id: 'jasmine-node@1.14.5',
+36 silly install resolved     _shasum: '18e8397b856924ee77003666c3731b5aea50c39d',
+36 silly install resolved     _from: 'jasmine-node@latest',
+36 silly install resolved     _npmVersion: '1.4.9',
+36 silly install resolved     _npmUser: { name: 'tebriel', email: 'tebriel@gmail.com' },
+36 silly install resolved     dist:
+36 silly install resolved      { shasum: '18e8397b856924ee77003666c3731b5aea50c39d',
+36 silly install resolved        tarball: 'https://registry.npmjs.org/jasmine-node/-/jasmine-node-1.14.5.tgz' },
+36 silly install resolved     directories: {},
+36 silly install resolved     _resolved: 'https://registry.npmjs.org/jasmine-node/-/jasmine-node-1.14.5.tgz',
+36 silly install resolved     readme: 'ERROR: No README data found!' } ]
+37 info install jasmine-node@1.14.5 into /usr/local/lib
+38 info installOne jasmine-node@1.14.5
+39 verbose installOne of jasmine-node to /usr/local/lib not in flight; installing
+40 verbose correctMkdir /Users/alirezaandersen/.npm/_locks correctMkdir not in flight; initializing
+41 verbose lock using /Users/alirezaandersen/.npm/_locks/jasmine-node-592af5d86773a3f7.lock for /usr/local/lib/node_modules/jasmine-node
+42 silly install write writing jasmine-node 1.14.5 to /usr/local/lib/node_modules/jasmine-node
+43 verbose unbuild lib/node_modules/jasmine-node
+44 silly gentlyRm /usr/local/lib/node_modules/jasmine-node is being purged from base /usr/local
+45 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/jasmine-node
+46 verbose tar unpack /Users/alirezaandersen/.npm/jasmine-node/1.14.5/package.tgz
+47 verbose tar unpacking to /usr/local/lib/node_modules/jasmine-node
+48 silly gentlyRm /usr/local/lib/node_modules/jasmine-node is being purged
+49 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/jasmine-node
+50 silly gunzTarPerm modes [ '755', '644' ]
+51 error tar.unpack untar error /Users/alirezaandersen/.npm/jasmine-node/1.14.5/package.tgz
+52 verbose unlock done using /Users/alirezaandersen/.npm/_locks/jasmine-node-592af5d86773a3f7.lock for /usr/local/lib/node_modules/jasmine-node
+53 verbose fstream_path /usr/local/lib/node_modules/jasmine-node
+54 verbose fstream_type Directory
+55 verbose fstream_class DirWriter
+56 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/jasmine-node'
+56 verbose stack     at Error (native)
+57 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+57 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+57 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+58 verbose cwd /Users/alirezaandersen/exercism/javascript/bob
+59 error Darwin 15.6.0
+60 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "jasmine-node" "-g"
+61 error node v4.4.7
+62 error npm  v2.15.8
+63 error path /usr/local/lib/node_modules/jasmine-node
+64 error code EACCES
+65 error errno -13
+66 error syscall mkdir
+67 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/jasmine-node'
+67 error     at Error (native)
+67 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/jasmine-node']
+67 error   errno: -13,
+67 error   code: 'EACCES',
+67 error   syscall: 'mkdir',
+67 error   path: '/usr/local/lib/node_modules/jasmine-node',
+67 error   fstream_type: 'Directory',
+67 error   fstream_path: '/usr/local/lib/node_modules/jasmine-node',
+67 error   fstream_class: 'DirWriter',
+67 error   fstream_stack:
+67 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+67 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+67 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+68 error Please try running this command again as root/Administrator.
+69 verbose exit [ -13, true ]
+70 verbose unbuild lib/node_modules/jasmine-node
+71 silly gentlyRm /usr/local/lib/node_modules/jasmine-node is being purged from base /usr/local
+72 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/jasmine-node
