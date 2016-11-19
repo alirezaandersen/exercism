@@ -6,4 +6,4 @@ primeFactors.prototype.toEqual = function(){
 
 };
 
-module.exports = {for: primeFactors};
+module.exports = primeFactors;
