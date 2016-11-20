@@ -1,6 +1,6 @@
 class Pangram
   def self.is_pangram?(str)
-    string = str.gsub(/[^a-zA-Z]/, '').chars.uniq
+    string = str.gsub(/[^a-zA-Z]/, '').downcase.chars.uniq
     return string.length == 26
   end
 end
