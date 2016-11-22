@@ -1,5 +1,5 @@
 class Sieve
-	attr_reader :primes
+	# attr_reader :primes
 
   def initialize(len)
     @primes = [nil, nil, *2..len]
@@ -8,4 +8,8 @@ class Sieve
     end
     @primes.compact!
   end
+end
+
+module BookKeeping
+  VERSION = 1
 end
