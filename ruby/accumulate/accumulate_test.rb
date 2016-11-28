@@ -10,7 +10,6 @@ class ArrayTest < Minitest::Test
   end
 
   def test_accumulate_squares
-    skip
     result = [1, 2, 3].accumulate do |number|
       number * number
     end
@@ -18,19 +17,16 @@ class ArrayTest < Minitest::Test
   end
 
   def test_accumulate_upcases
-    skip
     result = %w(hello world).accumulate(&:upcase)
     assert_equal %w(HELLO WORLD), result
   end
 
   def test_accumulate_reversed_strings
-    skip
     result = %w(the quick brown fox etc).accumulate(&:reverse)
     assert_equal %w(eht kciuq nworb xof cte), result
   end
 
   def test_accumulate_recursively
-    skip
     result = %w(a b c).accumulate do |char|
       %w(1 2 3).accumulate do |digit|
         "#{char}#{digit}"
@@ -40,7 +36,6 @@ class ArrayTest < Minitest::Test
   end
 
   def test_do_not_change_in_place
-    skip
     original = [1, 2, 3]
     copy = original.dup
     original.accumulate { |n| n * n }
@@ -64,7 +59,6 @@ class ArrayTest < Minitest::Test
   # http://ruby-doc.org/docs/ruby-doc-bundle/UsersGuide/rg/constants.html
 
   def test_bookkeeping
-    skip
     assert_equal 1, BookKeeping::VERSION
   end
 end

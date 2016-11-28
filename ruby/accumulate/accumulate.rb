@@ -1,7 +1,11 @@
 class Array
-
   def accumulate
-
-  end 
-
+    out = []
+    each { |i| out.push(yield(i)) }
+    out
+  end
 end
+
+module BookKeeping
+  VERSION = 1
+end 
