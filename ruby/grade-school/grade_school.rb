@@ -1,0 +1,4 @@
+class GradeSchool
+
+
+end 
