@@ -5,6 +5,7 @@ require_relative 'etl'
 
 class TransformTest < Minitest::Test
   def test_transform_one_value
+    skip
     old = { 1 => ['A'] }
     expected = { 'a' => 1 }
 
@@ -20,7 +21,7 @@ class TransformTest < Minitest::Test
   end
 
   def test_more_keys
-    skip
+    # skip
     old = { 1 => %w(A E), 2 => %w(D G) }
     expected = {
       'a' => 1,
