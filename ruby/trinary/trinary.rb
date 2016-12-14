@@ -1,0 +1,3 @@
+class Trinary
+
+end 
