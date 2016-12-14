@@ -6,11 +6,9 @@ class PhoneNumber
   end
 
   def number
-    # binding.pry
     if @parsed_number.length == 10
       @parsed_number
     elsif @parsed_number.length == 11 && @parsed_number.slice(0) === "1"
-      # binding.pry
        @parsed_number[1..-1]
     else
       '0000000000'
