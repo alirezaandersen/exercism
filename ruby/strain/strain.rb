@@ -1,3 +1,9 @@
+require 'pry'
+
 class ArrayTest
 
-end 
+def keep(array)
+binding.pry
+end
+
+end
