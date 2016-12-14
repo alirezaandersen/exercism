@@ -1,6 +1,5 @@
 class Sieve
-	# attr_reader :primes
-
+  
   def initialize(len)
     @primes = [nil, nil, *2..len]
     (2..len**0.5).each do |n|
