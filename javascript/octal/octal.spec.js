@@ -6,7 +6,7 @@ describe('octal', function() {
     expect(new Octal('1').toDecimal()).toEqual(1);
   });
 
-  xit('10 is decimal 8', function() {
+  it('10 is decimal 8', function() {
     expect(new Octal('10').toDecimal()).toEqual(8);
   });
 
