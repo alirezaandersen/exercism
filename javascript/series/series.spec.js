@@ -11,7 +11,7 @@ describe('Series', function () {
       .toEqual([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
   });
 
-  xit('keeps the digit order if reversed', function () {
+  it('keeps the digit order if reversed', function () {
     expect(new Series('9876543210').digits)
       .toEqual([9, 8, 7, 6, 5, 4, 3, 2, 1, 0]);
   });
