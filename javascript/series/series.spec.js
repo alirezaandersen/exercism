@@ -41,7 +41,7 @@ describe('Series', function () {
       .toEqual([[3, 1, 0], [1, 0, 0], [0, 0, 1]]);
   });
 
-  xit('can slice by 4', function () {
+  it('can slice by 4', function () {
     expect(new Series('91274').slices(4))
       .toEqual([[9, 1, 2, 7], [1, 2, 7, 4]]);
   });
