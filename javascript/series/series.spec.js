@@ -16,7 +16,7 @@ describe('Series', function () {
       .toEqual([9, 8, 7, 6, 5, 4, 3, 2, 1, 0]);
   });
 
-  xit('keeps arbitrary digit order', function () {
+  it('keeps arbitrary digit order', function () {
     expect(new Series('936923468').digits)
       .toEqual([9, 3, 6, 9, 2, 3, 4, 6, 8]);
   });
