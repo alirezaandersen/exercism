@@ -46,12 +46,12 @@ describe('Series', function () {
       .toEqual([[9, 1, 2, 7], [1, 2, 7, 4]]);
   });
 
-  xit('can slice by 5', function () {
+  it('can slice by 5', function () {
     expect(new Series('81228').slices(5))
       .toEqual([[8, 1, 2, 2, 8]]);
   });
 
-  xit('throws an error if not enough digits to slice', function () {
+  it('throws an error if not enough digits to slice', function () {
     expect( function () {
       new Series('01032987583').slices(12);
     }).toThrow(new Error('Slice size is too big.'));
