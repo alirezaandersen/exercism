@@ -39,7 +39,7 @@ describe('Squares', function () {
   describe('up to 100', function () {
     var squares = new Squares(100);
 
-    xit('gets the square of sums', function () {
+    it('gets the square of sums', function () {
       expect(squares.squareOfSums).toBe(25502500);
     });
 
