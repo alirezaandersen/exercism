@@ -9,7 +9,7 @@ describe('Squares', function () {
       expect(squares.squareOfSums).toBe(225);
     });
 
-    xit('gets the sum of squares', function () {
+    it('gets the sum of squares', function () {
       expect(squares.sumOfSquares).toBe(55);
     });
 
