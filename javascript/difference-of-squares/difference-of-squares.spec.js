@@ -30,7 +30,7 @@ describe('Squares', function () {
       expect(squares.sumOfSquares).toBe(385);
     });
 
-    xit('gets the difference', function () {
+    it('gets the difference', function () {
       expect(squares.difference).toBe(2640);
     });
 
