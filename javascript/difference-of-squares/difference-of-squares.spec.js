@@ -13,7 +13,7 @@ describe('Squares', function () {
       expect(squares.sumOfSquares).toBe(55);
     });
 
-    xit('gets the difference', function () {
+    it('gets the difference', function () {
       expect(squares.difference).toBe(170);
     });
 
@@ -22,7 +22,7 @@ describe('Squares', function () {
   describe('up to 10', function () {
     var squares = new Squares(10);
 
-    xit('gets the square of sums', function () {
+    it('gets the square of sums', function () {
       expect(squares.squareOfSums).toBe(3025);
     });
 
