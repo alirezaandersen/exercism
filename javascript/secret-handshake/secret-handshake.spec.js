@@ -16,7 +16,7 @@ describe('Secret Handshake', function() {
     expect(handshake.commands()).toEqual(['close your eyes']);
   });
 
-  xit('1000 is jump', function() {
+  it('1000 is jump', function() {
     var handshake = new SecretHandshake(8);
     expect(handshake.commands()).toEqual(['jump']);
   });
