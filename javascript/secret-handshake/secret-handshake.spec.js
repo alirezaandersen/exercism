@@ -11,7 +11,7 @@ describe('Secret Handshake', function() {
     expect(handshake.commands()).toEqual(['double blink']);
   });
 
-  xit('100 is close your eyes', function() {
+  it('100 is close your eyes', function() {
     var handshake = new SecretHandshake(4);
     expect(handshake.commands()).toEqual(['close your eyes']);
   });
