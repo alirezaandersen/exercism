@@ -6,7 +6,7 @@ describe('Secret Handshake', function() {
     expect(handshake.commands()).toEqual(['wink']);
   });
 
-  xit('10 is a double blink', function() {
+  it('10 is a double blink', function() {
     var handshake = new SecretHandshake(2);
     expect(handshake.commands()).toEqual(['double blink']);
   });
