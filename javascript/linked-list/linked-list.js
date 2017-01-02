@@ -1,5 +1,5 @@
-var LinkList = function(){
+var LinkedList = function(){
 
 };
 
-module.exports = LinkList;
+module.exports = LinkedList;
