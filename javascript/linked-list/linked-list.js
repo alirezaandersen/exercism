@@ -43,6 +43,16 @@ LinkedList.prototype.shift = function() {
 	return element.val;
 };
 
+LinkedList.prototype.unshift = function(val) {
+	/* Adds a value to the start of the linked list */
+	this.head = new Element(val, this.head, null);
+	if(this.length >= 1)
+		this.head.next.prev = this.head;
+	else
+		this.tail = this.head;
+	this.length++;
+};
+
 var Element = function(val, next, prev) {
 	/* Element of a linked list */
 	this.val = val;
@@ -59,5 +69,6 @@ Element.prototype.delete = function(){
     this.next = null;
     this.prev = null;
 };
+
 
 module.exports = LinkedList;
