@@ -50,7 +50,7 @@ describe('LinkedList', function () {
     list.push(20);
     expect(list.count()).toBe(2);
   });
-  xit('deletes the last element from the list', function () {
+  it('deletes the last element from the list', function () {
     var list = new LinkedList();
     list.push(10);
     list.push(20);
