@@ -30,6 +30,19 @@ LinkedList.prototype.pop = function() {
 	return element.val;
 };
 
+LinkedList.prototype.shift = function() {
+	/* Removes and returns a value from the start of the linked list */
+	if(this.length === 0)
+		return undefined;
+	this.length--;
+	var element = this.head;
+	this.head = element.next;
+	if(this.length === 0)
+		this.tail = this.head;
+	element.delete();
+	return element.val;
+};
+
 var Element = function(val, next, prev) {
 	/* Element of a linked list */
 	this.val = val;
