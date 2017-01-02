@@ -13,8 +13,15 @@ LinkedList.prototype.push = function(val) {
     this.tail.prev.next = this.tail;
     else {
       this.head = this.tail;
-      this.length ++; 
+      this.length ++;
     }
+};
+
+var Element = function(val, next, prev) {
+	/* Element of a linked list */
+	this.val = val;
+	this.next = next;
+	this.prev = prev;
 };
 
 module.exports = LinkedList;
