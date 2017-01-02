@@ -29,7 +29,7 @@ describe('LinkedList', function () {
     expect(list.pop()).toBe(10);
     expect(list.pop()).toBe(20);
   });
-  xit('example', function () {
+  it('example', function () {
     var list = new LinkedList();
     list.push(10);
     list.push(20);
