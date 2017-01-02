@@ -37,4 +37,14 @@ var Element = function(val, next, prev) {
 	this.prev = prev;
 };
 
+Element.prototype.delete = function(){
+  /* Removes an element from the linked list */
+  if(this.prev)
+    this.prev.next = this.next;
+  if(this.next)
+    this.next.prev = this.prev;
+    this.next = null;
+    this.prev = null;
+};
+
 module.exports = LinkedList;
