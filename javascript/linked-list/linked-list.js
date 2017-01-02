@@ -17,6 +17,19 @@ LinkedList.prototype.push = function(val) {
     }
 };
 
+LinkedList.prototype.pop = function() {
+	/* Removes and returns a value from the end of the linked list */
+	if(this.length === 0)
+		return undefined;
+	this.length--;
+	var element = this.tail;
+	this.tail = element.prev;
+	if(this.length === 0)
+		this.head = this.tail;
+	element.delete();
+	return element.val;
+};
+
 var Element = function(val, next, prev) {
 	/* Element of a linked list */
 	this.val = val;
