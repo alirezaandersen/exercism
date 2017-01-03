@@ -48,7 +48,7 @@ describe('Word Problem', function() {
     expect(new WordProblem(question).answer()).toEqual(8);
   });
 
-  xit('subtract twice', function() {
+  it('subtract twice', function() {
     var question = 'What is 20 minus 4 minus 13?';
     expect(new WordProblem(question).answer()).toEqual(3);
   });
