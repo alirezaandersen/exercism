@@ -33,12 +33,12 @@ describe('Word Problem', function() {
     expect(new WordProblem(question).answer()).toEqual(-75);
   });
 
-  xit('divide', function() {
+  it('divide', function() {
     var question = 'What is 33 divided by -3?';
     expect(new WordProblem(question).answer()).toEqual(-11);
   });
 
-  xit('add twice', function() {
+  it('add twice', function() {
     var question = 'What is 1 plus 1 plus 1?';
     expect(new WordProblem(question).answer()).toEqual(3);
   });
