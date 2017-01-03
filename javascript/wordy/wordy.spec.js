@@ -58,7 +58,7 @@ describe('Word Problem', function() {
     expect(new WordProblem(question).answer()).toEqual(14);
   });
 
-  xit('multiply twice', function() {
+  it('multiply twice', function() {
     var question = 'What is 2 multiplied by -2 multiplied by 3?';
     expect(new WordProblem(question).answer()).toEqual(-12);
   });
