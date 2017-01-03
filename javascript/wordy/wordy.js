@@ -3,7 +3,8 @@ var WordProblem = function(text){
   this.text = text;
   this.operators = {
       "plus" : '+',
-      "minus" : '-'
+      "minus" : '-',
+      "multiplied" : '*'
   };
   this.form = new RegExp("^What is (-?\\d+(?: (?:" + Object.keys(this.operators).join("|") + ") -?\\d+)+)\\?$");
 };
