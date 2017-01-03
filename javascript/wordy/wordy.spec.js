@@ -18,7 +18,7 @@ describe('Word Problem', function() {
     expect(new WordProblem(question).answer()).toEqual(-11);
   });
 
-  xit('add more digits', function() {
+  it('add more digits', function() {
     var question = 'What is 123 plus 45678?';
     expect(new WordProblem(question).answer()).toEqual(45801);
   });
