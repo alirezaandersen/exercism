@@ -2,7 +2,8 @@ var WordProblem = function(text){
   /* Solves mathmatical word problems */
   this.text = text;
   this.operators = {
-      "plus" : '+'
+      "plus" : '+',
+      "minus" : '-'
   };
   this.form = new RegExp("^What is (-?\\d+(?: (?:" + Object.keys(this.operators).join("|") + ") -?\\d+)+)\\?$");
 };
