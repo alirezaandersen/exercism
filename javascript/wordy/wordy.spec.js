@@ -43,7 +43,7 @@ describe('Word Problem', function() {
     expect(new WordProblem(question).answer()).toEqual(3);
   });
 
-  xit('add then subtract', function() {
+  it('add then subtract', function() {
     var question = 'What is 1 plus 5 minus -2?';
     expect(new WordProblem(question).answer()).toEqual(8);
   });
