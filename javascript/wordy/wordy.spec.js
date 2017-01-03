@@ -8,7 +8,7 @@ describe('Word Problem', function() {
     expect(new WordProblem(question).answer()).toEqual(2);
   });
 
-  xit('add 2', function() {
+  it('add 2', function() {
     var question = 'What is 53 plus 2?';
     expect(new WordProblem(question).answer()).toEqual(55);
   });
