@@ -80,7 +80,7 @@ describe('Word Problem', function() {
     expect(problem.answer.bind(problem)).toThrow(new ArgumentError());
   });
 
-  xit('irrelevant', function() {
+  it('irrelevant', function() {
     var question = 'Who is the president of the United States?';
     var problem  = new WordProblem(question);
 
