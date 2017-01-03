@@ -53,7 +53,7 @@ describe('Word Problem', function() {
     expect(new WordProblem(question).answer()).toEqual(3);
   });
 
-  xit('subtract then add', function() {
+  it('subtract then add', function() {
     var question = 'What is 17 minus 6 plus 3?';
     expect(new WordProblem(question).answer()).toEqual(14);
   });
