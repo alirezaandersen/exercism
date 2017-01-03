@@ -13,7 +13,7 @@ describe('Word Problem', function() {
     expect(new WordProblem(question).answer()).toEqual(55);
   });
 
-  xit('add negative numbers', function() {
+  it('add negative numbers', function() {
     var question = 'What is -1 plus -10?';
     expect(new WordProblem(question).answer()).toEqual(-11);
   });
