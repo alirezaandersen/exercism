@@ -68,7 +68,7 @@ describe('Word Problem', function() {
     expect(new WordProblem(question).answer()).toEqual(-8);
   });
 
-  xit('divide twice', function() {
+  it('divide twice', function() {
     var question = 'What is -12 divided by 2 divided by -3?';
     expect(new WordProblem(question).answer()).toEqual(2);
   });
