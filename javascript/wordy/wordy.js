@@ -4,7 +4,7 @@ var WordProblem = function(text){
   this.operators = {
       "plus" : '+',
       "minus" : '-',
-      "multiplied" : '*'
+      "multiplied by" : '*'
   };
   this.form = new RegExp("^What is (-?\\d+(?: (?:" + Object.keys(this.operators).join("|") + ") -?\\d+)+)\\?$");
 };

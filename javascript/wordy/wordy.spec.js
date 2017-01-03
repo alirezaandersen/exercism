@@ -28,7 +28,7 @@ describe('Word Problem', function() {
     expect(new WordProblem(question).answer()).toEqual(16);
   });
 
-  xit('multiply', function() {
+  it('multiply', function() {
     var question = 'What is -3 multiplied by 25?';
     expect(new WordProblem(question).answer()).toEqual(-75);
   });
