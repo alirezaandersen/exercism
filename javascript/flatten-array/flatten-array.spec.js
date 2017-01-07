@@ -8,7 +8,7 @@ describe("FlattenArray", function() {
     it('flattens a 2 level nested list', function(){
 		  expect(flattener.flatten([1,[2,3,4],5])).toEqual([1, 2, 3, 4, 5]);
 	  });
-    xit('flattens a  3 level nested list', function(){
+    it('flattens a  3 level nested list', function(){
 		  expect(flattener.flatten([1,[2,3,4],5,[6,[7,8]]])).toEqual([1, 2, 3, 4, 5, 6, 7, 8]);
 	  });
 	  xit('flattens a 5 level nested list', function(){
