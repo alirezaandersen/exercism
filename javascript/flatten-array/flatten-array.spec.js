@@ -17,7 +17,7 @@ describe("FlattenArray", function() {
     it('flattens a 6 level nest list', function(){
 		  expect(flattener.flatten([1,[2,[[3]],[4,[[5]]],6,7],8])).toEqual([1,2,3,4,5,6,7,8]);
 	  });
-    xit('flattens a 6 level nest list with null values', function(){
+    it('flattens a 6 level nest list with null values', function(){
 		  expect(flattener.flatten([0, 2, [[2, 3], 8, [[100]], null, [[null]]], -2])).toEqual([0,2,2,3,8,100,-2]);
 	  });
     xit('returns an empty list if all values in nested list are null', function(){
