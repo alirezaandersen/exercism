@@ -37,7 +37,7 @@ describe('Hexadecimal', function() {
     expect(hex.toDecimal()).toEqual(0);
   });
 
-  xit('black', function() {
+  it('black', function() {
     var hex = new Hexadecimal('000000');
     expect(hex.toDecimal()).toEqual(0);
   });
