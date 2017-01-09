@@ -2,6 +2,16 @@ var Hexadecimal = function(hex_digits) {
 	/* Hexadeciaml number class */
 	this.hex_digits = hex_digits;
 };
+Hexadecimal.prototype.toDecimal = function() {
+	/* Converts hexadecimal to decimal */
+	return this.hex_digits
+		.split('')
+		.reverse()
+		.map(hex_digit_value)
+		.reduce(function(total, digit, power) {
+			return total + digit * Math.pow(16, power);
+		}, 0) || 0;
+};
 
 function hex_digit_value(digit) {
 	/* Converts a hexadecimal digit to integer or NaN*/
