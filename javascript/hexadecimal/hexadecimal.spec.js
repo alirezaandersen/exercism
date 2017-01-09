@@ -32,7 +32,7 @@ describe('Hexadecimal', function() {
     expect(hex.toDecimal()).toEqual(105166);
   });
 
-  xit('invalid hex is decimal 0', function() {
+  it('invalid hex is decimal 0', function() {
     var hex = new Hexadecimal('carrot');
     expect(hex.toDecimal()).toEqual(0);
   });
