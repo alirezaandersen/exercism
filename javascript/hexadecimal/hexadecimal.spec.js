@@ -27,7 +27,7 @@ describe('Hexadecimal', function() {
     expect(hex.toDecimal()).toEqual(256);
   });
 
-  xit('hex 19ace is decimal 105166', function() {
+  it('hex 19ace is decimal 105166', function() {
     var hex = new Hexadecimal('19ace');
     expect(hex.toDecimal()).toEqual(105166);
   });
