@@ -12,7 +12,7 @@ describe('Hexadecimal', function() {
     expect(hex.toDecimal()).toEqual(12);
   });
 
-  xit('hex 10 is decimal 16', function() {
+  it('hex 10 is decimal 16', function() {
     var hex = new Hexadecimal('10');
     expect(hex.toDecimal()).toEqual(16);
   });
