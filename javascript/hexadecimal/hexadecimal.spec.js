@@ -42,7 +42,7 @@ describe('Hexadecimal', function() {
     expect(hex.toDecimal()).toEqual(0);
   });
 
-  xit('white', function() {
+  it('white', function() {
     var hex = new Hexadecimal('ffffff');
     expect(hex.toDecimal()).toEqual(16777215);
   });
