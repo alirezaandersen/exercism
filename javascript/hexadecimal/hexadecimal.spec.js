@@ -22,7 +22,7 @@ describe('Hexadecimal', function() {
     expect(hex.toDecimal()).toEqual(175);
   });
 
-  xit('hex 100 is decimal 256', function() {
+  it('hex 100 is decimal 256', function() {
     var hex = new Hexadecimal('100');
     expect(hex.toDecimal()).toEqual(256);
   });
