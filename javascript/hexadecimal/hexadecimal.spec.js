@@ -7,7 +7,7 @@ describe('Hexadecimal', function() {
     expect(hex.toDecimal()).toEqual(1);
   });
 
-  xit('hex c is decimal 12', function() {
+  it('hex c is decimal 12', function() {
     var hex = new Hexadecimal('c');
     expect(hex.toDecimal()).toEqual(12);
   });
