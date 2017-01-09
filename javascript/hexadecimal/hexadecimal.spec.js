@@ -17,7 +17,7 @@ describe('Hexadecimal', function() {
     expect(hex.toDecimal()).toEqual(16);
   });
 
-  xit('hex af is decimal 175', function() {
+  it('hex af is decimal 175', function() {
     var hex = new Hexadecimal('af');
     expect(hex.toDecimal()).toEqual(175);
   });
