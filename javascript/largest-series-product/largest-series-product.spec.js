@@ -10,7 +10,7 @@ describe('Series', function () {
     expect(new Series('19').largestProduct(2)).toBe(9);
   });
 
-  xit('can get the largest product of 3', function () {
+  it('can get the largest product of 3', function () {
     expect(new Series('1027839564').largestProduct(3)).toBe(270);
   });
 
