@@ -37,7 +37,7 @@ describe('Series', function () {
 
   it('rejects invalid character in input', ()=> {
     expect(function () {
-      new Series('1234a5').largestProduct('2')
+      new Series('1234a5').largestProduct('2');
     }).toThrow(new Error('Invalid input.'));
   });
 
