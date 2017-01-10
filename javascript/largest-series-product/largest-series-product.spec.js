@@ -61,7 +61,7 @@ describe('Series', function () {
     }).toThrow(new Error('Slice size is too big.'));
   });
 
-  xit('throws an error for empty string and non-zero slice length', function () {
+  it('throws an error for empty string and non-zero slice length', function () {
     expect(function () {
       new Series('').largestProduct(1);
     }).toThrow(new Error('Slice size is too big.'));
