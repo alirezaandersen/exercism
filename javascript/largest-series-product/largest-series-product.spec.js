@@ -55,7 +55,7 @@ describe('Series', function () {
     expect(new Series('123').largestProduct(0)).toBe(1);
   });
 
-  xit('throws an error for slices bigger than the number', function () {
+  it('throws an error for slices bigger than the number', function () {
     expect(function () {
       new Series('123').largestProduct(4);
     }).toThrow(new Error('Slice size is too big.'));
