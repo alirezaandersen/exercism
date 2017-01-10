@@ -41,9 +41,9 @@ describe('Series', function () {
     }).toThrow(new Error('Invalid input.'));
   });
 
-  xit('rejects negative span', function () {
+  it('rejects negative span', function () {
     expect(() => {
-      new Series('12345').largestProduct(-1)
+      new Series('12345').largestProduct(-1);
     }).toThrow(new Error('Invalid input.'));
   });
 
