@@ -51,7 +51,7 @@ describe('Series', function () {
     expect(new Series('').largestProduct(0)).toBe(1);
   });
 
-  xit('returns 1 for non-empty string and zero slice length', function () {
+  it('returns 1 for non-empty string and zero slice length', function () {
     expect(new Series('123').largestProduct(0)).toBe(1);
   });
 
