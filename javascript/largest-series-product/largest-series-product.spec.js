@@ -35,7 +35,7 @@ describe('Series', function () {
     expect(new Series('99099').largestProduct(3)).toBe(0);
   });
 
-  xit('rejects invalid character in input', ()=> {
+  it('rejects invalid character in input', ()=> {
     expect(function () {
       new Series('1234a5').largestProduct('2')
     }).toThrow(new Error('Invalid input.'));
