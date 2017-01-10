@@ -6,7 +6,7 @@ describe('Series', function () {
     expect(new Series('0123456789').largestProduct(2)).toBe(72);
   });
 
-  xit('works for a tiny number', function () {
+  it('works for a tiny number', function () {
     expect(new Series('19').largestProduct(2)).toBe(9);
   });
 
