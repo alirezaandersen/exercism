@@ -21,4 +21,12 @@ Series.prototype.laregestProduct = function(size) {
     return Math.max.apply(null, this.slices(size).map(multiply));
 };
 
+function multiply(numbers) {
+    /* Multiples all elements of an array together */
+    return numbers.reduce(function(total, element) {
+        return total * element;
+    }, 1);
+}
+
+
 module.exports = Series;
