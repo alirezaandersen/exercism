@@ -27,7 +27,7 @@ describe('Series', function () {
     expect(new Series(largeNumber).largestProduct(13)).toBe(23514624000);
   });
 
-  xit('returns 0 if all digits are zero', function () {
+  it('returns 0 if all digits are zero', function () {
     expect(new Series('0000').largestProduct(2)).toBe(0);
   });
 
