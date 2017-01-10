@@ -47,7 +47,7 @@ describe('Series', function () {
     }).toThrow(new Error('Invalid input.'));
   });
 
-  xit('returns 1 for empty string and zero slice length', function () {
+  it('returns 1 for empty string and zero slice length', function () {
     expect(new Series('').largestProduct(0)).toBe(1);
   });
 
