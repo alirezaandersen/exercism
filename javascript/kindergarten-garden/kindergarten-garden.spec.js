@@ -123,7 +123,7 @@ describe('Two gardens, different students', function () {
   var garden1 = new Garden(diagram, ['Alice', 'Bob', 'Charlie', 'Dan']);
   var garden2 = new Garden(diagram, ['Bob', 'Charlie', 'Dan', 'Erin']);
 
-  xit('Bob and Charlie for each garden', function () {
+  it('Bob and Charlie for each garden', function () {
     expect(garden1.bob)
       .toEqual(['radishes', 'radishes', 'grass', 'clover']);
     expect(garden2.bob)
