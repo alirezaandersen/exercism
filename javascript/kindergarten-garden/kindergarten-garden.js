@@ -4,6 +4,7 @@ var DEFAULT_STUDENTS = [ 'Alice', 'Bob', 'Charlie', 'David', 'Eve',
 var Garden = function(garden, students){
   /* A Kindergarden plant garden */
   students ? students.sort(): (students = DEFAULT_STUDENTS);
+  garden = garden.split('\n').map(MakeRow);
 };
 
 function MakeRow(row) {
