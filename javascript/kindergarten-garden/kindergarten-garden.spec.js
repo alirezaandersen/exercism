@@ -96,7 +96,7 @@ describe('Disordered class', function () {
   var students = ['Samantha', 'Patricia', 'Xander', 'Roger'];
   var garden = new Garden(diagram, students);
 
-  xit('Patricia', function () {
+  it('Patricia', function () {
     expect(garden.patricia)
       .toEqual(['violets', 'clover', 'radishes', 'violets']);
   });
