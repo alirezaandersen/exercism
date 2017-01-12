@@ -5,9 +5,13 @@ var Garden = function(garden, students){
   /* A Kindergarden plant garden */
 };
 
+function MakeRow(row) {
+	/* Converts a row of plant letters to an array of plants */
+}
+
 function StudentsGarden(garden, position) {
 	/* The plants owned by an individual student */
 
-};
+}
 
 module.exports = Garden;
