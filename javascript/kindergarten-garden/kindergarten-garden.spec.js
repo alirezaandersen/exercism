@@ -7,7 +7,7 @@ describe('Garden', function () {
       .toEqual(['radishes', 'clover', 'grass', 'grass']);
   });
 
-  xit('another for Alice', function () {
+  it('another for Alice', function () {
     expect(new Garden('VC\nRC').alice)
       .toEqual(['violets', 'clover', 'radishes', 'clover']);
   });
