@@ -1,4 +1,4 @@
-var Hexadecimal = function(hex_digits) {
+cd var Hexadecimal = function(hex_digits) {
 	/* Hexadeciaml number class */
 	this.hex_digits = hex_digits;
 };
