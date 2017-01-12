@@ -106,7 +106,7 @@ describe('Disordered class', function () {
       .toEqual(['radishes', 'radishes', 'grass', 'clover']);
   });
 
-  xit('Samantha', function () {
+  it('Samantha', function () {
     expect(garden.samantha)
       .toEqual(['grass', 'violets', 'clover', 'grass']);
   });
