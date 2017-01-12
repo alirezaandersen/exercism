@@ -79,7 +79,7 @@ describe('Full garden', function () {
       .toEqual(['violets', 'clover', 'violets', 'grass']);
   });
 
-  xit('for Kincaid', function () {
+  it('for Kincaid', function () {
     expect(garden.kincaid)
       .toEqual(['grass', 'clover', 'clover', 'grass']);
   });
