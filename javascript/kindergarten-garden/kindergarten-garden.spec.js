@@ -49,7 +49,7 @@ describe('Full garden', function () {
       .toEqual(['radishes', 'violets', 'clover', 'radishes']);
   });
 
-  xit('for Eve', function () {
+  it('for Eve', function () {
     expect(garden.eve)
       .toEqual(['clover', 'grass', 'radishes', 'grass']);
   });
