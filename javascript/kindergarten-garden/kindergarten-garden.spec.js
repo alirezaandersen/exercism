@@ -17,7 +17,7 @@ describe('Garden', function () {
       .toEqual(['clover', 'grass', 'radishes', 'clover']);
   });
 
-  xit('for Bob and Charlie', function () {
+  it('for Bob and Charlie', function () {
     var garden = new Garden('VVCCGG\nVVCCGG');
     expect(garden.bob).toEqual(['clover', 'clover', 'clover', 'clover']);
     expect(garden.charlie).toEqual(['grass', 'grass', 'grass', 'grass']);
