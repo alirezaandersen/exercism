@@ -29,7 +29,7 @@ describe('Full garden', function () {
   var diagram = 'VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV';
   var garden = new Garden(diagram);
 
-  xit('for Alice', function () {
+  it('for Alice', function () {
     expect(garden.alice)
       .toEqual(['violets', 'radishes', 'violets', 'radishes']);
   });
