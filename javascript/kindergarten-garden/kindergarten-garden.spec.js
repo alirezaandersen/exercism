@@ -84,7 +84,7 @@ describe('Full garden', function () {
       .toEqual(['grass', 'clover', 'clover', 'grass']);
   });
 
-  xit('for Larry', function () {
+  it('for Larry', function () {
     expect(garden.larry)
       .toEqual(['grass', 'violets', 'clover', 'violets']);
   });
