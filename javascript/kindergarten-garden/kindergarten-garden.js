@@ -5,6 +5,10 @@ var Garden = function(garden, students){
   /* A Kindergarden plant garden */
   students ? students.sort(): (students = DEFAULT_STUDENTS);
 	garden = garden.split('\n').map(MakeRow);
+
+  for(var i = 0; i < students.length; i++) {
+		this[students[i].toLowerCase()] = StudentsGarden(garden, i);
+	}
 };
 
 function MakeRow(row) {
