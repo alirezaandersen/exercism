@@ -1,4 +1,5 @@
 var BinaryTree = function(data){
+  /* Tree Data Structure */
 
 };
 
