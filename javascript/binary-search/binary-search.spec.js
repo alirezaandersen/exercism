@@ -22,7 +22,7 @@ describe('BinarySearch', function() {
     expect(new BinarySearch(sortedArray).indexOf(1)).toEqual(0);
   });
 
-  xit('should find the correct index of an included value at the end of the array', function() {
+  it('should find the correct index of an included value at the end of the array', function() {
     expect(new BinarySearch(sortedArray).indexOf(6)).toEqual(5);
   });
 
