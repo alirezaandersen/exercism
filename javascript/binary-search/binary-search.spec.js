@@ -18,7 +18,7 @@ describe('BinarySearch', function() {
     expect(new BinarySearch(sortedArray).indexOf(3)).toEqual(2);
   });
 
-  xit('should find the correct index of an included value at the beginning of the array', function() {
+  it('should find the correct index of an included value at the beginning of the array', function() {
     expect(new BinarySearch(sortedArray).indexOf(1)).toEqual(0);
   });
 
