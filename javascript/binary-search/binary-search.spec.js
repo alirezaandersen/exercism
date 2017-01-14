@@ -14,7 +14,7 @@ describe('BinarySearch', function() {
     expect(Array.isArray(validBinarySearch.array)).toEqual(true);
   });
 
-  xit('should find the correct index of an included value in the middle of the array', function() {
+  it('should find the correct index of an included value in the middle of the array', function() {
     expect(new BinarySearch(sortedArray).indexOf(3)).toEqual(2);
   });
 
