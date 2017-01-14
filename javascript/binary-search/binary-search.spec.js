@@ -26,7 +26,7 @@ describe('BinarySearch', function() {
     expect(new BinarySearch(sortedArray).indexOf(6)).toEqual(5);
   });
 
-  xit('should search the middle of the array', function() {
+  it('should search the middle of the array', function() {
     expect(new BinarySearch(sortedArrayOfOddLength).indexOf(2)).toEqual(3);
   });
 
