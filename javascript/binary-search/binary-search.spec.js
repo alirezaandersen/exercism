@@ -30,7 +30,7 @@ describe('BinarySearch', function() {
     expect(new BinarySearch(sortedArrayOfOddLength).indexOf(2)).toEqual(3);
   });
 
-  xit('should return -1 for a value not in the array', function() {
+  it('should return -1 for a value not in the array', function() {
     expect(new BinarySearch(sortedArray).indexOf(10)).toEqual(-1);
   });
 });
