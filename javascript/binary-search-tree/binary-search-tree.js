@@ -8,6 +8,10 @@ var BinaryTree = function(data) {
 BinaryTree.prototype.insert = function(data) {
 	/* Adds a value to the tree */
   var node = (data <= this.data) ? 'left' : 'right';
+  if( this[node] )
+		this[node].insert(data);
+	else
+		this[node] = new BinaryTree(data);
 
 };
 
