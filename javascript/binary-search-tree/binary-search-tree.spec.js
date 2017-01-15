@@ -64,7 +64,7 @@ describe('BinarySearchTree', function() {
     expect(four.right.right.data).toEqual(7);
   });
 
-  xit('iterating one element', function() {
+  it('iterating one element', function() {
     expect(recordAllData(new Bst(4))).toEqual([4]);
   });
 
