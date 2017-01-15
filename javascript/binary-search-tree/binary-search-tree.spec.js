@@ -14,7 +14,7 @@ describe('BinarySearchTree', function() {
     expect(new Bst(4).data).toEqual(4);
   });
 
-  xit('inserting less', function() {
+  it('inserting less', function() {
     var four;
 
     four = new Bst(4);
