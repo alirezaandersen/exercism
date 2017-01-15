@@ -7,6 +7,12 @@ var BinaryTree = function(data) {
 
 BinaryTree.prototype.insert = function(data) {
 	/* Adds a value to the tree */
+  var node = (data <= this.data) ? 'left' : 'right';
+
+};
+
+BinaryTree.prototype.each = function(func) {
+	/* Sorted elements in the tree */
 
 };
 
