@@ -34,7 +34,7 @@ describe('BinarySearchTree', function() {
     expect(four.left.data).toEqual(4);
   });
 
-  xit('inserting right', function() {
+  it('inserting right', function() {
     var four;
 
     four = new Bst(4);
