@@ -6,7 +6,7 @@ describe('Matrix', function () {
     expect(new Matrix('1 2\n10 20').rows[0]).toEqual([1, 2]);
   });
 
-  xit('can extract the other row', function () {
+  it('can extract the other row', function () {
     expect(new Matrix('9 8 7\n19 18 17').rows[1]).toEqual([19, 18, 17]);
   });
 
