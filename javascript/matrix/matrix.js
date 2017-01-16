@@ -1,4 +1,4 @@
-var Matrix = function(){
+var Matrix = function(matrix){
 
 };
 
