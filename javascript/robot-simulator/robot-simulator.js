@@ -12,4 +12,8 @@ Robot.prototype.orient = function(direction) {
 	this.bearing = direction;
 };
 
+Robot.prototype.turnRight = function() {
+	/* Changes the bearing one step to the right */
+};
+
 module.exports = Robot;
