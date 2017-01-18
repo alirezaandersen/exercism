@@ -5,5 +5,8 @@ var Robot = function() {};
 var directions = [ 'north', 'east', 'south', 'west' ];
 var vectors = [[0, 1], [1, 0], [0, -1], [-1, 0]];
 
+Robot.prototype.orient = function(direction) {
+	/* Sets the direction of the robot */
+};
 
 module.exports = Robot;
