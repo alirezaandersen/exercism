@@ -7,6 +7,9 @@ var vectors = [[0, 1], [1, 0], [0, -1], [-1, 0]];
 
 Robot.prototype.orient = function(direction) {
 	/* Sets the direction of the robot */
+  if(directions.indexOf(direction) == -1)
+		throw "Invalid Robot Bearing";
+	this.bearing = direction;
 };
 
 module.exports = Robot;
