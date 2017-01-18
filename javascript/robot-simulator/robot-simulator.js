@@ -14,6 +14,8 @@ Robot.prototype.orient = function(direction) {
 
 Robot.prototype.turnRight = function() {
 	/* Changes the bearing one step to the right */
+  var i = directions.indexOf(this.bearing);
+	this.bearing = directions[(i + 1) % directions.length];
 };
 
 module.exports = Robot;
