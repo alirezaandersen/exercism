@@ -23,4 +23,8 @@ Robot.prototype.turnLeft = function() {
   var i = directions.indexOf(this.bearing);
 	this.bearing = directions[(i + directions.length - 1) % directions.length];
 };
+
+/* Sets the robots position */
+Robot.prototype.at = function(x, y) { this.coordinates = [x,y]; };
+
 module.exports = Robot;
