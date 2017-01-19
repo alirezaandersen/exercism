@@ -35,4 +35,12 @@ Robot.prototype.advance = function() {
 	}, this.coordinates);
 };
 
+// Instructions the robot understands
+var instructions = {
+	'L': 'turnLeft',
+	'R': 'turnRight',
+	'A': 'advance',
+};
+
+
 module.exports = Robot;
