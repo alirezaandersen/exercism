@@ -29,6 +29,7 @@ Robot.prototype.at = function(x, y) { this.coordinates = [x,y]; };
 
 Robot.prototype.advance = function() {
 	/* Move the position one step in the direction the robot is facing */
+  var dir = directions.indexOf(this.bearing);
 
 };
 
