@@ -112,7 +112,7 @@ describe('Robot', function() {
     expect(robot.instructions('L')).toEqual(['turnLeft']);
   });
 
-  xit('instructions for turning right', function() {
+  it('instructions for turning right', function() {
     expect(robot.instructions('R')).toEqual(['turnRight']);
   });
 
