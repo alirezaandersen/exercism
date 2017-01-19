@@ -125,7 +125,7 @@ describe('Robot', function() {
       .toEqual(['turnRight', 'advance', 'advance', 'turnLeft']);
   });
 
-  xit('instruct robot', function() {
+  it('instruct robot', function() {
     robot.place({x: -2, y: 1, direction: 'east'});
     robot.evaluate('RLAALAL');
     expect(robot.coordinates).toEqual([0,2]);
