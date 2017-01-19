@@ -33,7 +33,7 @@ describe('Robot', function() {
     expect(robot.bearing).toEqual('south');
   });
 
-  xit('turn right from south', function() {
+  it('turn right from south', function() {
     robot.orient('south');
     robot.turnRight();
     expect(robot.bearing).toEqual('west');
