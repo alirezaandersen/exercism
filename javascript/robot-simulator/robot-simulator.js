@@ -27,4 +27,9 @@ Robot.prototype.turnLeft = function() {
 /* Sets the robots position */
 Robot.prototype.at = function(x, y) { this.coordinates = [x,y]; };
 
+Robot.prototype.advance = function() {
+	/* Move the position one step in the direction the robot is facing */
+
+};
+
 module.exports = Robot;
