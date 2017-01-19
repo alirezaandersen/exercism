@@ -55,5 +55,10 @@ Robot.prototype.place = function(args) {
 	this.at(args['x'], args['y']);
 };
 
-
+Robot.prototype.evaluate = function(instruction_list) {
+	/* Robot preforms a series of instructions */
+	this.instructions(instruction_list).forEach(function(action) {
+		this[action]();
+	}, this);
+};
 module.exports = Robot;
