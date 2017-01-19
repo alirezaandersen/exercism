@@ -13,7 +13,7 @@ describe('Robot', function() {
     }
   });
 
-  xit('invalid robot bearing', function() {
+  it('invalid robot bearing', function() {
     try {
       robot.orient('crood');
     } catch(exception) {
