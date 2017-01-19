@@ -132,7 +132,7 @@ describe('Robot', function() {
     expect(robot.bearing).toEqual('west');
   });
 
-  xit('instruct many robots', function() {
+  it('instruct many robots', function() {
     var robot1 = new Robot();
     var robot2 = new Robot();
     var robot3 = new Robot();
