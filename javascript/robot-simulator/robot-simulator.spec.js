@@ -80,7 +80,7 @@ describe('Robot', function() {
     expect(robot.coordinates).toEqual([-2,5]);
   });
 
-  xit('advance when facing north', function() {
+  it('advance when facing north', function() {
     robot.at(0,0);
     robot.orient('north');
     robot.advance();
