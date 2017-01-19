@@ -75,7 +75,7 @@ describe('Robot', function() {
   });
 
 
-  xit('other robot coordinates', function() {
+  it('other robot coordinates', function() {
     robot.at(-2, 5);
     expect(robot.coordinates).toEqual([-2,5]);
   });
