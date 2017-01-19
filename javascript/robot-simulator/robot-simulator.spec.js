@@ -87,7 +87,7 @@ describe('Robot', function() {
     expect(robot.coordinates).toEqual([0,1]);
   });
 
-  xit('advance when facing east', function() {
+  it('advance when facing east', function() {
     robot.at(0,0);
     robot.orient('east');
     robot.advance();
