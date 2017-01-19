@@ -49,4 +49,11 @@ Robot.prototype.instructions = function(instruction_list) {
 	});
 };
 
+Robot.prototype.place = function(args) {
+	/* Initilized the direction and location of a robot */
+	this.orient(args['direction']);
+	this.at(args['x'], args['y']);
+};
+
+
 module.exports = Robot;
