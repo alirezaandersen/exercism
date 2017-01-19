@@ -116,7 +116,7 @@ describe('Robot', function() {
     expect(robot.instructions('R')).toEqual(['turnRight']);
   });
 
-  xit('instructions for advancing', function() {
+  it('instructions for advancing', function() {
     expect(robot.instructions('A')).toEqual(['advance']);
   });
 
