@@ -108,7 +108,7 @@ describe('Robot', function() {
     expect(robot.coordinates).toEqual([-1,0]);
   });
 
-  xit('instructions for turning left', function() {
+  it('instructions for turning left', function() {
     expect(robot.instructions('L')).toEqual(['turnLeft']);
   });
 
