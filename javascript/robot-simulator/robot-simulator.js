@@ -42,5 +42,11 @@ var instructions = {
 	'A': 'advance',
 };
 
+Robot.prototype.instructions = function(instruction_list) {
+	/* Make a list of instructions from a string */
+	return instruction_list.split('').map(function(instruction) {
+		return instructions[instruction];
+	});
+};
 
 module.exports = Robot;
