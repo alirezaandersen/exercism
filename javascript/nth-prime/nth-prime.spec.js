@@ -18,7 +18,7 @@ describe('Prime',function() {
     expect(prime.nth(10001)).toEqual(104743);
   });
 
-  xit('weird case',function() {
+  it('weird case',function() {
     expect( function () {
       prime.nth(0);
     }).toThrow(new Error('Prime is not possible'));
