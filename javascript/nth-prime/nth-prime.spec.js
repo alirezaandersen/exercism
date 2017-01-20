@@ -10,7 +10,7 @@ describe('Prime',function() {
     expect(prime.nth(2)).toEqual(3);
   });
 
-  xit('sixth',function(){
+  it('sixth',function(){
     expect(prime.nth(6)).toEqual(13);
   });
 
