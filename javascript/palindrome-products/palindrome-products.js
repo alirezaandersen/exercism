@@ -1,7 +1,7 @@
 var Palindromes = function(args){
   /* Pairs of numbers that when multipied are palindromes */
-	this.maxFactors = args['maxFactor'];
-	this.minFactor = args['minFactor'] || 1;
+	this.maxFactors = args.maxFactor;
+	this.minFactor = args.minFactor || 1;
 };
 
 Palindromes.prototype.generate = function() {
