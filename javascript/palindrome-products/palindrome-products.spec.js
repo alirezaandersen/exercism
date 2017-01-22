@@ -15,7 +15,7 @@ describe('Palindrome', function() {
     expect(orderedLargestFactors).toEqual([[1, 9], [3, 3]]);
   });
 
-  xit('largest palindrome from double digit factors', function() {
+  it('largest palindrome from double digit factors', function() {
     var palindromes = new Palindromes({ maxFactor: 99, minFactor: 10 });
     palindromes.generate();
 
