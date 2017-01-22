@@ -4,6 +4,23 @@ var Palindromes = function(args){
 	this.minFactor = args['minFactor'] || 1;
 };
 
+Palindromes.prototype.generate = function() {
+	/* Finds all palindrome products in a range */
+	if(this.palindromes)
+		return;
+	this.palindromes = {};
+	for(var i = this.minFactor; i <= this.maxFactors; i++) {
+		for( var j = i; j <= this.maxFactors; j++) {
+			var product = i * j;
+			if(is_palindrome(product.toString())) {
+				if(!(product in this.palindromes))
+					this.palindromes[product] = [];
+				this.palindromes[product].push([i,j]);
+			}
+		}
+	}
+};
+
 Palindromes.prototype.largest = function() {
 	/* The largest product generated */
 	var keys = Object.keys(this.palindromes);
