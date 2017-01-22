@@ -42,7 +42,7 @@ describe('Palindrome', function() {
     expect(largest.factors).toEqual([[913, 993]]);
   });
 
-  xit('smallest palindrome from triple digit factors', function() {
+  it('smallest palindrome from triple digit factors', function() {
     var palindromes = new Palindromes({ maxFactor: 999, minFactor: 100 });
     palindromes.generate();
 
