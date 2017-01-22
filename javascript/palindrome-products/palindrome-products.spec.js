@@ -33,7 +33,7 @@ describe('Palindrome', function() {
     expect(smallest.factors).toEqual([[11, 11]]);
   });
 
-  xit('largest palindrome from triple digit factors', function() {
+  it('largest palindrome from triple digit factors', function() {
     var palindromes = new Palindromes({ maxFactor: 999, minFactor: 100 });
     palindromes.generate();
 
