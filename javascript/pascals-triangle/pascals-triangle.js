@@ -9,4 +9,16 @@ var Triangle = function(nRows){
   }
 };
 
+  function nextRow(currentRow){
+    /* Builds the next row of Pascals Triangle*/
+    var row = [];
+    var prev = 0;
+    for(var j =0 ; j < currentRow.length; j++){
+      row.push(currentRow[j] + prev);
+      prev = currentRow[j];
+    }
+    row.push(prev);
+    return row;
+  }
+
 module.exports = Triangle;
