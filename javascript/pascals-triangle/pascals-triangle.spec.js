@@ -10,7 +10,7 @@ describe('Triangle', function () {
     expect(new Triangle(2).rows).toEqual([[1], [1, 1]]);
   });
 
-  xit('with three rows', function () {
+  it('with three rows', function () {
     expect(new Triangle(3).rows).toEqual([[1], [1, 1], [1, 2, 1]]);
   });
 
