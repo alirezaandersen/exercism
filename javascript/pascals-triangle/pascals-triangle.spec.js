@@ -18,7 +18,7 @@ describe('Triangle', function () {
     expect(new Triangle(4).lastRow).toEqual([1, 3, 3, 1]);
   });
 
-  xit('fifth row', function () {
+  it('fifth row', function () {
     expect(new Triangle(5).lastRow).toEqual([1, 4, 6, 4 ,1]);
   });
 
