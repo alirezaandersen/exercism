@@ -22,7 +22,7 @@ describe('Triangle', function () {
     expect(new Triangle(5).lastRow).toEqual([1, 4, 6, 4 ,1]);
   });
 
-  xit('twentieth row', function () {
+  it('twentieth row', function () {
     var twentieth = [1, 19, 171, 969, 3876, 11628, 27132, 50388, 75582, 92378, 92378, 75582, 50388, 27132, 11628, 3876, 969, 171, 19, 1];
     expect(new Triangle(20).lastRow)
       .toEqual(twentieth);
