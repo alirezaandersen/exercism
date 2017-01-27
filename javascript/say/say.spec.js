@@ -6,7 +6,7 @@ describe('say', function () {
     expect(say.inEnglish(0)).toBe('zero');
   });
 
-  xit('one', function () {
+  it('one', function () {
     expect(say.inEnglish(1)).toBe('one');
   });
 
