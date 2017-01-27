@@ -26,7 +26,7 @@ describe('say', function () {
     expect(say.inEnglish(100)).toBe('one hundred');
   });
 
-  xit('one hundred twenty-three', function () {
+  it('one hundred twenty-three', function () {
     expect(say.inEnglish(123)).toBe('one hundred twenty-three');
   });
 
