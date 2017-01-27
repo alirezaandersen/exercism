@@ -30,7 +30,7 @@ describe('say', function () {
     expect(say.inEnglish(123)).toBe('one hundred twenty-three');
   });
 
-  xit('one thousand', function () {
+  it('one thousand', function () {
     expect(say.inEnglish(1000)).toBe('one thousand');
   });
 
