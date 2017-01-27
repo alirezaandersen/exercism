@@ -42,7 +42,7 @@ describe('say', function () {
     expect(say.inEnglish(1000000)).toBe('one million');
   });
 
-  xit('one million two', function () {
+  it('one million two', function () {
     expect(say.inEnglish(1000002)).toBe('one million two');
   });
 
