@@ -10,7 +10,7 @@ describe('say', function () {
     expect(say.inEnglish(1)).toBe('one');
   });
 
-  xit('fourteen', function () {
+  it('fourteen', function () {
     expect(say.inEnglish(14)).toBe('fourteen');
   });
 
