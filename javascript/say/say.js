@@ -25,4 +25,9 @@ var teens = ",eleven,twelve,thirteen,fourteen,fifteen,sixteen,seventeen,eighteen
 var tens = ",,twenty,thirty,forty,fifty,sixty,seventy,eighty,ninty".split(',');
 var powers = ", thousand, million, billion".split(',');
 
+function englishPower(digits) {
+	/* Say numbers between 0 and 1000 in english (exclusive) */
+
+}
+
 module.exports = {inEnglish: inEnglish};
