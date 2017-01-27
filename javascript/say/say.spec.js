@@ -34,7 +34,7 @@ describe('say', function () {
     expect(say.inEnglish(1000)).toBe('one thousand');
   });
 
-  xit('one thousand two hundred thirty-four', function () {
+  it('one thousand two hundred thirty-four', function () {
     expect(say.inEnglish(1234)).toBe('one thousand two hundred thirty-four');
   });
 
