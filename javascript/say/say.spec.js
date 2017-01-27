@@ -22,7 +22,7 @@ describe('say', function () {
     expect(say.inEnglish(22)).toBe('twenty-two');
   });
 
-  xit('one hundred', function () {
+  it('one hundred', function () {
     expect(say.inEnglish(100)).toBe('one hundred');
   });
 
