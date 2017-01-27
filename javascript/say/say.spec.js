@@ -69,7 +69,7 @@ describe('say', function () {
     }).toThrow(new Error('Number must be between 0 and 999,999,999,999.'));
   });
 
-  xit('raises an error above 999,999,999,999', function () {
+  it('raises an error above 999,999,999,999', function () {
     expect(function () {
       say.inEnglish(1000000000000);
     }).toThrow(new Error('Number must be between 0 and 999,999,999,999.'));
