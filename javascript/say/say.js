@@ -31,8 +31,14 @@ function englishPower(digits) {
 	var english = "";
 
   // hundereds
-if(digits[0] != 0)
+if(digits[0] !== 0)
   english += ones[digits[0]] + " hundred";
+
+  // tens, teens are specual cases
+if(digits[1] == 1)
+  return english + (english?' ':'') + teens[digits[2]];
+else if(digits[1] !== 0)
+  english += (english?' ':'') + tens[digits[1]];
 }
 
 module.exports = {inEnglish: inEnglish};
