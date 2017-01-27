@@ -63,7 +63,7 @@ describe('say', function () {
     expect(say.inEnglish(987654321123)).toBe(expected);
   });
 
-  xit('raises an error below zero', function () {
+  it('raises an error below zero', function () {
     expect(function () {
       say.inEnglish(-1);
     }).toThrow(new Error('Number must be between 0 and 999,999,999,999.'));
