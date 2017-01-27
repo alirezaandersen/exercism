@@ -21,5 +21,7 @@ return digit_groups.reduce(function(english, group, power) {
 }
 
 var ones = ",one,two,three,four,five,six,seven,eight,nine".split(',');
+var teens = ",eleven,twelve,thirteen,fourteen,fifteen,sixteen,seventeen,eighteen,nineteen".split(',');
+
 
 module.exports = {inEnglish: inEnglish};
