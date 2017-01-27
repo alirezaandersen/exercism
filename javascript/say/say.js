@@ -27,7 +27,12 @@ var powers = ", thousand, million, billion".split(',');
 
 function englishPower(digits) {
 	/* Say numbers between 0 and 1000 in english (exclusive) */
+  digits = ("00" + digits).slice(-3).split('').map(function(e) {return parseInt(e);});
+	var english = "";
 
+  // hundereds
+if(digits[0] != 0)
+  english += ones[digits[0]] + " hundred";
 }
 
 module.exports = {inEnglish: inEnglish};
