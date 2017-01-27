@@ -51,7 +51,7 @@ describe('say', function () {
       .toBe('one million two thousand three hundred forty-five');
   });
 
-  xit('one billion', function () {
+  it('one billion', function () {
     expect(say.inEnglish(1000000000)).toBe('one billion');
   });
 
