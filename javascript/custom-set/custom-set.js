@@ -18,4 +18,12 @@ CustomSet.prototype.subset = function(set_b) {
 	return set_b.toList().every(function(element) {return this.member(element);}, this);
 };
 
+CustomSet.prototype.put = function(item) {
+	/* Insert an item into a set */
+	if(!this.member(item))
+		this.items.push(item);
+	this.items.sort();
+	return this;
+};
+
 module.exports = CustomSet;
