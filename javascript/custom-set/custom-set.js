@@ -45,4 +45,11 @@ CustomSet.prototype.delete = function(item) {
 	return this;
 };
 
+CustomSet.prototype.difference = function(set_b) {
+	/* Items in one set and not in another */
+	return new CustomSet( this.items.filter(function(item) {
+		return !set_b.member(item);
+	}));
+};
+
 module.exports = CustomSet;
