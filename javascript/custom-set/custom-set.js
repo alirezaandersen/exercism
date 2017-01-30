@@ -1,4 +1,3 @@
-
 var CustomSet = function(items) {
 	/* A set object */
 	this.items = [];
@@ -7,16 +6,11 @@ var CustomSet = function(items) {
 };
 
 // Tests if item is in a set
-CustomSet.prototype.member = function(item) { return this.items.indexOf(item) != -1; };
+CustomSet.prototype.member = function(item) { return this.items.indexOf(item) != -1 };
 // Number of elements in the set
-CustomSet.prototype.size = function() { return this.items.length; };
+CustomSet.prototype.size = function() { return this.items.length };
 // Makes a list from a set
-CustomSet.prototype.toList = function() { return this.items; };
-
-CustomSet.prototype.subset = function(set_b) {
-	/* All elements of one set are contained in this set */
-	return set_b.toList().every(function(element) {return this.member(element);}, this);
-};
+CustomSet.prototype.toList = function() { return this.items };
 
 CustomSet.prototype.put = function(item) {
 	/* Insert an item into a set */
@@ -54,7 +48,7 @@ CustomSet.prototype.difference = function(set_b) {
 
 CustomSet.prototype.disjoint = function(set_b) {
 	/* Tests if there are no elements in common */
-	if(this.size() === 0 || set_b.size() === 0)
+	if(this.size() == 0 || set_b.size() == 0)
 		return true;
 	return this.toList().every(function(element) {
 		return !set_b.member(element);
@@ -64,6 +58,25 @@ CustomSet.prototype.disjoint = function(set_b) {
 CustomSet.prototype.empty = function() {
 	/* Remove all items from the set */
 	this.items = [];
-	return this;
+	return true;
 };
+
+CustomSet.prototype.intersection = function(set_b) {
+	/* Items in both sets */
+	return new CustomSet(this.toList().filter(function(element) {
+		return set_b.member(element);
+	}));
+};
+
+
+CustomSet.prototype.subset = function(set_b) {
+	/* All elements of one set are contained in this set */
+	return set_b.toList().every(function(element) {return this.member(element)}, this);
+};
+
+CustomSet.prototype.union = function(set_b) {
+	/* Set containing elements from either set */
+	return new CustomSet([].concat(this.toList(), set_b.toList()));
+};
+
 module.exports = CustomSet;

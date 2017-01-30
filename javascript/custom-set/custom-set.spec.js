@@ -212,7 +212,7 @@ describe('CustomSet', function() {
     expect(actual2.eql(expected2)).toBe(true);
   });
 
-  xit('knows its size', function() {
+  it('knows its size', function() {
     var actual = new CustomSet().size();
     expect(actual).toBe(0);
     var actual2 = new CustomSet([1, 2, 3]).size();
