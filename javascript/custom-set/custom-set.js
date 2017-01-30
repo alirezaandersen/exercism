@@ -1,89 +1,98 @@
-"use strict";
+function CustomSet(set){
+	this._set = [];
+	for(var i in set){
+		this.add(set[i]);
+	}
+}
 
-var CustomSet = function(array) {
-  this.set = [];
-  array = array || [];
-  [...array].forEach((i) => this.add(i));
+CustomSet.prototype.empty = function(){
+	return this._set.length === 0;
 };
 
-CustomSet.prototype.toList = function() {
-  return this.set.sort((a,b) => a - b);
+CustomSet.prototype.contains = function(value){
+	return this._set.indexOf(value) != -1;
 };
 
-CustomSet.prototype.size = function() {
-  return this.set.length;
+CustomSet.prototype.subset = function(CSet){
+	if(this._set.length < CSet._set.length){
+		return false;
+	}
+	var isSubset = true;
+	for(var i = 0; i < CSet._set.length; i++){
+		if(this._set.indexOf(CSet._set[i]) == -1){
+			isSubset = false;
+			break;
+		}
+	}
+	return isSubset;
 };
 
-CustomSet.prototype.empty = function() {
-  return this.size() == 0;
+CustomSet.prototype.disjoint = function(CSet){
+	var isDisjoint = true;
+	for(var i = 0; i < CSet._set.length; i++){
+		if(this._set.indexOf(CSet._set[i]) != -1){
+			isDisjoint = false;
+			break;
+		}
+	}
+	return isDisjoint;
 };
 
-CustomSet.prototype.contains = function(item) {
-  return this.toList().some((i) => i == item);
+CustomSet.prototype.eql = function(CSet){
+	var sortedSetA = this._set;
+	sortedSetA.sort();
+	var sortedSetB = CSet._set;
+	sortedSetB.sort();
+	return sortedSetA.join() == sortedSetB.join();
 };
 
-CustomSet.prototype.intersection = function(set2) {
-  let out = new CustomSet();
-  this.toList().forEach((item) => {
-    if (set2.contains(item)) {
-      out.add(item);
-    }
-  });
-  return out;
+CustomSet.prototype.add = function(value){
+	if(this._set.indexOf(value) == -1)
+		this._set.push(value);
+	return this;
 };
 
-CustomSet.prototype.difference = function(set2) {
-  let intersection = this.intersection(set2);
-  let out = new CustomSet();
-  this.toList().forEach((item) => {
-    if (!intersection.contains(item)) {
-      out.add(item);
-    }
-  });
-  return out;
+CustomSet.prototype.intersection = function(CSet){
+	var interS = [];
+	for(var i = 0; i < CSet._set.length; i++){
+		if(this._set.indexOf(CSet._set[i]) != -1){
+			interS.push(CSet._set[i]);
+		}
+	}
+	return new CustomSet(interS);
 };
 
-CustomSet.prototype.disjoint = function(set2) {
-  return this.intersection(set2).empty();
+CustomSet.prototype.difference = function(CSet){
+	var differ = [];
+	if(this._set.length === 0)
+		return new CustomSet(differ);
+	for(var i = 0; i < this._set.length; i++){
+		if(CSet._set.indexOf(this._set[i]) == -1){
+			differ.push(this._set[i]);
+		}
+	}
+	return new CustomSet(differ);
 };
 
-CustomSet.prototype.eql = function(set2) {
-  return set2.size() == this.size() && this.subset(set2);
+CustomSet.prototype.union = function(CSet){
+	var _union = new CustomSet(this._set);
+	for(var i = 0; i < CSet._set.length; i++){
+		_union.add(CSet._set[i]);
+	}
+	return _union;
 };
 
-CustomSet.prototype.subset = function(set2) {
-  let subset = true;
-  set2.toList().forEach((item) => {
-    if (!this.contains(item)) {
-      subset = false;
-    }
-  });
-  return subset;
+CustomSet.prototype.clear = function(){
+	this._set = [];
+	return this;
 };
 
-CustomSet.prototype.add = function(item) {
-  if (!this.contains(item)) {
-    this.set.push(item);
-  }
-  return this;
+CustomSet.prototype.size = function(){
+	return this._set.length;
 };
 
-CustomSet.prototype.delete = function(item) {
-  this.set = this.set.filter((i) => i != item);
-  return this;
-};
-
-CustomSet.prototype.clear = function() {
-  this.set = [];
-  return this;
-};
-
-CustomSet.prototype.union = function(set2) {
-  let out = new CustomSet(this.toList());
-  set2.toList().forEach((item) => {
-    out.add(item);
-  });
-  return out;
+CustomSet.prototype.toList = function(){
+	return this._set;
 };
 
 module.exports = CustomSet;
