@@ -37,4 +37,12 @@ CustomSet.prototype.eql = function(set_b) {
 	return true;
 };
 
+CustomSet.prototype.delete = function(item) {
+	/* Removes an item from a set */
+	this.items = this.items.filter(function(element){
+		return element != item;
+	});
+	return this;
+};
+
 module.exports = CustomSet;
