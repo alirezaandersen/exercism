@@ -26,4 +26,15 @@ CustomSet.prototype.put = function(item) {
 	return this;
 };
 
+CustomSet.prototype.eql = function(set_b) {
+	/* Compares two sets for equality */
+	if(this.items.length != set_b.items.length)
+		return false;
+	for(var i = 0; i < this.items.length; i++) {
+		if(this.items[i] !== set_b.items[i])
+			return false;
+	}
+	return true;
+};
+
 module.exports = CustomSet;
