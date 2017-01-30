@@ -10,7 +10,7 @@ var CustomSet = function(items) {
 
 CustomSet.prototype.subset = function(set_b) {
 	/* All elements of one set are contained in this set */
-	return set_b.toList().every(function(element) {return this.member(element)}, this);
+	return set_b.toList().every(function(element) {return this.member(element);}, this);
 };
 
 module.exports = CustomSet;
