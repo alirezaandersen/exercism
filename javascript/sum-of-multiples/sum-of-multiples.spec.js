@@ -13,7 +13,7 @@ describe('SumOfMultiples', function () {
     expect(SumOfMultiples([3, 5]).to(10)).toBe(23);
   });
 
-  xit('to 100', function () {
+  it('to 100', function () {
     expect(SumOfMultiples([3, 5]).to(100)).toBe(2318);
   });
 
