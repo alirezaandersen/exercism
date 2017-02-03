@@ -29,7 +29,7 @@ describe('SumOfMultiples', function () {
     expect(SumOfMultiples([4, 6]).to(15)).toBe(30);
   });
 
-  xit('[5, 6, 8] to 150', function () {
+  it('[5, 6, 8] to 150', function () {
     expect(SumOfMultiples([5, 6, 8]).to(150)).toBe(4419);
   });
 
