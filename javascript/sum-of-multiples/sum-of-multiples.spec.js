@@ -5,7 +5,7 @@ describe('SumOfMultiples', function () {
     expect(SumOfMultiples([3, 5]).to(1)).toBe(0);
   });
 
-  xit('to 3', function () {
+  it('to 3', function () {
     expect(SumOfMultiples([3, 5]).to(4)).toBe(3);
   });
 
