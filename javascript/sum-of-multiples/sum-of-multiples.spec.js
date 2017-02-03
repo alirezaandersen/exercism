@@ -9,7 +9,7 @@ describe('SumOfMultiples', function () {
     expect(SumOfMultiples([3, 5]).to(4)).toBe(3);
   });
 
-  xit('to 10', function () {
+  it('to 10', function () {
     expect(SumOfMultiples([3, 5]).to(10)).toBe(23);
   });
 
