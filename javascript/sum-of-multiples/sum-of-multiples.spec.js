@@ -17,7 +17,7 @@ describe('SumOfMultiples', function () {
     expect(SumOfMultiples([3, 5]).to(100)).toBe(2318);
   });
 
-  xit('to 1000', function () {
+  it('to 1000', function () {
     expect(SumOfMultiples([3, 5]).to(1000)).toBe(233168);
   });
 
