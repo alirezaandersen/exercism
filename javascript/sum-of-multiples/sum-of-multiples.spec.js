@@ -25,7 +25,7 @@ describe('SumOfMultiples', function () {
     expect(SumOfMultiples([7, 13, 17]).to(20)).toBe(51);
   });
 
-  xit('[4, 6] to 15', function () {
+  it('[4, 6] to 15', function () {
     expect(SumOfMultiples([4, 6]).to(15)).toBe(30);
   });
 
