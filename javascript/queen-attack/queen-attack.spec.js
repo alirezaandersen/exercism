@@ -24,7 +24,7 @@ describe('Queens', function() {
 
   });
 
-  xit('toString representation', function() {
+  it('toString representation', function() {
     var positioning = {white: [2, 4], black: [6, 6]};
     var queens = new Queens(positioning);
     var board = '_ _ _ _ _ _ _ _\n\
