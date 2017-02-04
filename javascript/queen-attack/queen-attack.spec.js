@@ -13,7 +13,7 @@ describe('Queens', function() {
     expect(queens.black).toEqual([6, 1]);
   });
 
-  xit('cannot occupy the same space', function() {
+  it('cannot occupy the same space', function() {
     var positioning = {white: [2,4], black: [2,4]};
 
     try {
