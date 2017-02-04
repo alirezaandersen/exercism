@@ -59,7 +59,7 @@ _ _ _ _ _ _ _ _\n\
     expect(queens.canAttack()).toEqual(true);
   });
 
-  xit('queens can attack another diagonally', function() {
+  it('queens can attack another diagonally', function() {
     var queens = new Queens({ white: [0, 6], black: [1, 7] });
     expect(queens.canAttack()).toEqual(true);
   });
