@@ -2,7 +2,7 @@ var Queens = require('./queen-attack');
 
 describe('Queens', function() {
   it('has the correct default positions', function() {
-    var queens = new Queens;
+    var queens = new Queens();
     expect(queens.white).toEqual([0, 3]);
     expect(queens.black).toEqual([7, 3]);
   });
