@@ -49,7 +49,7 @@ _ _ _ _ _ _ _ _\n\
     expect(queens.canAttack()).toEqual(true);
   });
 
-  xit('queens can attack when they are on the same column', function() {
+  it('queens can attack when they are on the same column', function() {
     var queens = new Queens({ white: [5,4], black: [2,4] });
     expect(queens.canAttack()).toEqual(true);
   });
