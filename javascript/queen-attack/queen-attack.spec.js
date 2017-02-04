@@ -7,7 +7,7 @@ describe('Queens', function() {
     expect(queens.black).toEqual([7, 3]);
   });
 
-  xit('initialized with specific placement', function() {
+  it('initialized with specific placement', function() {
     var queens = new Queens({white: [3,7], black: [6,1]});
     expect(queens.white).toEqual([3, 7]);
     expect(queens.black).toEqual([6, 1]);
