@@ -22,5 +22,9 @@ Queens.prototype.toString = function() {
 
 Queens.prototype.canAttack = function() {
 	/* Can the queens attack eachother */
+	var diffs = this.black.map(function(e, i) {
+		return Math.abs(e - this.white[i]);
+	}, this);
+	return (Math.min.apply(null, diffs) === 0 || diffs[0] === diffs[1]);
 };
 module.exports = Queens;
