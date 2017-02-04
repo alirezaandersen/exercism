@@ -19,4 +19,8 @@ Queens.prototype.toString = function() {
 	}, this).join("");
 };
 
+
+Queens.prototype.canAttack = function() {
+	/* Can the queens attack eachother */
+};
 module.exports = Queens;
