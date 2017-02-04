@@ -6,4 +6,8 @@ var Queens = function(){
 		throw "Queens cannot share the same space";
 }
 
+Queens.prototype.toString = function() {
+	/* String representation of the chess board */
+};
+
 module.exports = Queens;
