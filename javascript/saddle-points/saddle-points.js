@@ -9,7 +9,7 @@ var Matrix = function(matrix){
     return this.map(function(row) {
       return row[colNum];
     });
-  });
+  }, this.rows);
 };
 
 module.exports = Matrix;
