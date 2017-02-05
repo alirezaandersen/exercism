@@ -31,7 +31,7 @@ describe('Matrix', function() {
     expect(matrix.saddlePoints).toEqual([[0,1]]);
   });
 
-  xit('another saddle point', function() {
+  it('another saddle point', function() {
     var matrix = new Matrix('18 3 39 19 91\n38 10 8 77 320\n3 4 8 6 7');
     expect(matrix.saddlePoints).toEqual([[2,2]]);
   });
