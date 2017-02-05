@@ -16,7 +16,7 @@ describe('Matrix', function() {
     expect(matrix.columns[0]).toEqual([1, 4, 7, 8]);
   });
 
-  xit('extracts another column', function() {
+  it('extracts another column', function() {
     var matrix = new Matrix('89 1903 3\n18 3 1\n9 4 800');
     expect(matrix.columns[1]).toEqual([1903, 3, 4]);
   });
