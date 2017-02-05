@@ -26,7 +26,7 @@ describe('Matrix', function() {
     expect(matrix.saddlePoints).toEqual([]);
   });
 
-  xit('a saddle point', function() {
+  it('a saddle point', function() {
     var matrix = new Matrix('1 2\n3 4');
     expect(matrix.saddlePoints).toEqual([[0,1]]);
   });
