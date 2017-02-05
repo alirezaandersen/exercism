@@ -11,7 +11,7 @@ describe('Matrix', function() {
     expect(matrix.rows[1]).toEqual([19, 18, 17]);
   });
 
-  xit('extracts a column', function() {
+  it('extracts a column', function() {
     var matrix = new Matrix('1 2 3\n4 5 6\n7 8 9\n8 7 6');
     expect(matrix.columns[0]).toEqual([1, 4, 7, 8]);
   });
