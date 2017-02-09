@@ -110,7 +110,7 @@ describe('ocr', function () {
     )).toBe('?');
   });
 
-  xit('converts 110101100', function () {
+  it('converts 110101100', function () {
     expect(ocr.convert(
       '       _     _        _  _ \n' +
       '  |  || |  || |  |  || || |\n' +
