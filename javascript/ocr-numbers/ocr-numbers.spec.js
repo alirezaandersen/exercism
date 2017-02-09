@@ -38,7 +38,7 @@ describe('ocr', function () {
     )).toBe('3');
   });
 
-  xit('recognizes four', function () {
+  it('recognizes four', function () {
     expect(ocr.convert(
       '   \n' +
       '|_|\n' +
