@@ -11,7 +11,7 @@ describe('ocr', function () {
     )).toBe('0');
   });
 
-  xit('recognizes one', function () {
+ it('recognizes one', function () {
     expect(ocr.convert(
       '   \n' +
       '  |\n' +
