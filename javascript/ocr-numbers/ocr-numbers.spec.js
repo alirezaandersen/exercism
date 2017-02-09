@@ -119,7 +119,7 @@ describe('ocr', function () {
     )).toBe('110101100');
   });
 
-  xit('identifies garble mixed in', function () {
+  it('identifies garble mixed in', function () {
     expect(ocr.convert(
       '       _     _           _ \n' +
       '  |  || |  || |     || || |\n' +
