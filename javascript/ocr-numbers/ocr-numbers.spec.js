@@ -47,7 +47,7 @@ describe('ocr', function () {
     )).toBe('4');
   });
 
-  xit('recognizes five', function () {
+  it('recognizes five', function () {
     expect(ocr.convert(
       ' _ \n' +
       '|_ \n' +
