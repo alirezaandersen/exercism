@@ -10,7 +10,51 @@ function lines_to_characters(line) {
 			return row.slice(c * 3, c * 3 + 3);
 		}) );
 	}
-	return characters.map(function(character) {return character.join("\n")});
+	return characters.map(function(character) {
+    return character.join("\n");
+  });
 }
 
+var OCR_digits = [
+	" _ \n" +
+	"| |\n" +
+	"|_|\n" +
+	"   ",
+    "   \n" +
+    "  |\n" +
+    "  |\n" +
+    "   ",
+    " _ \n" +
+    " _|\n" +
+    "|_ \n" +
+    "   ",
+    " _ \n" +
+    " _|\n" +
+    " _|\n" +
+    "   ",
+    "   \n" +
+    "|_|\n" +
+    "  |\n" +
+    "   ",
+    " _ \n" +
+    "|_ \n" +
+    " _|\n" +
+    "   ",
+    " _ \n" +
+    "|_ \n" +
+    "|_|\n" +
+    "   ",
+    " _ \n" +
+    "  |\n" +
+    "  |\n" +
+    "   ",
+    " _ \n" +
+    "|_|\n" +
+    "|_|\n" +
+    "   ",
+    " _ \n" +
+    "|_|\n" +
+    " _|\n" +
+    "   ",
+];
 module.exports = {convert: convert};
