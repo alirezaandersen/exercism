@@ -20,7 +20,7 @@ describe('ocr', function () {
     )).toBe('1');
   });
 
-  xit('recognizes two', function () {
+  it('recognizes two', function () {
     expect(ocr.convert(
       ' _ \n' +
       ' _|\n' +
