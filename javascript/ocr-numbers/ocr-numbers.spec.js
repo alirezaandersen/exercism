@@ -128,7 +128,7 @@ describe('ocr', function () {
     )).toBe('11?10?1?0');
   });
 
-  xit('converts 1234567890', function () {
+  it('converts 1234567890', function () {
     expect(ocr.convert(
       '    _  _     _  _  _  _  _  _ \n' +
       '  | _| _||_||_ |_   ||_||_|| |\n' +
