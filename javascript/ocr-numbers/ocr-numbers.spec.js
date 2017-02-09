@@ -29,7 +29,7 @@ describe('ocr', function () {
     )).toBe('2');
   });
 
-  xit('recognizes three', function () {
+  it('recognizes three', function () {
     expect(ocr.convert(
       ' _ \n' +
       ' _|\n' +
