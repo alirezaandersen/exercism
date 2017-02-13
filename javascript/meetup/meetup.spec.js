@@ -55,7 +55,7 @@ describe('meetupDay()', function() {
     expect(meetupDay(2015, 2, 'Monday', '5th')).toEqual(new Date(2015, 2, 30));
   });
 
-  xit('nonexistent fifth monday of february 2015', function() {
+  it('nonexistent fifth monday of february 2015', function() {
     expect(function () { meetupDay(2015, 1, 'Monday', '5th'); }).toThrow();
   });
 });
