@@ -39,7 +39,7 @@ describe('meetupDay()', function() {
     expect(meetupDay(2012, 1, 'Wednesday', 'last')).toEqual(new Date(2012, 1, 29));
   });
 
-  xit('last wednesday of december 2014', function() {
+  it('last wednesday of december 2014', function() {
     expect(meetupDay(2014, 11, 'Wednesday', 'last')).toEqual(new Date(2014, 11, 31));
   });
 
