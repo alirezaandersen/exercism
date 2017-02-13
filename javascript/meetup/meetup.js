@@ -46,6 +46,11 @@ function last(year, month, day) {
   throw "Date does not exist";
 }
 
-
+Date.prototype.addDays = function(days) {
+	/* Adds a number of days to a date object */
+	var dat = new Date(this.valueOf());
+    dat.setDate(dat.getDate() + days);
+    return dat;
+};
 
 module.exports = Meetup;
