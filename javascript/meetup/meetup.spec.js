@@ -15,7 +15,7 @@ describe('meetupDay()', function() {
     expect(meetupDay(2013, 1, 'Saturday', 'teenth')).toEqual(new Date(2013, 1, 16));
   });
 
-  xit('first tuesday of may 2013', function() {
+  it('first tuesday of may 2013', function() {
     expect(meetupDay(2013, 4, 'Tuesday', '1st')).toEqual(new Date(2013, 4, 7));
   });
 
