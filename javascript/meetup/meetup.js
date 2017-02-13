@@ -22,5 +22,16 @@ var Meetup = function(year, month, day, nth) {
   }
 };
 
+function find_day(year, month, day, start, stop) {
+	/* Finds the first occurance of a day of the week between two dates */
+  for(var meetup = new Date(year, month, start);
+    meetup.getDate() <= stop && meetup.getMonth() == month;
+    meetup = meetup.addDays(1)) {
+
+    if( meetup.getDay() == day )
+      return meetup;
+  }
+  throw "Date does not exist";
+};
 
 module.exports = Meetup;
