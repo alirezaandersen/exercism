@@ -32,6 +32,20 @@ function find_day(year, month, day, start, stop) {
       return meetup;
   }
   throw "Date does not exist";
-};
+}
+
+function last(year, month, day) {
+	/* Last occurance of a day in a month */
+  for(var meetup = new Date(year, month + 1, 0);
+    meetup.getMonth() == month;
+    meetup = meetup.addDays(-1)) {
+
+    if( meetup.getDay() == day )
+      return meetup;
+  }
+  throw "Date does not exist";
+}
+
+
 
 module.exports = Meetup;
