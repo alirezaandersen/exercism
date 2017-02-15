@@ -29,7 +29,7 @@ describe('bracket push', function() {
     expect(bracket('{[)][]}')).toEqual(false);
   });
 
-  xit('checks bracket closure in a long string of brackets', function() {
+  it('checks bracket closure in a long string of brackets', function() {
     expect(bracket('{[]([()])}')).toEqual(true);
   });
 });
