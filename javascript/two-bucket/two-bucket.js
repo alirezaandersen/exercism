@@ -19,6 +19,21 @@ TwoBucket.prototype.moves = function() {
   		else if(this.otherBucket == this.otherBucketSize)
   			this.otherBucket = 0;
   		// Pour from the goal bucket into the other bucket
+      else {
+      			// Pour all water from the goal bucket into the other bucket
+      			if(this.otherBucket + this.waterInGoal <= this.otherBucketSize) {
+      				this.otherBucket += this.waterInGoal;
+      				this.waterInGoal = 0;
+      			}
+      			// Pour from the goal bucket until the other bucket is full
+      			else {
+      				this.waterInGoal -= this.otherBucketSize - this.otherBucket;
+      				this.otherBucket = this.otherBucketSize;
+      			}
+      		}
+      	}
+      	return moves;
+
 };
 
 module.exports = TwoBucket;
