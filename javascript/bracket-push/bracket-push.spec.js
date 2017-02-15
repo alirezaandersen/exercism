@@ -9,7 +9,7 @@ describe('bracket push', function() {
     expect(bracket('{{')).toEqual(false);
   });
 
-  xit('returns false if brackets are out of order', function() {
+  it('returns false if brackets are out of order', function() {
     expect(bracket('}{')).toEqual(false);
   });
 
