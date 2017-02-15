@@ -8,6 +8,8 @@ var TwoBucket = function(sizeOne, sizeTwo, goal, starterBucket) {
 
 TwoBucket.prototype.moves = function() {
 	/* Fills buckets until one contains a certain amount of water */
+  this.waterInGoal = 0;
+  this.otherBucket = 0;
 };
 
 module.exports = TwoBucket;
