@@ -28,7 +28,7 @@ describe('TwoBucket', function(){
     var buckTwo = 11;
     var goal = 2;
 
-    xit('starting with bucket one', function(){
+    it('starting with bucket one', function(){
       var starterBuck = 'one';
       var twoBucket = new TwoBucket(buckOne,buckTwo,goal,starterBuck);
       expect(twoBucket.moves()).toEqual(14);
