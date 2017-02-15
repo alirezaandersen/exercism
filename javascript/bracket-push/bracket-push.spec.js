@@ -17,7 +17,7 @@ describe('bracket push', function() {
     expect(bracket('{}[]')).toEqual(true);
   });
 
-  xit('checks bracketing in nested brackets', function() {
+  it('checks bracketing in nested brackets', function() {
     expect(bracket('{[]}')).toEqual(true);
   });
 
