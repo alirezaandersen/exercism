@@ -21,7 +21,7 @@ describe('bracket push', function() {
     expect(bracket('{[]}')).toEqual(true);
   });
 
-  xit('rejects brackets that are properly balanced but improperly nested', function() {
+  it('rejects brackets that are properly balanced but improperly nested', function() {
     expect(bracket('{[}]')).toEqual(false);
   });
 
