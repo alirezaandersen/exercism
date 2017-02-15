@@ -13,7 +13,7 @@ describe('bracket push', function() {
     expect(bracket('}{')).toEqual(false);
   });
 
-  xit('checks bracketing in more than one pair of brackets', function() {
+  it('checks bracketing in more than one pair of brackets', function() {
     expect(bracket('{}[]')).toEqual(true);
   });
 
