@@ -5,7 +5,7 @@ describe('bracket push', function() {
     expect(bracket('{}')).toEqual(true);
   });
 
-  xit('returns false for unclosed brackets', function() {
+  it('returns false for unclosed brackets', function() {
     expect(bracket('{{')).toEqual(false);
   });
 
