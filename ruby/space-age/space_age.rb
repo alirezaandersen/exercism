@@ -9,5 +9,6 @@ class SpaceAge
       on_venus:   19_413_907.2,
       on_earth:   31_558_149.76,
       on_mars:    59_354_294.4,
+      on_jupiter: 374_335_776.0,
 
 end
