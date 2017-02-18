@@ -11,5 +11,11 @@ class SpaceAge
       on_mars:    59_354_294.4,
       on_jupiter: 374_335_776.0,
       on_saturn:  929_596_608.0,
-
+      on_uranus:  2_661_041_808.0,
+      on_neptune: 5_200_418_592.0
+    }.each do |planet, factor|
+      define_method(planet) do
+        @seconds / factor
+      end
+    end
 end
