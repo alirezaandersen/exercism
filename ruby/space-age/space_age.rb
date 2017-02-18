@@ -10,5 +10,6 @@ class SpaceAge
       on_earth:   31_558_149.76,
       on_mars:    59_354_294.4,
       on_jupiter: 374_335_776.0,
+      on_saturn:  929_596_608.0,
 
 end
