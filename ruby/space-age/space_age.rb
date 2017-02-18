@@ -6,5 +6,6 @@ class SpaceAge
 
     {
       on_mercury: 7_600_530.24,
+      on_venus:   19_413_907.2,
 
 end
