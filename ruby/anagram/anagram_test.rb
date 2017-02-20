@@ -25,7 +25,6 @@ class AnagramTest < Minitest::Test
   end
 
   def test_detects_multiple_anagrams
-    skip
     detector = Anagram.new('master')
     anagrams = detector.match(["stream", "pigeon", "maters"])
     assert_equal ["maters", "stream"], anagrams.sort
