@@ -55,7 +55,6 @@ class AnagramTest < Minitest::Test
   end
 
   def test_does_not_detect_non_anagrams_with_identical_checksum
-    skip
     detector = Anagram.new('mass')
     anagrams = detector.match(["last"])
     assert_equal [], anagrams
