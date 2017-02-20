@@ -79,7 +79,6 @@ class AnagramTest < Minitest::Test
   end
 
   def test_does_not_detect_a_word_as_its_own_anagram
-    skip
     detector = Anagram.new('banana')
     anagrams = detector.match(["Banana"])
     assert_equal [], anagrams
