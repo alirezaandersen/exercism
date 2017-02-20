@@ -97,7 +97,6 @@ class AnagramTest < Minitest::Test
   end
 
   def test_capital_word_is_not_own_anagram
-    skip
     detector = Anagram.new('BANANA')
     anagrams = detector.match(["Banana"])
     assert_equal [], anagrams
