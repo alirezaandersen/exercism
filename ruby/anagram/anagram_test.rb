@@ -31,7 +31,6 @@ class AnagramTest < Minitest::Test
   end
 
   def test_does_not_detect_anagram_subsets
-    skip
     detector = Anagram.new('good')
     anagrams = detector.match(["dog", "goody"])
     assert_equal [], anagrams
