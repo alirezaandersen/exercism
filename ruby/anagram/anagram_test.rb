@@ -43,7 +43,6 @@ class AnagramTest < Minitest::Test
   end
 
   def test_detects_multiple_anagrams
-    skip
     detector = Anagram.new('allergy')
     anagrams = detector.match(["gallery", "ballerina", "regally", "clergy", "largely", "leading"])
     assert_equal ["gallery", "largely", "regally"], anagrams.sort
