@@ -91,7 +91,6 @@ class AnagramTest < Minitest::Test
   end
 
   def test_anagrams_must_use_all_letters_exactly_once
-    skip
     detector = Anagram.new('tapper')
     anagrams = detector.match(["patter"])
     assert_equal [], anagrams
