@@ -19,7 +19,6 @@ class AnagramTest < Minitest::Test
   end
 
   def test_does_not_detect_false_positives
-    skip
     detector = Anagram.new('galea')
     anagrams = detector.match(["eagle"])
     assert_equal [], anagrams
