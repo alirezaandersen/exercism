@@ -85,7 +85,6 @@ class AnagramTest < Minitest::Test
   end
 
   def test_does_not_detect_a_anagram_if_the_original_word_is_repeated
-    skip
     detector = Anagram.new('go')
     anagrams = detector.match(["go Go GO"])
     assert_equal [], anagrams
