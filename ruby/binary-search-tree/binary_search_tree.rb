@@ -10,7 +10,12 @@ class Bst
     if value <= @data
       @left.insert(value) if @left != nil
       @left = Bst.new(value) if @left == nil
-    
+    else
+      @right.insert(value) if @right != nil
+      @right = Bst.new(value) if @right == nil
+    end
+  end
+
 end
 
 module BookKeeping
