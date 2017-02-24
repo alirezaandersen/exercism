@@ -16,6 +16,12 @@ class Bst
     end
   end
 
+  def each(&block)
+    return enum_for(:each) unless block_given?
+    left.each(&block) if @left
+    yield(@data)
+    right.each(&block) if @right
+  end
 end
 
 module BookKeeping
