@@ -6,6 +6,8 @@ class Bst
     @right = nil
   end
 
+  def insert(value)
+
 end
 
 module BookKeeping
