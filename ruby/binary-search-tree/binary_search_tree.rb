@@ -7,7 +7,8 @@ class Bst
   end
 
   def insert(value)
-
+    if value <= @data
+    
 end
 
 module BookKeeping
