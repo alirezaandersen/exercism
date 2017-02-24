@@ -8,6 +8,8 @@ class Bst
 
   def insert(value)
     if value <= @data
+      @left.insert(value) if @left != nil
+      @left = Bst.new(value) if @left == nil
     
 end
 
