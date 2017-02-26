@@ -15,4 +15,8 @@ class Crypto
     normalize_plaintext.chars.each_slice(size).collect { |i| i.join }.to_a
   end
 
+  def normalize_ciphertext
+    transpose.join(' ')
+  end
+
 end
