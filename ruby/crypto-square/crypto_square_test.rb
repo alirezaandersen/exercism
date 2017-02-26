@@ -66,7 +66,6 @@ class CryptoTest < Minitest::Test
   end
 
   def test_normalized_ciphertext_spills_into_short_segment
-    skip
     crypto = Crypto.new('Madness, and then illumination.')
     expected = 'msemo aanin dnin ndla etlt shui'
     assert_equal expected, crypto.normalize_ciphertext
