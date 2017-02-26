@@ -72,7 +72,6 @@ class CryptoTest < Minitest::Test
   end
 
   def test_another_normalized_ciphertext
-    skip
     crypto = Crypto.new(
       'If man was meant to stay on the ground god would have given us roots',
     )
