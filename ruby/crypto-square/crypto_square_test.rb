@@ -15,7 +15,6 @@ class CryptoTest < Minitest::Test
   end
 
   def test_normalize_with_numbers
-    skip
     crypto = Crypto.new('1, 2, 3 GO!')
     assert_equal '123go', crypto.normalize_plaintext
   end
