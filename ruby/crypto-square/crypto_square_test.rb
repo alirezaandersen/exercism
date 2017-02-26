@@ -35,7 +35,6 @@ class CryptoTest < Minitest::Test
   end
 
   def test_size_is_determined_by_normalized_plaintext
-    skip
     crypto = Crypto.new('Oh hey, this is nuts!')
     assert_equal 4, crypto.size
   end
