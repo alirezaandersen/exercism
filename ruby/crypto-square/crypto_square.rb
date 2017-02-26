@@ -19,4 +19,10 @@ class Crypto
     transpose.join(' ')
   end
 
+  private
+
+  def transpose
+    segs = plaintext_segments.map { |i| Array.new(size) { |j| i[j] or '' } }
+    segs.transpose.map { |i| i.join }
+  end
 end
