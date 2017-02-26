@@ -19,6 +19,10 @@ class Crypto
     transpose.join(' ')
   end
 
+  def ciphertext
+    transpose.join
+  end
+
   private
 
   def transpose
