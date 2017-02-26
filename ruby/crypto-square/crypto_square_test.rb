@@ -80,7 +80,6 @@ class CryptoTest < Minitest::Test
   end
 
   def test_normalized_ciphertext_with_punctuation
-    skip
     crypto = Crypto.new('Have a nice day. Feed the dog & chill out!')
     expected = 'hifei acedl veeol eddgo aatcu nyhht'
     assert_equal expected, crypto.normalize_ciphertext
