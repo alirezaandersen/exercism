@@ -1,5 +1,8 @@
 class Clock
-
+  
+  def self.at(hour, minute)
+    Clock.new(hour, minute)
+  end
 
 end
 
