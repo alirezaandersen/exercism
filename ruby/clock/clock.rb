@@ -15,8 +15,12 @@ class Clock
 
   def ==(clock2)
     to_s == clock2.to_s
-  end  
+  end
 
+  def hour_part
+    @minutes / 60 % 24
+  end
+  
 end
 
 
