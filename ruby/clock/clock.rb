@@ -13,6 +13,10 @@ class Clock
     self
   end
 
+  def ==(clock2)
+    to_s == clock2.to_s
+  end  
+
 end
 
 
