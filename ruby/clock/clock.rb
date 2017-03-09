@@ -20,7 +20,12 @@ class Clock
   def hour_part
     @minutes / 60 % 24
   end
-  
+
+  def minute_part
+    @minutes % 60
+  end
+
+
 end
 
 
