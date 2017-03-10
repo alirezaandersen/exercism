@@ -25,7 +25,9 @@ class Clock
     @minutes % 60
   end
 
-
+  def to_s
+    "#{hour_part.to_s.rjust(2, '0')}:#{minute_part.to_s.rjust(2, '0')}"
+  end
 end
 
 
