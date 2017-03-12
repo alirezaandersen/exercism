@@ -58,7 +58,7 @@ class ClockTest < Minitest::Test
   end
 
   def test_hour_and_minutes_roll_over_to_exactly_midnight
-    skip
+    # skip
     assert_equal '00:00', Clock.at(72, 8640).to_s
   end
 
