@@ -113,7 +113,7 @@ class ClockTest < Minitest::Test
   end
 
   def test_add_to_next_hour
-    skip
+    # skip
     assert_equal '01:25', (Clock.at(0, 45) + 40).to_s
   end
 
