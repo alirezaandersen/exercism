@@ -211,7 +211,7 @@ class ClockTest < Minitest::Test
   end
 
   def test_clocks_with_hour_overflow_by_several_days
-    skip
+    # skip
     clock1 = Clock.at(3, 11)
     clock2 = Clock.at(99, 11)
     assert clock1 == clock2
