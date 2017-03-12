@@ -133,7 +133,7 @@ class ClockTest < Minitest::Test
   end
 
   def test_add_more_than_one_day__1500_min_is_equal_to_25_hrs
-    skip
+    # skip
     assert_equal '06:32', (Clock.at(5, 32) + 1500).to_s
   end
 
