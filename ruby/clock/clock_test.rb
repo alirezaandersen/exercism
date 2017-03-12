@@ -18,7 +18,7 @@ class ClockTest < Minitest::Test
   end
 
   def test_midnight_is_zero_hours
-    skip
+    # skip
     assert_equal '00:00', Clock.at(24, 0).to_s
   end
 
