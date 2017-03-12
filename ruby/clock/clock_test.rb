@@ -148,7 +148,7 @@ class ClockTest < Minitest::Test
   end
 
   def test_subtract_to_previous_hour
-    skip
+    # skip
     assert_equal '09:33', (Clock.at(10, 3) + -30).to_s
   end
 
