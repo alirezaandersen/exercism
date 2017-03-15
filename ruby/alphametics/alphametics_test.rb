@@ -14,7 +14,7 @@ class AlphameticsTest < Minitest::Test
   end
 
   def test_solution_must_have_unique_value_for_each_letter
-    skip
+    # skip
     input = 'A == B'
     expected = {}
     assert_equal expected, Alphametics.solve(input)
