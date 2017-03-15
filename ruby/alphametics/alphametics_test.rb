@@ -35,7 +35,7 @@ class AlphameticsTest < Minitest::Test
   end
 
   def test_puzzle_with_six_letters
-    skip
+    # skip
     input = 'NO + NO + TOO == LATE'
     expected = { 'A' => 0, 'E' => 2, 'L' => 1, 'N' => 7,
                  'O' => 4, 'T' => 9 }
