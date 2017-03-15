@@ -21,7 +21,7 @@ class AlphameticsTest < Minitest::Test
   end
 
   def test_leading_zero_solution_is_invalid
-    skip
+    # skip
     input = 'ACA + DD == BD'
     expected = {}
     assert_equal expected, Alphametics.solve(input)
