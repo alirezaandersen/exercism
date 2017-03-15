@@ -28,7 +28,7 @@ class AlphameticsTest < Minitest::Test
   end
 
   def test_puzzle_with_four_letters
-    skip
+    # skip
     input = 'AS + A == MOM'
     expected = { 'A' => 9, 'M' => 1, 'O' => 0, 'S' => 2 }
     assert_equal expected, Alphametics.solve(input)
