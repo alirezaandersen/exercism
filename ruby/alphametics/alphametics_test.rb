@@ -43,7 +43,7 @@ class AlphameticsTest < Minitest::Test
   end
 
   def test_puzzle_with_seven_letters
-    skip
+    # skip
     input = 'HE + SEES + THE == LIGHT'
     expected = { 'E' => 4, 'G' => 2, 'H' => 5, 'I' => 0,
                  'L' => 1, 'S' => 9, 'T' => 7 }
