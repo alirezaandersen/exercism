@@ -7,5 +7,8 @@ class RailFenceCipher
     zig_zag_array.flatten.join
   end
 
+  def self.create_empty_fences_array(message, rails)
+    Array.new(rails) { Array.new(message.length) }
+  end
 
 end
