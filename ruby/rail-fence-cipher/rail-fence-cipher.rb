@@ -23,6 +23,8 @@ class RailFenceCipher
     fences
   end
 
+  private_class_method :create_empty_fences_array,
+                        :populate_fences_array
 end
 
 
