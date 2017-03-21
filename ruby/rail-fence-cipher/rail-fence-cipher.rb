@@ -23,6 +23,16 @@ class RailFenceCipher
     fences
   end
 
+  def self.decode(message, rails)
+    return message if message.empty? || rails == 1
+    empty = create_empty_fences_array(message, rails)
+    mark_fences = populate_fences_array('X' * message.length, rails, empty)
+    line_lengths = find_the_lengths_of_the_lines(message, rails)
+    lines = split_the_encrypted_message_by_rows(message, line_lengths)
+    result = switch_marked_cells_with_string(mark_fences, lines, empty)
+    result.transpose.flatten.join
+  end
+
   private_class_method :create_empty_fences_array,
                         :populate_fences_array
 end
