@@ -47,16 +47,16 @@ class RailFenceCipher
   end
 
   def self.split_the_encrypted_message_by_rows(message, line_lengths)
-  lines = []
-  line_lengths.each do |_row_num, line_length|
-    lines << message.slice!(0...line_length)
+    lines = []
+    line_lengths.each do |_row_num, line_length|
+      lines << message.slice!(0...line_length)
+    end
+    lines
   end
-  lines
-end
 
   private_class_method :create_empty_fences_array,
-                       :populate_fences_array,
-                       :find_the_lengths_of_the_lines
+  :populate_fences_array,
+  :find_the_lengths_of_the_lines
 end
 
 
