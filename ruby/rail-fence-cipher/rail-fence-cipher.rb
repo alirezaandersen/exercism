@@ -33,8 +33,22 @@ class RailFenceCipher
     result.transpose.flatten.join
   end
 
+  def self.find_the_lengths_of_the_lines(message, rails)
+    line_lengths = Hash.new(0)
+    row = 0
+    row_direction = 1
+    (0..(message.length - 1)).each do
+      line_lengths[row] += 1
+      row_direction = 1 if row == 0
+      row_direction = -1 if row == (rails - 1)
+      row += row_direction
+    end
+    line_lengths
+  end
+
   private_class_method :create_empty_fences_array,
-                        :populate_fences_array
+                       :populate_fences_array,
+                       :find_the_lengths_of_the_lines
 end
 
 
