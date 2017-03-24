@@ -1,4 +1,5 @@
 class RailFenceCipher
+  VERSION = 1
 
   def self.encode(message, rails)
     return message if message.empty? || rails == 1
@@ -55,10 +56,11 @@ class RailFenceCipher
   end
 
   def self.switch_marked_cells_with_string(mark_fences, lines, fences)
-  mark_fences.map.with_index do |row, row_number|
-    row.map.with_index do |cell, col_number|
-      if cell == 'X'
-        fences[row_number][col_number] = lines[row_number].slice!(0)
+    mark_fences.map.with_index do |row, row_number|
+      row.map.with_index do |cell, col_number|
+        if cell == 'X'
+          fences[row_number][col_number] = lines[row_number].slice!(0)
+        end
       end
     end
   end
@@ -67,9 +69,4 @@ class RailFenceCipher
                        :populate_fences_array,
                        :find_the_lengths_of_the_lines,
                        :split_the_encrypted_message_by_rows
-end
-
-
-module BookKeeping
-  VERSION = 1
 end
