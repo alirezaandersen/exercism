@@ -62,7 +62,7 @@ class RailFenceCipherTest < Minitest::Test
   end
 
   def test_bookkeeping
-    skip
+    # skip
     assert_equal 1, RailFenceCipher::VERSION
   end
 end
