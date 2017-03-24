@@ -10,7 +10,7 @@ class RailFenceCipherTest < Minitest::Test
   end
 
   def test_encode_with_one_rail
-    skip
+    # skip
     assert_equal 'One rail, only one rail',
                  RailFenceCipher.encode('One rail, only one rail', 1)
   end
