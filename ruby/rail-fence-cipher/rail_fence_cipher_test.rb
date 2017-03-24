@@ -1,5 +1,6 @@
 gem 'minitest', '>= 5.0.0'
 require 'minitest/autorun'
+require 'minitest/pride'
 require_relative 'rail_fence_cipher'
 
 # rubocop:enable all
