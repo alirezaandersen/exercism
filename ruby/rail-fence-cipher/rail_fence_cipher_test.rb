@@ -50,7 +50,7 @@ class RailFenceCipherTest < Minitest::Test
   end
 
   def test_decode_with_two_rails
-    skip
+    # skip
     assert_equal 'XOXOXOXOXOXOXOXOXO',
                  RailFenceCipher.decode('XXXXXXXXXOOOOOOOOO', 2)
   end
