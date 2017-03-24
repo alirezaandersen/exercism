@@ -28,7 +28,7 @@ class RailFenceCipherTest < Minitest::Test
   end
 
   def test_encode_with_ending_in_the_middle
-    skip
+    # skip
     assert_equal 'ESXIEECSR', RailFenceCipher.encode('EXERCISES', 4)
   end
 
