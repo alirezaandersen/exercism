@@ -54,9 +54,19 @@ class RailFenceCipher
     lines
   end
 
+  def self.switch_marked_cells_with_string(mark_fences, lines, fences)
+  mark_fences.map.with_index do |row, row_number|
+    row.map.with_index do |cell, col_number|
+      if cell == 'X'
+        fences[row_number][col_number] = lines[row_number].slice!(0)
+      end
+    end
+  end
+
   private_class_method :create_empty_fences_array,
-  :populate_fences_array,
-  :find_the_lengths_of_the_lines
+                       :populate_fences_array,
+                       :find_the_lengths_of_the_lines,
+                       :split_the_encrypted_message_by_rows
 end
 
 
