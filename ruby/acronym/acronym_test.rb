@@ -21,7 +21,7 @@ class AcronymTest < Minitest::Test
   end
 
   def test_punctuation
-    skip
+    # skip
     assert_equal 'FIFO', Acronym.abbreviate('First In, First Out')
   end
 
