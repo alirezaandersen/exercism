@@ -16,7 +16,7 @@ class AcronymTest < Minitest::Test
   end
 
   def test_camelcase
-    skip
+    # skip
     assert_equal 'HTML', Acronym.abbreviate('HyperText Markup Language')
   end
 
