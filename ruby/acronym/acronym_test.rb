@@ -26,7 +26,7 @@ class AcronymTest < Minitest::Test
   end
 
   def test_all_caps_words
-    skip
+    # skip
     assert_equal 'PHP', Acronym.abbreviate('PHP: Hypertext Preprocessor')
   end
 
