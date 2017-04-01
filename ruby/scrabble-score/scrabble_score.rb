@@ -1,5 +1,10 @@
 class Scrabble
 
+  def self.score
+
+  end
+
+
   def letter_values
     {
       'a' => 1, 'b' => 3, 'c' => 3, 'd' => 2, 'e' => 1,
