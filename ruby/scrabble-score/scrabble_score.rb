@@ -1,7 +1,7 @@
 class Scrabble
 
-  def self.score
-
+  def self.score(term)
+    new(term).score
   end
 
 
