@@ -1,7 +1,11 @@
 class Scrabble
 
-  def self.score(term)
-    new(term).score
+  def initialize(word)
+  @word = word.to_s.downcase
+end
+
+  def self.score(word)
+    new(word).score
   end
 
 
