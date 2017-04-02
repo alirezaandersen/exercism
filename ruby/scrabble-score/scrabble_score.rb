@@ -10,7 +10,7 @@ class Scrabble
 
   def score
     sum = 0
-    term.chars.each do |char|
+    @word.chars.each do |char|
       sum += letter_values.fetch(char) { 0 }
     end
     sum
