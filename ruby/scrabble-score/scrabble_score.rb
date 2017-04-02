@@ -8,6 +8,13 @@ end
     new(word).score
   end
 
+  def score
+    sum = 0
+    term.chars.each do |char|
+      sum += letter_values.fetch(char) { 0 }
+    end
+    sum
+  end
 
   def letter_values
     {
