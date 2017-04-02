@@ -35,7 +35,7 @@ class ScrabbleTest < Minitest::Test
   end
 
   def test_complicated_word_scores_more
-    skip
+    # skip
     assert_equal 22, Scrabble.new('quirky').score
   end
 
