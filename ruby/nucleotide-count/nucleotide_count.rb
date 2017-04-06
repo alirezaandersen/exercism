@@ -24,4 +24,9 @@ class Nucleotide
     }
   end
 
+  def count(acid)
+    acids.count(acid)
+  end
+
+
 end
