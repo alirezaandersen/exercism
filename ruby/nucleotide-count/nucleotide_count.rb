@@ -15,5 +15,13 @@ class Nucleotide
     proc { |acid| %w(A C G T).include?(acid) }
   end
 
+  def histogram
+    {
+      'A' => count('A'),
+      'T' => count('T'),
+      'G' => count('G'),
+      'C' => count('C')
+    }
+  end
 
 end
