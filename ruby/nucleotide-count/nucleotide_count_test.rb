@@ -39,7 +39,7 @@ class NucleotideTest < Minitest::Test
   end
 
   def test_counts_all_nucleotides
-    skip
+    # skip
     s = 'AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC'
     dna = Nucleotide.from_dna(s)
     expected = { 'A' => 20, 'T' => 21, 'G' => 17, 'C' => 12 }
