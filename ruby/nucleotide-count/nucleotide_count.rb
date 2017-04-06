@@ -1,4 +1,5 @@
 class Nucleotide
+  attr_reader :acids
 
   def self.from_dna(strand)
     acids = strand.chars
