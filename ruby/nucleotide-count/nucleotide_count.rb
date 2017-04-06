@@ -6,5 +6,9 @@ class Nucleotide
     new(acids)
   end
 
+  def self.validate
+    proc { |acid| %w(A C G T).include?(acid) }
+  end
+
 
 end
