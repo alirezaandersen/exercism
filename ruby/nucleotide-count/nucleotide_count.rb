@@ -28,5 +28,4 @@ class Nucleotide
     acids.count(acid)
   end
 
-
 end
