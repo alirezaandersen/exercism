@@ -34,7 +34,7 @@ class FlattenArrayTest < Minitest::Test
   end
 
   def test_bookkeeping
-    skip
+    # skip
     assert_equal 1, FlattenArray::VERSION
   end
 end
