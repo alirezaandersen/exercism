@@ -16,7 +16,7 @@ class FlattenArrayTest < Minitest::Test
   end
 
   def test_six_level_nesting
-    skip
+    # skip
     fa = FlattenArray.flatten([1, [2, [[3]], [4, [[5]]], 6, 7], 8])
     assert_equal [1, 2, 3, 4, 5, 6, 7, 8], fa
   end
