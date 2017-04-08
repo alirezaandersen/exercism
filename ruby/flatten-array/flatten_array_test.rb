@@ -22,7 +22,7 @@ class FlattenArrayTest < Minitest::Test
   end
 
   def test_six_level_nesting_with_nil_values
-    skip
+    # skip
     fa = FlattenArray.flatten([0, 2, [[2, 3], 8, [[100]], nil, [[nil]]], -2])
     assert_equal [0, 2, 2, 3, 8, 100, -2], fa
   end
