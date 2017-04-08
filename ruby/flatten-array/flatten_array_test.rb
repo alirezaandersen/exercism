@@ -28,7 +28,7 @@ class FlattenArrayTest < Minitest::Test
   end
 
   def test_all_values_are_nil
-    skip
+    # skip
     fa = FlattenArray.flatten([nil, [[[nil]]], nil, [[nil, nil], nil], nil])
     assert_equal [], fa
   end
