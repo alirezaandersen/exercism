@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 gem 'minitest', '>= 5.0.0'
 require 'minitest/autorun'
+require 'minitest/pride'
 require_relative 'flatten_array'
 
 class FlattenArrayTest < Minitest::Test
@@ -30,7 +31,7 @@ class FlattenArrayTest < Minitest::Test
   end
 
   def test_bookkeeping
-    skip
+    # skip
     assert_equal 1, FlattenArray::VERSION
   end
 end
