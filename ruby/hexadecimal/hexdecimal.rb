@@ -6,6 +6,16 @@ class Hexadecimal
     @digits = decimal.reverse.chars
   end
 
+  def to_decimal
+    return 0 unless valid?
+
+    decimal = 0
+    digits.each_with_index do |digit, index|
+      decimal += values[digit] * BASE**index
+    end
+    decimal
+  end
+
   def values
     {
       '0' => 0,
