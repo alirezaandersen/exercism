@@ -16,6 +16,10 @@ class Hexadecimal
     decimal
   end
 
+  def valid?
+    !digits.to_a.join('')[/[^0-9a-f]/, 0]
+  end
+
   def values
     {
       '0' => 0,
