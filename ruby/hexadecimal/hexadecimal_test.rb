@@ -39,7 +39,7 @@ class HexadecimalTest < Minitest::Test
   end
 
   def test_black
-    skip
+    # skip
     assert_equal 0, Hexadecimal.new('000000').to_decimal
   end
 
