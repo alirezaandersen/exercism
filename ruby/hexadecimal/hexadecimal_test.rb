@@ -19,7 +19,7 @@ class HexadecimalTest < Minitest::Test
   end
 
   def test_hex_af_is_decimal_175
-    skip
+    # skip
     assert_equal 175, Hexadecimal.new('af').to_decimal
   end
 
