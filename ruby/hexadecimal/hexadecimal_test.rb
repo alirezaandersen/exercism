@@ -24,7 +24,7 @@ class HexadecimalTest < Minitest::Test
   end
 
   def test_hex_100_is_decimal_256
-    skip
+    # skip
     assert_equal 256, Hexadecimal.new('100').to_decimal
   end
 
