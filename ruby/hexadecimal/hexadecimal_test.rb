@@ -49,7 +49,7 @@ class HexadecimalTest < Minitest::Test
   end
 
   def test_yellow
-    skip
+    # skip
     assert_equal 16_776_960, Hexadecimal.new('ffff00').to_decimal
   end
 end
