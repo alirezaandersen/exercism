@@ -14,7 +14,7 @@ class HexadecimalTest < Minitest::Test
   end
 
   def test_hex_10_is_decimal_16
-    skip
+    # skip
     assert_equal 16, Hexadecimal.new('10').to_decimal
   end
 
