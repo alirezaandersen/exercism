@@ -44,7 +44,7 @@ class HexadecimalTest < Minitest::Test
   end
 
   def test_white
-    skip
+    # skip
     assert_equal 16_777_215, Hexadecimal.new('ffffff').to_decimal
   end
 
