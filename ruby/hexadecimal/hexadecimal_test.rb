@@ -34,7 +34,7 @@ class HexadecimalTest < Minitest::Test
   end
 
   def test_invalid_hex_is_decimal_0
-    skip
+    # skip
     assert_equal 0, Hexadecimal.new('carrot').to_decimal
   end
 
