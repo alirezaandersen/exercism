@@ -29,7 +29,7 @@ class HexadecimalTest < Minitest::Test
   end
 
   def test_hex_19ace_is_decimal_105166
-    skip
+    # skip
     assert_equal 105_166, Hexadecimal.new('19ace').to_decimal
   end
 
