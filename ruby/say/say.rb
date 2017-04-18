@@ -7,7 +7,11 @@ class Say
     end
 
     def in_english
+      guard_range
 
+      return 'zero' if value.zero?
+
+      chunks.join(' ').squeeze(' ').strip
     end
 
 
