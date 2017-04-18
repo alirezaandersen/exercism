@@ -16,4 +16,11 @@ class Say
 
 private
 
+def guard_range
+  unless in_range?
+    message = 'Number must be between 0 and 999,999,999,999 inclusive.'
+    fail ArgumentError.new(message)
+  end
+end
+
 end
