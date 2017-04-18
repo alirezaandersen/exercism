@@ -14,5 +14,6 @@ class Say
       chunks.join(' ').squeeze(' ').strip
     end
 
+private
 
 end
