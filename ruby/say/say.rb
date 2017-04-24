@@ -96,17 +96,7 @@ class Say
 
   private
 
-  def chunks
-    billions, i = chop(value, ONE_BILLION)
-    millions, i = chop(i, ONE_MILLION)
-    thousands, i = chop(i, 1000)
-    [
-      Chunk.new(billions, 'billion'),
-      Chunk.new(millions, 'million'),
-      Chunk.new(thousands, 'thousand'),
-      Chunk.new(i)
-    ]
-  end
+
 
   def chop(number, location)
     [number / location, number % location]
