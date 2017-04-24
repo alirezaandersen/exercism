@@ -113,3 +113,7 @@ class Say
     value >= 0 && value < 10**12
   end
 end
+
+module BookKeeping
+  VERSION = 1
+end
