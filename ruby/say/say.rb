@@ -102,17 +102,6 @@ class Say
     [number / location, number % location]
   end
 
-  def guard_range
-    unless in_range?
-      message = 'Number must be between 0 and 999,999,999,999 inclusive.'
-      fail ArgumentError.new(message)
-    end
-  end
-
-  def in_range?
-    value >= 0 && value < 10**12
-  end
-end
 
 module BookKeeping
   VERSION = 1
