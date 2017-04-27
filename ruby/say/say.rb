@@ -101,8 +101,3 @@ class Say
   def chop(number, location)
     [number / location, number % location]
   end
-
-
-module BookKeeping
-  VERSION = 1
-end
