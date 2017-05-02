@@ -77,27 +77,3 @@ class Chunk
          sixty seventy eighty ninety)
   end
 end
-
-class Say
-
-  attr_reader :value
-
-  def initialize(value)
-    @value = value
-  end
-
-  def in_english
-    guard_range
-
-    return 'zero' if value.zero?
-
-    chunks.join(' ').squeeze(' ').strip
-  end
-
-  private
-
-
-
-  def chop(number, location)
-    [number / location, number % location]
-  end
