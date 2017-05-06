@@ -51,17 +51,17 @@ class Chunk
     @ones ||= double_digits % 10
   end
 
-  # def hundreds?
-  #   !hundreds.zero?
-  # end
-  #
-  # def zero?
-  #   value.zero?
-  # end
-  #
-  # def magnitude?
-  #   !!magnitude
-  # end
+  def hundreds?
+    !hundreds.zero?
+  end
+
+  def zero?
+    value.zero?
+  end
+
+  def magnitude?
+    !!magnitude
+  end
 
   # def small_numbers
   #   [nil] +
