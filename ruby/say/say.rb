@@ -71,9 +71,9 @@ class Chunk
          sixteen seventeen eighteen nineteen)
   end
   #
-  def decades
-    [nil, nil] +
-      %w(twenty thirty forty fifty
-         sixty seventy eighty ninety)
+  # def decades
+  #   [nil, nil] +
+  #     %w(twenty thirty forty fifty
+  #        sixty seventy eighty ninety)
   end
 end
