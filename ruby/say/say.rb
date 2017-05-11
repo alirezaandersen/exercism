@@ -53,7 +53,7 @@ class Chunk
 
   # def hundreds?
   #   !hundreds.zero?
-  end
+  # end
 
   # def zero?
   #   value.zero?
