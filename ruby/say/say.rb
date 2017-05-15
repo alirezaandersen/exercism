@@ -55,9 +55,9 @@ class Chunk
     !hundreds.zero?
   end
 
-  # def zero?
-  #   value.zero?
-  # end
+  def zero?
+    value.zero?
+  end
 
   # def magnitude?
   #   !!magnitude
