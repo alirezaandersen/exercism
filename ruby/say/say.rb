@@ -47,9 +47,9 @@ class Chunk
   #   @tens ||= double_digits / 10
   # end
 
-  def ones
-    @ones ||= double_digits % 10
-  end
+  # def ones
+  #   @ones ||= double_digits % 10
+  # end
 
   def hundreds?
     !hundreds.zero?
