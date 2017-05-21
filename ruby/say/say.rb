@@ -39,13 +39,13 @@ class Chunk
     @hundreds ||= value / 100
   end
 
-  # def double_digits
-  #   @double_digits ||= value % 100
-  # end
-
-  def tens
-    @tens ||= double_digits / 10
+  def double_digits
+    @double_digits ||= value % 100
   end
+
+  # def tens
+  #   @tens ||= double_digits / 10
+  # end
 
   def ones
     @ones ||= double_digits % 10
