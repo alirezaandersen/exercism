@@ -51,9 +51,9 @@ class Chunk
   #   @ones ||= double_digits % 10
   # end
 
-  def hundreds?
-    !hundreds.zero?
-  end
+  # def hundreds?
+  #   !hundreds.zero?
+  # end
 
   # def zero?
   #   value.zero?
