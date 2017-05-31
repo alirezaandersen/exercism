@@ -55,13 +55,13 @@ class Chunk
     !hundreds.zero?
   end
 
-  # def zero?
-  #   value.zero?
-  # end
-  #
-  # def magnitude?
-  #   !!magnitude
-  # end
+  def zero?
+    value.zero?
+  end
+
+  def magnitude?
+    !!magnitude
+  end
 
   def small_numbers
     [nil] +
