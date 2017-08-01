@@ -20,20 +20,20 @@ class Chunk
     "#{small_numbers[hundreds]} hundred"
   end
 
-  # def say_double_digits
-  #   return '' if double_digits.zero?
-  #   s = ' '
-  #   if double_digits < 20
-  #     s << small_numbers[double_digits]
-  #   else
-  #     s << decades[tens]
-  #     unless ones.zero?
-  #       s << '-'
-  #       s << small_numbers[ones]
-  #     end
-  #   end
-  #   s
-  # end
+  def say_double_digits
+    return '' if double_digits.zero?
+    s = ' '
+    if double_digits < 20
+      s << small_numbers[double_digits]
+    else
+      s << decades[tens]
+      unless ones.zero?
+        s << '-'
+        s << small_numbers[ones]
+      end
+    end
+    s
+  end
   #
   # def hundreds
   #   @hundreds ||= value / 100
