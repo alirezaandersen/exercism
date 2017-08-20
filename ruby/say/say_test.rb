@@ -4,7 +4,6 @@ require_relative 'say'
 # Test data version: e3bd4a2
 class SayTest < Minitest::Test
   def test_zero
-    # skip
     question = 0
     assert_equal('zero', Say.new(question).in_english)
   end

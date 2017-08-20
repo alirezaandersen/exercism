@@ -1,79 +1,51 @@
-class Chunk
-  attr_reader :value, :magnitude
-  def initialize(value, magnitude = nil)
-    @value = value
-    @magnitude = magnitude.nil? ? '' : " #{magnitude}"
+class Say
+  NUMBERS = %w(zero one two three four five six
+    seven eight nine ten eleven twelve thirteen fourteen fifteen
+    sixteen seventeen eighteen nineteen)
+
+  TENS = %w(twenty thirty forty fifty sixty seventy eighty ninety)
+
+  def initialize(number)
+    raise ArgumentError unless (0..999_999_999_999).cover?(number)
+    @number = number
   end
 
-  def to_s
-    return '' if zero?
-    s = say_hundreds
-    s << say_double_digits
-  #
-  #   s << magnitude
-  # end
-  #
-  # private
-  #
-  def say_hundreds
-    return '' unless hundreds?
-    "#{small_numbers[hundreds]} hundred"
+  def in_english(number = @number)
+    case number
+    when 0..19
+      NUMBERS[number]
+    when 20..99
+      tens(number)
+    when 100..999
+      to_english(number, 100, 'hundred')
+    when 1_000..999_999
+      to_english(number, 1_000, 'thousand')
+    when 1_000_000..999_999_999
+      to_english(number, 1_000_000, 'million')
+    when 1_000_000_000..999_999_999_999
+      to_english(number, 1_000_000_000, 'billion')
+    end
   end
 
-  # def say_double_digits
-  #   return '' if double_digits.zero?
-  #   s = ' '
-  #   if double_digits < 20
-  #     s << small_numbers[double_digits]
-  #   else
-  #     s << decades[tens]
-  #     unless ones.zero?
-  #       s << '-'
-  #       s << small_numbers[ones]
-  #     end
-  #   end
-  #   s
-  # end
-  #
-  # def hundreds
-  #   @hundreds ||= value / 100
-  # end
-  #
-  # def double_digits
-  #   @double_digits ||= value % 100
-  # end
-  #
-  # # def tens
-  # #   @tens ||= double_digits / 10
-  # # end
-  #
-  # # def ones
-  # #   @ones ||= double_digits % 10
-  # # end
-  #
-  # # def hundreds?
-  # #   !hundreds.zero?
-  # # end
-  # #
-  # # def zero?
-  # #   value.zero?
-  # # end
-  # #
-  # def magnitude?
-    !!magnitude
-  end
-  #
-  # def small_numbers
-  #   [nil] +
-  #     %w(one two three four five
-  #        six seven eight nine ten
-  #        eleven twelve thirteen fourteen fifteen
-  #        sixteen seventeen eighteen nineteen)
-  # end
+  private
 
-  def decades
-  #   [nil, nil] +
-  #     %w(twenty thirty forty fifty
-  #        sixty seventy eighty ninety)
+  def tens(number)
+    string    = TENS[number / 10 - 2]
+    remainder = number % 10
+
+    string += "-#{in_english(remainder)}" unless remainder.zero?
+    string
   end
+
+  def to_english(number, decimal, decimal_unit)
+    string    = "#{in_english(number / decimal)} #{decimal_unit}"
+    remainder = number % decimal
+
+    string += " #{in_english(remainder)}" unless remainder.zero?
+    string
+  end
+end
+
+module BookKeeping
+  VERSION = 1
 end
