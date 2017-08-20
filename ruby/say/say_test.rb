@@ -14,7 +14,6 @@ class SayTest < Minitest::Test
   end
 
   def test_fourteen
-    # skip
     question = 14
     assert_equal('fourteen', Say.new(question).in_english)
   end
