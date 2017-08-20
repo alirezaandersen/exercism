@@ -62,14 +62,14 @@ class Chunk
   # def magnitude?
     !!magnitude
   end
-  #
-  # def small_numbers
-  #   [nil] +
-  #     %w(one two three four five
-  #        six seven eight nine ten
-  #        eleven twelve thirteen fourteen fifteen
-  #        sixteen seventeen eighteen nineteen)
-  # end
+
+  def small_numbers
+    [nil] +
+      %w(one two three four five
+         six seven eight nine ten
+         eleven twelve thirteen fourteen fifteen
+         sixteen seventeen eighteen nineteen)
+  end
 
   def decades
   #   [nil, nil] +
