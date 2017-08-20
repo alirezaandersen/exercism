@@ -64,7 +64,6 @@ class SayTest < Minitest::Test
   end
 
   def test_a_big_number
-    # skip
     question = 987_654_321_123
     assert_equal('nine hundred eighty-seven billion six hundred fifty-four million three hundred twenty-one thousand one hundred twenty-three', Say.new(question).in_english)
   end
