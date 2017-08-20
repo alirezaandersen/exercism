@@ -69,7 +69,6 @@ class SayTest < Minitest::Test
   end
 
   def test_numbers_below_zero_are_out_of_range
-    # skip
     question = -1
     assert_raises ArgumentError do
       Say.new(question).in_english
