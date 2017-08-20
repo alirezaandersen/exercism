@@ -44,7 +44,6 @@ class SayTest < Minitest::Test
   end
 
   def test_one_thousand_two_hundred_thirty_four
-    # skip
     question = 1_234
     assert_equal('one thousand two hundred thirty-four', Say.new(question).in_english)
   end
