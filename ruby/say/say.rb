@@ -29,13 +29,13 @@ class Say
 
   private
 
-  # def tens(number)
-  #   string    = TENS[number / 10 - 2]
-  #   remainder = number % 10
-  #
-  #   string += "-#{in_english(remainder)}" unless remainder.zero?
-  #   string
-  # end
+  def tens(number)
+    string    = TENS[number / 10 - 2]
+    remainder = number % 10
+
+    string += "-#{in_english(remainder)}" unless remainder.zero?
+    string
+  end
 
   def to_english(number, decimal, decimal_unit)
     string    = "#{in_english(number / decimal)} #{decimal_unit}"
