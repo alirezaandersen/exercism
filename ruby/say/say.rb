@@ -35,17 +35,17 @@ class Say
 
     string += "-#{in_english(remainder)}" unless remainder.zero?
     string
-#   end
-#
-#   def to_english(number, decimal, decimal_unit)
-#     string    = "#{in_english(number / decimal)} #{decimal_unit}"
-#     remainder = number % decimal
-#
-#     string += " #{in_english(remainder)}" unless remainder.zero?
-#     string
-#   end
-# end
-#
-# module BookKeeping
-#   VERSION = 1
-# end
+  end
+
+  def to_english(number, decimal, decimal_unit)
+    string    = "#{in_english(number / decimal)} #{decimal_unit}"
+    remainder = number % decimal
+
+    string += " #{in_english(remainder)}" unless remainder.zero?
+    string
+  end
+end
+
+module BookKeeping
+  VERSION = 1
+end
