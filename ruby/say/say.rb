@@ -35,8 +35,8 @@ class Say
 
     string += "-#{in_english(remainder)}" unless remainder.zero?
     string
-#   end
-#
+  end
+
 #   def to_english(number, decimal, decimal_unit)
 #     string    = "#{in_english(number / decimal)} #{decimal_unit}"
 #     remainder = number % decimal
@@ -45,7 +45,7 @@ class Say
 #     string
 #   end
 # end
-#
-# module BookKeeping
-#   VERSION = 1
-# end
+
+module BookKeeping
+  VERSION = 1
+end
