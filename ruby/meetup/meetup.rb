@@ -1,0 +1,4 @@
+class Meetup
+
+
+end 
