@@ -11,8 +11,8 @@ class Meetup
     when :third  then all_meet_ups[2]
     when :fourth then all_meet_ups[3]
     when :last   then all_meet_ups.last
-    # when :teenth
-      # all_meet_ups.select { |d| d.mday > 12 && d.mday < 20 }.first
-    end
-  end
+  #   when :teenth
+  #     all_meet_ups.select { |d| d.mday > 12 && d.mday < 20 }.first
+  #   end
+  # end
 end
