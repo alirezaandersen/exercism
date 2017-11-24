@@ -39,24 +39,24 @@ class MeetupTest < Minitest::Test
   #   skip
   #   assert_equal Date.new(2013, 8, 13),
   #     Meetup.new(8, 2013).day(:tuesday, :teenth)
-  # end
-
-  # def test_wednesteenth_of_january_2013
+  # # end
+  #
+  # # def test_wednesteenth_of_january_2013
+  # #   skip
+  # #   assert_equal Date.new(2013, 1, 16),
+  # #     Meetup.new(1, 2013).day(:wednesday, :teenth)
+  # # end
+  #
+  # def test_wednesteenth_of_february_2013
   #   skip
-  #   assert_equal Date.new(2013, 1, 16),
-  #     Meetup.new(1, 2013).day(:wednesday, :teenth)
+  #   assert_equal Date.new(2013, 2, 13),
+  #     Meetup.new(2, 2013).day(:wednesday, :teenth)
   # end
-
-  def test_wednesteenth_of_february_2013
-    skip
-    assert_equal Date.new(2013, 2, 13),
-      Meetup.new(2, 2013).day(:wednesday, :teenth)
-  end
-
-  def test_wednesteenth_of_june_2013
-    skip
-    assert_equal Date.new(2013, 6, 19),
-      Meetup.new(6, 2013).day(:wednesday, :teenth)
+  #
+  # def test_wednesteenth_of_june_2013
+  #   skip
+  #   assert_equal Date.new(2013, 6, 19),
+  #     Meetup.new(6, 2013).day(:wednesday, :teenth)
   end
 
   def test_thursteenth_of_may_2013
