@@ -3,8 +3,8 @@ class Meetup
     @cal = (Date.new(year, month, 1)..Date.new(year, month, -1))
   end
 
-  def day(meet_up, schedule)
-    all_meet_ups = @cal.select { |date| date.send("#{meet_up}?") }
+  def day(meet_up_day, schedule)
+    all_meet_ups = @cal.select { |date| date.send("#{meet_up_day}?") }
     case schedule
     when :first  then all_meet_ups[0]
     when :second then all_meet_ups[1]
