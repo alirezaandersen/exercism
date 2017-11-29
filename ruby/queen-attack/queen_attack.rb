@@ -6,15 +6,23 @@ class Queens
     @black = QueenAttack.new(opts[:black]) if opts[:black]
   end
 
+  def attack?
+    on_same_row?
+  end
+
+  def on_same_row?
+    white.row == black.row
+  end
+
 end
 
 class QueenAttack
-  attr_reader :rank, :file
+  attr_reader :row, :column
 
   def initialize(position)
     raise ArgumentError if position.any? { |x| x < 0 || x > 7 }
-    @rank = position[0]
-    @file = position[1]
+    @row = position[0]
+    @column = position[1]
   end
 end
 
