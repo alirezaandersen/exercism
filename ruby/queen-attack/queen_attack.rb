@@ -7,11 +7,15 @@ class Queens
   end
 
   def attack?
-    on_same_row?
+    on_same_row? || on_same_column?
   end
 
   def on_same_row?
     white.row == black.row
+  end
+
+  def on_same_column?
+    white.column == black.column
   end
 
 end
