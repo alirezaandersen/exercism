@@ -1,3 +1,13 @@
+class Queens
+  attr_reader :white, :black
+
+  def initialize(opts)
+    @white = QueenAttack.new(opts[:white]) if opts[:white]
+    @black = QueenAttack.new(opts[:black]) if opts[:black]
+  end
+
+end
+
 class QueenAttack
   attr_reader :rank, :file
 
