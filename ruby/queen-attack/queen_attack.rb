@@ -7,7 +7,7 @@ class Queens
   end
 
   def attack?
-    on_same_row? || on_same_column?
+    on_same_row? || on_same_column? || on_same_diagonal?
   end
 
   def on_same_row?
