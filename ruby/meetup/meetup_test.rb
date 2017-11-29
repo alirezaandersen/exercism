@@ -439,7 +439,6 @@ class MeetupTest < Minitest::Test
   end
 
   def test_last_friday_of_december_2013
-    skip
     assert_equal Date.new(2013, 12, 27),
       Meetup.new(12, 2013).day(:friday, :last)
   end
