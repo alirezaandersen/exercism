@@ -63,7 +63,6 @@ class QueenAttackTest < Minitest::Test
   end
 
   def test_can_attack_on_fourth_diagonal
-    skip
     queens = Queens.new(white: [2, 2], black: [5, 5])
     assert queens.attack?
   end
