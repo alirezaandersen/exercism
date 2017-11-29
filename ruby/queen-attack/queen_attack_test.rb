@@ -9,7 +9,6 @@ class QueenAttackTest < Minitest::Test
   end
 
   def test_queen_must_have_positive_row
-    # skip
     assert_raises ArgumentError do
       Queens.new(white: [-2, 2])
     end
