@@ -5,7 +5,6 @@ require 'minitest/pride'
 # Common test data version: 2.0.0 44a1e12
 class QueenAttackTest < Minitest::Test
   def test_queen_with_a_valid_position
-    # skip
     assert Queens.new(white: [2, 2])
   end
 
