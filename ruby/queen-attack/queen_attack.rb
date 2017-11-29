@@ -18,6 +18,10 @@ class Queens
     white.column == black.column
   end
 
+  def on_same_diagonal?
+    (white.row - black.row).abs == (white.column - black.column).abs
+  end
+
 end
 
 class QueenAttack
