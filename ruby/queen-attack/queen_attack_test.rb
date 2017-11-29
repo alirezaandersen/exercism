@@ -15,7 +15,6 @@ class QueenAttackTest < Minitest::Test
   end
 
   def test_queen_must_have_row_on_board
-    # skip
     assert_raises ArgumentError do
       Queens.new(white: [8, 4])
     end
