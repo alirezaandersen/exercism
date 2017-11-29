@@ -1,5 +1,6 @@
 require 'minitest/autorun'
 require_relative 'queen_attack'
+require 'minitest/pride'
 
 # Common test data version: 2.0.0 44a1e12
 class QueenAttackTest < Minitest::Test
