@@ -33,7 +33,6 @@ class QueenAttackTest < Minitest::Test
   end
 
   def test_can_not_attack
-    skip
     queens = Queens.new(white: [2, 4], black: [6, 6])
     refute queens.attack?
   end
