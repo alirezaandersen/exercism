@@ -39,4 +39,8 @@ class Palindromes
     sort.last[1]
   end
 
+  def smallest
+    sort.first[1]
+  end
+
 end
