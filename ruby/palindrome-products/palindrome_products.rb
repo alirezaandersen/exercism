@@ -36,7 +36,7 @@ class Palindromes
   end
 
   def largest
-
+    sort.last[1]
   end
 
 end
