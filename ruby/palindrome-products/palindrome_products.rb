@@ -25,6 +25,10 @@ class Palindromes
     end
   end
 
+  def palindrome?(number)
+    number.to_s == number.to_s.reverse
+  end
+
   def largest
 
   end
