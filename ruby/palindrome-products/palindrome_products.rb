@@ -29,6 +29,12 @@ class Palindromes
     number.to_s == number.to_s.reverse
   end
 
+  def sort
+    @palindromes.sort_by do |key, _palindrome|
+      key
+    end
+  end
+
   def largest
 
   end
