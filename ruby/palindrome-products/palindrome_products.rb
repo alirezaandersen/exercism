@@ -1,3 +1,5 @@
+Palindrome = Struct.new(:value, :factors)
+
 class Palindromes
 
   attr_reader :range
@@ -9,11 +11,22 @@ class Palindromes
   end
 
   def generate
-
+    @palindromes = {}
+    range.each do |i|
+      range.each do |j|
+        product = i * j
+        if palindrome?(product)
+          palindrome = @palindromes[product] || Palindrome.new(product, [])
+          palindrome.factors << [i, j].sort
+          palindrome.factors.uniq!
+          @palindromes[product] = palindrome
+        end
+      end
+    end
   end
 
   def largest
 
-  end 
+  end
 
 end
