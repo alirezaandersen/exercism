@@ -27,7 +27,6 @@ class PalindromesTest < Minitest::Test
   end
 
   def test_largest_palindrome_from_triple_digit_factors
-    skip
     palindromes = Palindromes.new(max_factor: 999, min_factor: 100)
     palindromes.generate
     largest = palindromes.largest
