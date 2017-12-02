@@ -8,7 +8,6 @@ class BracketPushTest < Minitest::Test
   end
 
   def test_empty_string
-    skip
     assert Brackets.paired?('')
   end
 
