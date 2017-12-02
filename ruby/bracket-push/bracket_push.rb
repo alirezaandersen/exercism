@@ -1,5 +1,10 @@
-class Brackets
+module Brackets
 
+  BRACKETS = {
+    ')' => '(',
+    ']' => '[',
+    '}' => '{'
+  }.freeze
 
 end
 
