@@ -56,7 +56,6 @@ class BracketPushTest < Minitest::Test
   end
 
   def test_complex_latex_expression
-    skip
     str = '\left(\begin{array}{cc} \frac{1}{3} & x\\ '\
           '\mathrm{e}^{x} &... x^2 \end{array}\right)'
     assert Brackets.paired?(str)
