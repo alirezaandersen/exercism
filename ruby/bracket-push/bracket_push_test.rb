@@ -40,7 +40,6 @@ class BracketPushTest < Minitest::Test
   end
 
   def test_unopened_closing_brackets
-    skip
     refute Brackets.paired?('{[)][]}')
   end
 
