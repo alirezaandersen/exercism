@@ -52,7 +52,6 @@ class BracketPushTest < Minitest::Test
   end
 
   def test_math_expression
-    skip
     assert Brackets.paired?('(((185 + 223.85) * 15) - 543)/2')
   end
 
