@@ -1,4 +1,8 @@
 class Brackets
 
 
-end 
+end
+
+module BookKeeping
+  VERSION = 4
+end
