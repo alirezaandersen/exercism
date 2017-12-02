@@ -12,7 +12,6 @@ class BracketPushTest < Minitest::Test
   end
 
   def test_unpaired_brackets
-    skip
     refute Brackets.paired?('[[')
   end
 
