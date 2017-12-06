@@ -1,0 +1,3 @@
+module FoodChain
+
+end
