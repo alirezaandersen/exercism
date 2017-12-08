@@ -3,5 +3,8 @@ module BookKeeping
 end
 
 module FoodChain
+  def self.song
+    verses(1, 8)
+  end
 
 end
