@@ -63,5 +63,23 @@ She swallowed the bird to catch the spider that wriggled and jiggled and tickled
 She swallowed the spider to catch the fly.
 I don't know why she swallowed the fly. Perhaps she'll die.
       LINES
-
+    when 7
+      <<-LINES
+I know an old lady who swallowed a cow.
+I don't know how she swallowed a cow!
+She swallowed the cow to catch the goat.
+She swallowed the goat to catch the dog.
+She swallowed the dog to catch the cat.
+She swallowed the cat to catch the bird.
+She swallowed the bird to catch the spider that wriggled and jiggled and tickled inside her.
+She swallowed the spider to catch the fly.
+I don't know why she swallowed the fly. Perhaps she'll die.
+      LINES
+    when 8
+      <<-LINES
+I know an old lady who swallowed a horse.
+She's dead, of course!
+      LINES
+    end
+  end
 end
