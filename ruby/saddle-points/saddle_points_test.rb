@@ -1,5 +1,6 @@
 require 'minitest/autorun'
 require_relative 'saddle_points'
+require 'minitest/pride'
 
 class MatrixTest < Minitest::Test
   def test_extract_a_row
