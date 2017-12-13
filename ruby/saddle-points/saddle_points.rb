@@ -3,6 +3,6 @@ class Matrix
   attr_reader :rows, :columns
 
   def initalize(input)
-
-  end 
+    @rows = input.split("\n").map { |r| r.split(" ").map(&:to_i) }
+  end
 end
