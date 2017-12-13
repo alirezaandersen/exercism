@@ -1,3 +1,5 @@
 class Matrix
 
-end 
+  attr_reader :rows, :columns
+  
+end
