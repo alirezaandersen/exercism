@@ -4,5 +4,6 @@ class Matrix
 
   def initalize(input)
     @rows = input.split("\n").map { |r| r.split(" ").map(&:to_i) }
+    @columns = @rows.transpose
   end
 end
