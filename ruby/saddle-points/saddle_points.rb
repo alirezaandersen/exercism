@@ -1,3 +1,5 @@
+require 'pry'
+
 class Matrix
 
   attr_reader :rows, :columns
