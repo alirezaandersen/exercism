@@ -36,5 +36,9 @@ class Triangle
   def invalid_length_side?
     sides.any? { |side| side <= 0 }
   end
-  
+
+end
+
+module BookKeeping
+  VERSION = 1
 end
