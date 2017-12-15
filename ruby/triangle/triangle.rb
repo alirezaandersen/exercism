@@ -13,6 +13,7 @@ class Triangle
   end
 
   def equilateral?
+    # binding.pry
     if @uniq_sides.length == 1
       return true
     end
