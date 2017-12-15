@@ -1,30 +1,29 @@
 require 'pry'
 class Triangle
-
-  attr_reader :uniq_sides
+  attr_reader :sides
 
   def initialize(sides)
-    @uniq_sides = sides.uniq
-    if illegal_size?
-      @uniq_sides = []
+    @sides = sides
+    if illegal_sides?
+      @sides = []
     end
   end
 
-  def isosceles?
-    @uniq_sides.size.between?(1, 2)
+  def equilateral?
+    sides.uniq.size == 1
   end
 
-  def equilateral?
-    @uniq_sides.size == 1
+  def isosceles?
+    sides.uniq.size.between?(1, 2)
   end
 
   def scalene?
-    @uniq_sides.size == 3
+    sides.uniq.size == 3
   end
 
   private
 
-  def illegal?
+  def illegal_sides?
     invalid_length_side? || violates_inequality?
   end
 
@@ -36,7 +35,6 @@ class Triangle
   def invalid_length_side?
     sides.any? { |side| side <= 0 }
   end
-
 end
 
 module BookKeeping
