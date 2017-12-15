@@ -52,13 +52,13 @@ class TriangleTest < Minitest::Test
   end
 
   def test_equilateral_triangles_are_also_isosceles
-    # skip
+    skip
     triangle = Triangle.new([4, 4, 4])
     assert triangle.isosceles?, "Expected 'true', triangle [4, 4, 4] is isosceles."
   end
 
   def test_triangle_is_not_isosceles_if_no_sides_are_equal
-    skip
+    # skip
     triangle = Triangle.new([2, 3, 4])
     refute triangle.isosceles?, "Expected 'false', triangle [2, 3, 4] is not isosceles."
   end

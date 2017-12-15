@@ -1,28 +1,25 @@
 require 'pry'
 class Triangle
 
+  attr_reader :uniq_sides
 
   def initialize(sides)
     @uniq_sides = sides.uniq
+    if illegal_size?
+      @uniq_sides = []
+    end 
   end
 
   def isosceles?
-    if @uniq_sides.length == 2
-      return true
-    end
+    @uniq_sides.size.between?(1, 2)
   end
 
   def equilateral?
-    # binding.pry
-    if @uniq_sides.length == 1
-      return true
-    end
+    @uniq_sides.size == 1
   end
 
   def scalene?
-    if @uniq_sides.length == 3
-      return true
-    end
+    @uniq_sides.size == 3
   end
 
 end
