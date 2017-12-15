@@ -38,7 +38,7 @@ class AtbashTest < Minitest::Test
   end
 
   def test_encode_all_the_things
-    skip
+    # skip
     plaintext = 'The quick brown fox jumps over the lazy dog.'
     cipher = 'gsvjf rxpyi ldmul cqfnk hlevi gsvoz abwlt'
     assert_equal cipher, Atbash.encode(plaintext)
