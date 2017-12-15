@@ -64,7 +64,7 @@ class TriangleTest < Minitest::Test
   end
 
   def test_sides_that_violate_triangle_inequality_are_not_isosceles_even_if_two_are_equal
-    skip
+    # skip
     triangle = Triangle.new([1, 1, 3])
     refute triangle.isosceles?, "Expected 'false', triangle [1, 1, 3] is not isosceles."
   end
