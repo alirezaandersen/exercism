@@ -5,6 +5,6 @@ module Atbash
   @@chunk = /.{1,5}/
 
   def self.encode(input)
-
-  end 
+    input.downcase.gsub(@@clean, '')
+  end
 end
