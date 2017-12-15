@@ -17,7 +17,7 @@ class AtbashTest < Minitest::Test
   end
 
   def test_encode_O_M_G
-    skip
+    # skip
     assert_equal 'lnt', Atbash.encode('O M G')
   end
 
