@@ -22,7 +22,7 @@ class TriangleTest < Minitest::Test
   end
 
   def test_all_zero_sides_are_illegal_so_the_triangle_is_not_equilateral
-    skip
+    # skip
     triangle = Triangle.new([0, 0, 0])
     refute triangle.equilateral?, "Expected 'false', triangle [0, 0, 0] is not equilateral."
   end
