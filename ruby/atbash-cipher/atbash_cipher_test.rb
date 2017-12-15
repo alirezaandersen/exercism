@@ -7,7 +7,7 @@ class AtbashTest < Minitest::Test
   end
 
   def test_encode_yes
-    skip
+    # skip
     assert_equal 'bvh', Atbash.encode('yes')
   end
 
