@@ -4,4 +4,7 @@ module Atbash
   @@clean = /[^a-z0-9]/
   @@chunk = /.{1,5}/
 
+  def self.encode(input)
+
+  end 
 end
