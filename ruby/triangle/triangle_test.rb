@@ -16,7 +16,7 @@ class TriangleTest < Minitest::Test
   end
 
   def test_triangle_is_not_equilateral_if_no_sides_are_equal
-    skip
+    # skip
     triangle = Triangle.new([5, 4, 6])
     refute triangle.equilateral?, "Expected 'false', triangle [5, 4, 6] is not equilateral."
   end
