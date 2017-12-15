@@ -1,3 +1,4 @@
+require 'pry'
 module Atbash
 
   @@letters = "abcdefghijklmnopqrstuvwxyz"
@@ -5,6 +6,7 @@ module Atbash
   @@chunk = /.{1,5}/
 
   def self.encode(input)
-    input.downcase.gsub(@@clean, '')
+     clean_input = input.downcase.gsub(@@clean, '')
+     binding.pry
   end
 end
