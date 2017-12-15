@@ -17,4 +17,10 @@ class Triangle
     end
   end
 
+  def scalene?
+    if @uniq_sides.length == 3
+      return true
+    end
+  end
+
 end
