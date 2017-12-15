@@ -27,7 +27,7 @@ class AtbashTest < Minitest::Test
   end
 
   def test_encode_numbers
-    skip
+    # skip
     assert_equal('gvhgr mt123 gvhgr mt',
                  Atbash.encode('Testing, 1 2 3, testing.'))
   end
