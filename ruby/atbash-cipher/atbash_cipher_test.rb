@@ -33,7 +33,7 @@ class AtbashTest < Minitest::Test
   end
 
   def test_encode_sentence
-    skip
+    # skip
     assert_equal 'gifgs rhurx grlm', Atbash.encode('Truth is fiction.')
   end
 
