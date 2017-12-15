@@ -7,6 +7,7 @@ module Atbash
 
   def self.encode(input)
      clean_input = input.downcase.gsub(@@clean, '')
-     binding.pry
+     trade_char = clean_input.tr(@@letters, @@letters.reverse)
+     # binding.pry
   end
 end
