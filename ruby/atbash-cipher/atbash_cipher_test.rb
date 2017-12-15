@@ -22,7 +22,7 @@ class AtbashTest < Minitest::Test
   end
 
   def test_encode_long_word
-    skip
+    # skip
     assert_equal 'nrmwy oldrm tob', Atbash.encode('mindblowingly')
   end
 
