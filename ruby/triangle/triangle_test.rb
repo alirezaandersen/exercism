@@ -94,7 +94,7 @@ class TriangleTest < Minitest::Test
   end
 
   def test_sides_that_violate_triangle_inequality_are_not_scalene_even_if_they_are_all_different
-    skip
+    # skip
     triangle = Triangle.new([7, 3, 2])
     refute triangle.scalene?, "Expected 'false', triangle [7, 3, 2] is not scalene."
   end
