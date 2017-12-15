@@ -11,5 +11,10 @@ class Triangle
     end
   end
 
+  def equilateral?
+    if @uniq_sides.length == 1
+      return true
+    end
+  end
 
 end
