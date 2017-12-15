@@ -1,4 +1,8 @@
 class Triangle
 
 
-end 
+  def initialize(sides)
+    @uniq_sides = [sides].uniq
+  end
+
+end
