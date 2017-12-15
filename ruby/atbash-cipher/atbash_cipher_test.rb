@@ -1,5 +1,6 @@
 require 'minitest/autorun'
 require_relative 'atbash_cipher'
+require 'minitest/pride'
 
 class AtbashTest < Minitest::Test
   def test_encode_no
