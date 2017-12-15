@@ -7,7 +7,7 @@ class Triangle
     @uniq_sides = sides.uniq
     if illegal_size?
       @uniq_sides = []
-    end 
+    end
   end
 
   def isosceles?
@@ -20,6 +20,12 @@ class Triangle
 
   def scalene?
     @uniq_sides.size == 3
+  end
+
+  private
+
+  def illegal?
+    invalid_length_side? || violates_inequality?
   end
 
 end
