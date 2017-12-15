@@ -1,8 +1,9 @@
+require 'pry'
 class Triangle
 
 
   def initialize(sides)
-    @uniq_sides = [sides].uniq
+    @uniq_sides = sides.uniq
   end
 
   def isosceles?
