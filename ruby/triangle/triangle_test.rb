@@ -40,7 +40,7 @@ class TriangleTest < Minitest::Test
   end
 
   def test_triangle_is_isosceles_if_first_two_sides_are_equal
-    skip
+    # skip
     triangle = Triangle.new([4, 4, 3])
     assert triangle.isosceles?, "Expected 'true', triangle [4, 4, 3] is isosceles."
   end
