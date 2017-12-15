@@ -100,7 +100,7 @@ class TriangleTest < Minitest::Test
   end
 
   def test_scalene_triangle_sides_may_be_floats
-    skip
+    # skip
     triangle = Triangle.new([0.5, 0.4, 0.6])
     assert triangle.scalene?, "Expected 'true', triangle [0.5, 0.4, 0.6] is scalene."
   end
