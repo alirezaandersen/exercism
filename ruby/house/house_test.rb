@@ -1,5 +1,6 @@
 require 'minitest/autorun'
 require_relative 'house'
+require 'minitest/pride'
 
 class HouseTest < Minitest::Test
   def test_rhyme
