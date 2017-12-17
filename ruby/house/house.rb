@@ -1,6 +1,19 @@
 module House
   def self.recite
-   "#{(1..@@parts.length).map { |i| verse(i) }.join("\n\n")}\n"
+    "#{(1..@@parts.length).map { |i| verse(i) }.join("\n\n")}\n"
+  end
+
+  def self.verse(n)
+    first = true
+    lines = @@parts.last(n).each_with_object([]) do |l, acc|
+      if first
+        first = false
+        acc.push "This is the #{l.last}"
+      else
+        acc.push "that #{l.first} the #{l.last}"
+      end
+    end
+    lines.join("\n")
   end
 
   @@parts = [
