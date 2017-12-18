@@ -38,7 +38,7 @@ class SecretHandshakeTest < Minitest::Test
   end
 
   def test_handshake_11111_to_double_blink_and_wink
-    skip
+    # skip
     handshake = SecretHandshake.new(31)
     expected = ['jump', 'close your eyes', 'double blink', 'wink']
     assert_equal expected, handshake.commands
