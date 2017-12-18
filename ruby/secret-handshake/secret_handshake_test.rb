@@ -14,7 +14,7 @@ class SecretHandshakeTest < Minitest::Test
   end
 
   def test_handshake_100_to_close_your_eyes
-    skip
+    # skip
     handshake = SecretHandshake.new(4)
     assert_equal ['close your eyes'], handshake.commands
   end
