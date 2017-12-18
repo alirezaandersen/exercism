@@ -32,7 +32,7 @@ class SecretHandshakeTest < Minitest::Test
   end
 
   def test_handshake_10011_to_double_blink_and_wink
-    skip
+    # skip
     handshake = SecretHandshake.new(19)
     assert_equal ['double blink', 'wink'], handshake.commands
   end
