@@ -6,7 +6,6 @@ class SecretHandshake
 
   def commands
     out = @@items.each_with_object([]) do |(k,v), acc|
-      binding.pry
       acc.push(k) if (v & @flags) != 0
     end
     out.reverse! if (16 & @flags) != 0
