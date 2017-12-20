@@ -10,5 +10,8 @@ class Proverb
     @phrase += ("\nAnd all for the want of a #{want_of}.")
   end
 
+  def to_s
+    @phrase
+  end
 
 end
