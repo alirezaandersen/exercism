@@ -1,5 +1,6 @@
 require 'minitest/autorun'
 require_relative 'proverb'
+require 'minitest/pride'
 
 class ProverbTest < Minitest::Test
   def test_a_single_consequence
