@@ -5,8 +5,9 @@ class OcrNumbers
   end
 
   def convert
-
+    digits = []
   end
+
   @@numbers = {
     [' _ ', '| |', '|_|'] => '0',
     ['   ', '  |', '  |'] => '1',
