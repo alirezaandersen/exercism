@@ -24,7 +24,7 @@ class OcrNumbersTest < Minitest::Test
   end
 
   def test_input_with_a_number_of_columns_that_is_not_a_multiple_of_three_raises_an_error
-    skip
+    # skip
     assert_raises(ArgumentError) { OcrNumbers.convert("    \n   |\n   |\n    ") }
   end
 
