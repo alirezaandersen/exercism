@@ -84,7 +84,7 @@ class OcrNumbersTest < Minitest::Test
   end
 
   def test_numbers_separated_by_empty_lines_are_recognized_lines_are_joined_by_commas
-    skip
+    # skip
     assert_equal "123,456,789", OcrNumbers.convert("    _  _ \n  | _| _|\n  ||_  _|\n         \n    _  _ \n|_||_ |_ \n  | _||_|\n         \n _  _  _ \n  ||_||_|\n  ||_| _|\n         ")
   end
 
