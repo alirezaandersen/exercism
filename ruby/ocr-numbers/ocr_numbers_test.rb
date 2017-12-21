@@ -19,7 +19,7 @@ class OcrNumbersTest < Minitest::Test
   end
 
   def test_input_with_a_number_of_lines_that_is_not_a_multiple_of_four_raises_an_error
-    skip
+    # skip
     assert_raises(ArgumentError) { OcrNumbers.convert(" _ \n| |\n   ") }
   end
 
