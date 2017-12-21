@@ -64,7 +64,7 @@ class OcrNumbersTest < Minitest::Test
   end
 
   def test_recognizes_7
-    skip
+    # skip
     assert_equal "7", OcrNumbers.convert(" _ \n  |\n  |\n   ")
   end
 
