@@ -29,7 +29,7 @@ class OcrNumbersTest < Minitest::Test
   end
 
   def test_recognizes_110101100
-    skip
+    # skip
     assert_equal "110101100", OcrNumbers.convert("       _     _        _  _ \n  |  || |  || |  |  || || |\n  |  ||_|  ||_|  |  ||_||_|\n                           ")
   end
 
