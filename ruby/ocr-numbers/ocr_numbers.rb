@@ -1,4 +1,5 @@
-class OcrNumbers
+class OCR
+  @value = nil
 
   def initialize(value)
     @value = value
@@ -34,9 +35,4 @@ class OcrNumbers
     [' _ ', '|_|', '|_|'] => '8',
     [' _ ', '|_|', ' _|'] => '9'
   }
-
-end
-
-module BookKeeping
-  VERSION = 1
 end
