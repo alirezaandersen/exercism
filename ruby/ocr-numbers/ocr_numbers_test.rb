@@ -79,7 +79,7 @@ class OcrNumbersTest < Minitest::Test
   end
 
   def test_recognizes_string_of_decimal_numbers
-    skip
+    # skip
     assert_equal "1234567890", OcrNumbers.convert("    _  _     _  _  _  _  _  _ \n  | _| _||_||_ |_   ||_||_|| |\n  ||_  _|  | _||_|  ||_| _||_|\n                              ")
   end
 
