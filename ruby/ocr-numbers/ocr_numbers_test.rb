@@ -14,7 +14,7 @@ class OcrNumbersTest < Minitest::Test
   end
 
   def test_unreadable_but_correctly_sized_inputs_return_?
-    skip
+    # skip
     assert_equal "?", OcrNumbers.convert("   \n  _\n  |\n   ")
   end
 
