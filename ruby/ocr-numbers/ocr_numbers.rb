@@ -4,6 +4,9 @@ class OcrNumbers
     @value = value
   end
 
+  def convert
+
+  end
   @@numbers = {
     [' _ ', '| |', '|_|'] => '0',
     ['   ', '  |', '  |'] => '1',
