@@ -1,5 +1,9 @@
 class OcrNumbers
 
+  def initialize(value)
+    @value = value
+  end
+  
 @@numbers = {
   [' _ ', '| |', '|_|'] => '0',
   ['   ', '  |', '  |'] => '1',
