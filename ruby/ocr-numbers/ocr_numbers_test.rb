@@ -34,7 +34,7 @@ class OcrNumbersTest < Minitest::Test
   end
 
   def test_garbled_numbers_in_a_string_are_replaced_with_?
-    skip
+    # skip
     assert_equal "11?10?1?0", OcrNumbers.convert("       _     _           _ \n  |  || |  || |     || || |\n  |  | _|  ||_|  |  ||_||_|\n                           ")
   end
 
