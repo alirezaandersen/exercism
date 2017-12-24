@@ -1,3 +1,6 @@
 class PigLatin
 
-end 
+  def translate(input)
+
+  end 
+end
