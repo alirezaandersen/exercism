@@ -18,3 +18,7 @@ module PigLatin
   @@vowel_sounds   = %w(a e i o u yt xr)
   @@consonant_sets = %w(ch thr th sch qu squ)
 end
+
+module BookKeeping
+  VERSION = 2
+end 
