@@ -12,7 +12,6 @@ class PigLatinTest < Minitest::Test
   end
 
   def test_word_beginning_with_i
-    skip
     assert_equal "iglooay", PigLatin.translate("igloo")
   end
 
