@@ -72,7 +72,6 @@ class PigLatinTest < Minitest::Test
   end
 
   def test_word_beginning_with_xr
-    skip
     assert_equal "xrayay", PigLatin.translate("xray")
   end
 
