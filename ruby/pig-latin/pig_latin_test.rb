@@ -32,7 +32,6 @@ class PigLatinTest < Minitest::Test
   end
 
   def test_word_beginning_with_k
-    skip
     assert_equal "oalakay", PigLatin.translate("koala")
   end
 
