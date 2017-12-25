@@ -88,7 +88,6 @@ class PigLatinTest < Minitest::Test
   end
 
   def test_a_whole_phrase
-    skip
     assert_equal "ickquay astfay unray", PigLatin.translate("quick fast run")
   end
 
