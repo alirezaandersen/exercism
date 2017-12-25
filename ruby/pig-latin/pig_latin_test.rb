@@ -8,7 +8,6 @@ class PigLatinTest < Minitest::Test
   end
 
   def test_word_beginning_with_e
-    skip
     assert_equal "earay", PigLatin.translate("ear")
   end
 
