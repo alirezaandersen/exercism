@@ -84,7 +84,6 @@ class PigLatinTest < Minitest::Test
   end
 
   def test_y_as_second_letter_in_two_letter_word
-    skip
     assert_equal "ymay", PigLatin.translate("my")
   end
 
