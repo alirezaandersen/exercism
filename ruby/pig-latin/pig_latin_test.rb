@@ -80,7 +80,6 @@ class PigLatinTest < Minitest::Test
   end
 
   def test_y_is_treated_like_a_vowel_at_the_end_of_a_consonant_cluster
-    skip
     assert_equal "ythmrhay", PigLatin.translate("rhythm")
   end
 
