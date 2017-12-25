@@ -44,7 +44,6 @@ class PigLatinTest < Minitest::Test
   end
 
   def test_word_beginning_with_ch
-    skip
     assert_equal "airchay", PigLatin.translate("chair")
   end
 
