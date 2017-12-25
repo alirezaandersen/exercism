@@ -60,7 +60,6 @@ class PigLatinTest < Minitest::Test
   end
 
   def test_word_beginning_with_thr
-    skip
     assert_equal "ushthray", PigLatin.translate("thrush")
   end
 
