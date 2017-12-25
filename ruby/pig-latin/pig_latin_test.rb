@@ -40,7 +40,6 @@ class PigLatinTest < Minitest::Test
   end
 
   def test_word_beginning_with_q_without_a_following_u
-    skip
     assert_equal "atqay", PigLatin.translate("qat")
   end
 
