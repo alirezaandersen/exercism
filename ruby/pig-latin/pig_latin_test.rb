@@ -68,7 +68,6 @@ class PigLatinTest < Minitest::Test
   end
 
   def test_word_beginning_with_yt
-    skip
     assert_equal "yttriaay", PigLatin.translate("yttria")
   end
 
