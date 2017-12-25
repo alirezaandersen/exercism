@@ -11,7 +11,6 @@ module PigLatin
     elsif starter = @@consonant_sets.select { |s| word.start_with?(s) }.first
       "#{word.slice(starter.length..word.length)}#{starter}ay"
     else
-      # binding.pry
       "#{word.slice(1..word.length)}#{word.slice(0,1)}ay"
     end
   end
