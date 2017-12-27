@@ -1,4 +1,4 @@
-require 'minitest/autorun'
+atom require 'minitest/autorun'
 require_relative 'pig_latin'
 require 'minitest/pride'
 # Common test data version: 1.1.0 b5ddd0a
