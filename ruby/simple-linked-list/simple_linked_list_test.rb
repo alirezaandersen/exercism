@@ -1,5 +1,6 @@
 require 'minitest/autorun'
 require_relative 'simple_linked_list'
+require 'minitest/pride'
 
 class LinkedListTest < Minitest::Test
   def test_element
