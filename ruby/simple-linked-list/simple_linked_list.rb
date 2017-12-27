@@ -38,6 +38,11 @@ class SimpleLinkedList
     element
   end
 
+  def reverse!
+
+  end
+
+  
   private
 
   def create_from_array(array)
