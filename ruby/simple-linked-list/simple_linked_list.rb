@@ -32,6 +32,12 @@ class SimpleLinkedList
     self
   end
 
+  def pop
+    element = @head
+    @head = element.next if element
+    element
+  end
+
   private
 
   def create_from_array(array)
