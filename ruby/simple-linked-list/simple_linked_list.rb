@@ -26,6 +26,12 @@ class SimpleLinkedList
     result
   end
 
+  def push(element)
+    element.next = @head unless @head.nil?
+    @head = element
+    self
+  end
+
   private
 
   def create_from_array(array)
