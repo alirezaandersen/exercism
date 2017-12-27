@@ -16,6 +16,16 @@ class SimpleLinkedList
     create_from_array(array)
   end
 
+  def to_a
+    result = []
+    pointer = @head
+    while pointer
+      result << pointer.datum
+      pointer = pointer.next
+    end
+    result
+  end
+
   private
 
   def create_from_array(array)
