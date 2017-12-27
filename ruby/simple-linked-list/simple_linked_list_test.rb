@@ -134,7 +134,7 @@ class LinkedListTest < Minitest::Test
   end
 
   def test_works_for_1_through_10
-    skip
+    # skip
     list = SimpleLinkedList.new(1..10)
     expected = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
     assert_equal expected, list.to_a
