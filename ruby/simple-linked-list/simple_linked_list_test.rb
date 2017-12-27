@@ -58,7 +58,7 @@ class LinkedListTest < Minitest::Test
   end
 
   def test_list_empty_to_array
-    skip
+    # skip
     list = SimpleLinkedList.new
     assert_equal [], list.to_a
   end
