@@ -1,18 +1,14 @@
 class Element
-
   attr_reader :datum
   attr_accessor :next
-
   def initialize(value)
     @datum = value
-    @next = nil
+    @next  = nil
   end
-
 end
 
 class SimpleLinkedList
-
-  def initialize(array = nil)
+  def initialize(array = [])
     create_from_array(array)
   end
 
@@ -43,24 +39,20 @@ class SimpleLinkedList
     pointer = @head
     while pointer
       temp = pointer.next
-      pointer.next = pointer
+      pointer.next = previous
       previous = pointer
       pointer = temp
     end
     @head = previous
+    self
   end
-
 
   private
 
   def create_from_array(array)
     array.each { |value| push(Element.new(value)) }
   end
-
 end
-
-
-
 
 module BookKeeping
   VERSION = 1
