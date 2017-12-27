@@ -14,7 +14,7 @@ class LinkedListTest < Minitest::Test
   end
 
   def test_element_next
-    skip
+    # skip
     element = Element.new(1)
     assert_nil element.next
   end
