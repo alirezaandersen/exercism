@@ -82,7 +82,7 @@ class LinkedListTest < Minitest::Test
   end
 
   def test_list_create_from_array
-    skip
+    # skip
     array = [1, 2, 3]
     list = SimpleLinkedList.new(array)
     assert_equal [3, 2, 1], list.to_a
