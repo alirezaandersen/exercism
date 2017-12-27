@@ -28,7 +28,7 @@ class LinkedListTest < Minitest::Test
   end
 
   def test_list_push
-    skip
+    # skip
     list = SimpleLinkedList.new
     element = Element.new(1)
     assert_equal list, list.push(element)
