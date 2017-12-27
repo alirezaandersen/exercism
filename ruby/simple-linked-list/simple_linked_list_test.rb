@@ -115,7 +115,7 @@ class LinkedListTest < Minitest::Test
   end
 
   def test_list_in_place_reverse_are_the_same_elements
-    skip
+    # skip
     first = Element.new(1)
     second = Element.new(2)
     list = SimpleLinkedList.new
