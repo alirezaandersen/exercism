@@ -8,7 +8,7 @@ class LinkedListTest < Minitest::Test
   end
 
   def test_element_can_hold_a_different_value
-    skip
+    # skip
     element = Element.new(10)
     assert_equal 10, element.datum
   end
