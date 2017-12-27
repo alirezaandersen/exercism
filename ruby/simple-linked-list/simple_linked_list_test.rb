@@ -49,7 +49,7 @@ class LinkedListTest < Minitest::Test
   end
 
   def test_list_pop_is_last_in_first_out
-    skip
+    # skip
     list = SimpleLinkedList.new
     first = Element.new(1)
     second = Element.new(2)
