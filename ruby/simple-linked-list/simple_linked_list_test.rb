@@ -104,7 +104,7 @@ class LinkedListTest < Minitest::Test
   end
 
   def test_list_in_place_reverse!
-    skip
+    # skip
     first = Element.new(1)
     second = Element.new(2)
     third = Element.new(3)
