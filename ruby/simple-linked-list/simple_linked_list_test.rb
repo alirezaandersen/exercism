@@ -43,7 +43,7 @@ class LinkedListTest < Minitest::Test
   end
 
   def test_list_pop_empty
-    skip
+    # skip
     list = SimpleLinkedList.new
     assert_nil list.pop
   end
