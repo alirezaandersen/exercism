@@ -35,7 +35,7 @@ class LinkedListTest < Minitest::Test
   end
 
   def test_list_pop
-    skip
+    # skip
     list = SimpleLinkedList.new
     element = Element.new(1)
     list.push(element)
