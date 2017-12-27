@@ -128,7 +128,7 @@ class LinkedListTest < Minitest::Test
   end
 
   def test_list_reverse_empty_list
-    skip
+    # skip
     list = SimpleLinkedList.new
     assert_equal list, list.reverse!
   end
