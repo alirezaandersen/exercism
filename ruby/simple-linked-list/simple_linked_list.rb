@@ -39,10 +39,18 @@ class SimpleLinkedList
   end
 
   def reverse!
-
+    previous = nil
+    pointer = @head
+    while pointer
+      temp = pointer.next
+      pointer.next = pointer
+      previous = pointer
+      pointer = temp
+    end
+    @head = previous
   end
 
-  
+
   private
 
   def create_from_array(array)
