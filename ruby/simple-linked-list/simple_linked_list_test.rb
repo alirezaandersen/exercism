@@ -20,7 +20,7 @@ class LinkedListTest < Minitest::Test
   end
 
   def test_element_next_can_be_assigned_to
-    skip
+    # skip
     first  = Element.new(1)
     second = Element.new(2)
     first.next = second
