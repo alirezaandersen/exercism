@@ -16,6 +16,14 @@ class Luhn
       index.odd? ? double_digit(digit) : digit
     end
   end
+  
+  def self.double_digit(digit)
+    if digit * 2 > 9
+      digit * 2 - 9
+    else
+      digit * 2
+    end
+  end
 end
 
 module BookKeeping
