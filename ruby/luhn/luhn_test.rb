@@ -54,7 +54,7 @@ class LuhnTest < Minitest::Test
   end
 
   def test_single_zero_with_space_is_invalid
-    skip
+    # skip
     refute Luhn.valid?(" 0")
   end
 
