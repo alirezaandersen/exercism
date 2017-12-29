@@ -49,7 +49,7 @@ class LuhnTest < Minitest::Test
   end
 
   def test_valid_strings_with_symbols_included_become_invalid
-    skip
+    # skip
     refute Luhn.valid?("055£ 444$ 285")
   end
 
