@@ -19,7 +19,7 @@ class LuhnTest < Minitest::Test
   end
 
   def test_a_simple_valid_sin_that_becomes_invalid_if_reversed
-    skip
+    # skip
     assert Luhn.valid?("59")
   end
 
