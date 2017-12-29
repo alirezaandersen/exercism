@@ -1,5 +1,6 @@
 require 'minitest/autorun'
 require_relative 'luhn'
+require 'mintest/pride'
 
 # Common test data version: 1.0.0 c826372
 class LuhnTest < Minitest::Test
