@@ -24,7 +24,7 @@ class LuhnTest < Minitest::Test
   end
 
   def test_a_valid_canadian_sin
-    skip
+    # skip
     assert Luhn.valid?("055 444 285")
   end
 
