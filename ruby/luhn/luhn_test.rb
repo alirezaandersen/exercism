@@ -34,7 +34,7 @@ class LuhnTest < Minitest::Test
   end
 
   def test_invalid_credit_card
-    skip
+    # skip
     refute Luhn.valid?("8273 1232 7352 0569")
   end
 
