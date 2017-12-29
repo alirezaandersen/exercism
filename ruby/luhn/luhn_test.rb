@@ -64,7 +64,7 @@ class LuhnTest < Minitest::Test
   end
 
   def test_input_digit_9_is_correctly_converted_to_output_digit_9
-    skip
+    # skip
     assert Luhn.valid?("091")
   end
 
