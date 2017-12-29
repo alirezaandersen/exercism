@@ -1,0 +1,3 @@
+class Luhn
+
+end
