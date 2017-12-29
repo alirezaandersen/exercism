@@ -9,6 +9,13 @@ class Luhn
     sum = digits_doubled.reduce(:+)
     (sum % 10).zero?
   end
+
+  def self.double_alternate_digits(string)
+    digits = string.chars.map(&:to_i)
+    digits.reverse.map.with_index do |digit, index|
+      index.odd? ? double_digit(digit) : digit
+    end
+  end
 end
 
 module BookKeeping
