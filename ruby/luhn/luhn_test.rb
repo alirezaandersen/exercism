@@ -39,7 +39,7 @@ class LuhnTest < Minitest::Test
   end
 
   def test_valid_strings_with_a_non_digit_included_become_invalid
-    skip
+    # skip
     refute Luhn.valid?("055a 444 285")
   end
 
