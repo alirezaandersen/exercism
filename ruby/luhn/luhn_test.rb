@@ -59,7 +59,7 @@ class LuhnTest < Minitest::Test
   end
 
   def test_more_than_a_single_zero_is_valid
-    skip
+    # skip
     assert Luhn.valid?("0000 0")
   end
 
