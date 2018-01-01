@@ -82,7 +82,7 @@ class SubstitutionCipherTest < Minitest::Test
   end
 
   def test_cipher_reversible
-    skip
+    # skip
     plaintext = 'abcdefghij'
     assert_equal(plaintext, @cipher.decode(@cipher.encode(plaintext)))
   end
