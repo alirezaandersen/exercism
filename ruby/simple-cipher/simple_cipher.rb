@@ -23,4 +23,9 @@ class Cipher
   def validate_key(key)
     raise ArgumentError unless key.match(/^[a-z]+$/)
   end
+
+  def encode_char(char, index)
+    char + key_offsets[index]
+  end
+
 end
