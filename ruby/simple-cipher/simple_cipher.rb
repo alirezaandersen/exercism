@@ -1,3 +1,4 @@
+require 'pry'
 class Cipher
   attr_reader :key
 
@@ -7,8 +8,9 @@ class Cipher
   end
 
   def encode(string)
+    binding.pry
 
-  end 
+  end
 
 
   private

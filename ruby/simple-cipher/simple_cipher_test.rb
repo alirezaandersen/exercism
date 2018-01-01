@@ -7,6 +7,7 @@ class RandomKeyCipherTest < Minitest::Test
   end
 
   def test_cipher_key_is_letters
+    skipped
     assert_match(/\A[a-z]+\z/, @cipher.key)
   end
 
