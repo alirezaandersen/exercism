@@ -108,7 +108,7 @@ class PseudoShiftCipherTest < Minitest::Test
   end
 
   def test_cipher_encode
-    skip
+    # skip
     plaintext = 'aaaaaaaaaa'
     ciphertext = 'dddddddddd'
     assert_equal(ciphertext, @cipher.encode(plaintext))
