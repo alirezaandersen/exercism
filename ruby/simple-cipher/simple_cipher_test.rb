@@ -21,7 +21,7 @@ class RandomKeyCipherTest < Minitest::Test
   end
 
   def test_cipher_decode
-    skip
+    # skip
     plaintext = 'aaaaaaaaaa'
     assert_equal(plaintext, @cipher.decode(@cipher.key[0, 10]))
   end
