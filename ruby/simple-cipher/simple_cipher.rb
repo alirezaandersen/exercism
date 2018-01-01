@@ -11,6 +11,9 @@ class Cipher
     convert_string(string, :encode_char)
   end
 
+  def decode(string)
+    convert_string(string, :decode_char)
+  end
 
   private
 
