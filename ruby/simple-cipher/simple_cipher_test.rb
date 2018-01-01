@@ -63,7 +63,7 @@ class SubstitutionCipherTest < Minitest::Test
   end
 
   def test_cipher_key_is_as_submitted
-    skip
+    # skip
     assert_equal(@cipher.key, @key)
   end
 
