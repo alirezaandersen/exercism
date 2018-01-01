@@ -35,6 +35,10 @@ class Cipher
     char + key_offsets[index]
   end
 
+  def decode_char(char, index)
+    char + key_offsets[index]
+  end
+  
   def key_offsets
     @key_offsets ||= key.bytes.map { |c| c - 'a'.ord }
   end
