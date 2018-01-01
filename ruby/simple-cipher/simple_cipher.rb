@@ -2,9 +2,13 @@ require 'pry'
 class Cipher
   attr_reader :key
 
-  def initialize(key = "aaaaaaaaaa")
+  def initialize(key = default_key)
     validate_key(key)
     @key = key
+  end
+
+  def default_key
+    "dddddddddd"
   end
 
   def encode(string)
@@ -16,7 +20,6 @@ class Cipher
   end
 
   private
-
   def convert_string(string, method)
     string.bytes.each_with_index.map do |char, index|
       char_wrap(self.send(method, char, index))
@@ -36,9 +39,9 @@ class Cipher
   end
 
   def decode_char(char, index)
-    char + key_offsets[index]
+    char - key_offsets[index]
   end
-  
+
   def key_offsets
     @key_offsets ||= key.bytes.map { |c| c - 'a'.ord }
   end
