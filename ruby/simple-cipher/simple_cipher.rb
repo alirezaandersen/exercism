@@ -20,6 +20,10 @@ class Cipher
     end.map(&:chr).join
   end
 
+  def char_wrap(char)
+    (char - 'a'.ord) % ('a'..'z').to_a.length + 'a'.ord
+  end
+
   def validate_key(key)
     raise ArgumentError unless key.match(/^[a-z]+$/)
   end
