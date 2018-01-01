@@ -6,6 +6,10 @@ class Cipher
     @key = key
   end
 
+  def encode(string)
+
+  end 
+
 
   private
 
