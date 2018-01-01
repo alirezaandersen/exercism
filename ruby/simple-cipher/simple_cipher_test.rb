@@ -42,7 +42,7 @@ class IncorrectKeyCipherTest < Minitest::Test
   end
 
   def test_cipher_with_numeric_key
-    skip
+    # skip
     assert_raises ArgumentError do
       Cipher.new('12345')
     end
