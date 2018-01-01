@@ -68,7 +68,7 @@ class SubstitutionCipherTest < Minitest::Test
   end
 
   def test_cipher_encode
-    skip
+    # skip
     plaintext = 'aaaaaaaaaa'
     ciphertext = 'abcdefghij'
     assert_equal(ciphertext, @cipher.encode(plaintext))
