@@ -4,7 +4,7 @@ require_relative 'wordy'
 # Common test data version: 1.0.0 5b8ad58
 class WordyTest < Minitest::Test
   def test_addition
-    skip
+    # skip
     question = 'What is 1 plus 1?'
     assert_equal(2, WordProblem.new(question).answer)
   end
@@ -123,7 +123,7 @@ class WordyTest < Minitest::Test
   # http://ruby-doc.org/docs/ruby-doc-bundle/UsersGuide/rg/constants.html
 
   def test_bookkeeping
-    # skip
+    skip
     assert_equal 1, BookKeeping::VERSION
   end
 end
