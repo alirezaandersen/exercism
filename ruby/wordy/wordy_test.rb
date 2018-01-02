@@ -16,7 +16,7 @@ class WordyTest < Minitest::Test
   end
 
   def test_addition_with_negative_numbers
-    skip
+    # skip
     question = 'What is -1 plus -10?'
     assert_equal(-11, WordProblem.new(question).answer)
   end
@@ -127,4 +127,5 @@ class WordyTest < Minitest::Test
     assert_equal 1, BookKeeping::VERSION
   end
 end
+#
 # 
