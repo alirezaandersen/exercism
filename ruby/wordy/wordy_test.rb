@@ -5,7 +5,7 @@ require_relative 'wordy'
 class WordyTest < Minitest::Test
   def test_addition
     # skip
-    question = 'What is 1 plus 1?'
+    question = 'What is -1 plus 1?'
     assert_equal(2, WordProblem.new(question).answer)
   end
 
