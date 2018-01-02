@@ -1,3 +1,3 @@
-class Wordy
+class WordProblem
 
-end 
+end
