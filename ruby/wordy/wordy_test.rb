@@ -1,5 +1,6 @@
 require 'minitest/autorun'
 require_relative 'wordy'
+require 'minitest/pride'
 
 # Common test data version: 1.0.0 5b8ad58
 class WordyTest < Minitest::Test
