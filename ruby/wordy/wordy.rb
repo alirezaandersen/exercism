@@ -11,6 +11,12 @@ class WordProblem
     if mathematic_parser.nil?
       raise ArgumentError
     end
+    converter = []
+    mathematic_parser.select do |s|
+      converter << operators(s)
+      # binding.pry
+    end
+    binding.pry # mathematic_parser.map {|s| s.gsub(/plus/," +")}
   end
 
   def mathematic_parser
