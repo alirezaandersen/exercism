@@ -22,7 +22,7 @@ class WordyTest < Minitest::Test
   end
 
   def test_large_addition
-    skip
+    # skip
     question = 'What is 123 plus 45678?'
     assert_equal(45801, WordProblem.new(question).answer)
   end
@@ -127,5 +127,6 @@ class WordyTest < Minitest::Test
     assert_equal 1, BookKeeping::VERSION
   end
 end
+#
 #
 # 
