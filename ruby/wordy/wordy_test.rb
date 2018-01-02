@@ -98,7 +98,7 @@ class WordyTest < Minitest::Test
   end
 
   def test_non_math_question
-    skip
+    # skip
     question = 'Who is the President of the United States?'
     assert_raises ArgumentError do
       WordProblem.new(question).answer
