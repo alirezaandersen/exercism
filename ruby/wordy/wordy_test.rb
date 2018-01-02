@@ -84,7 +84,7 @@ class WordyTest < Minitest::Test
   end
 
   def test_multiple_division
-    skip
+    # skip
     question = 'What is -12 divided by 2 divided by -3?'
     assert_equal(2, WordProblem.new(question).answer)
   end
