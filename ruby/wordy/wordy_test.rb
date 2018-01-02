@@ -70,7 +70,7 @@ class WordyTest < Minitest::Test
   end
 
   def test_multiple_multiplication
-    skip
+    # skip
     question = 'What is 2 multiplied by -2 multiplied by 3?'
     assert_equal(-12, WordProblem.new(question).answer)
   end
@@ -127,6 +127,6 @@ class WordyTest < Minitest::Test
     assert_equal 1, BookKeeping::VERSION
   end
 end
-
+# 
 #
 #
