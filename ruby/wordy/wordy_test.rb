@@ -40,7 +40,7 @@ class WordyTest < Minitest::Test
   end
 
   def test_division
-    skip
+    # skip
     question = 'What is 33 divided by -3?'
     assert_equal(-11, WordProblem.new(question).answer)
   end
@@ -129,5 +129,5 @@ class WordyTest < Minitest::Test
 end
 #
 #
-
+# 
 #
