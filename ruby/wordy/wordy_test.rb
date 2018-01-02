@@ -90,7 +90,7 @@ class WordyTest < Minitest::Test
   end
 
   def test_unknown_operation
-    skip
+    # skip
     question = 'What is 52 cubed?'
     assert_raises ArgumentError do
       WordProblem.new(question).answer
