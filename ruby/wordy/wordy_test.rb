@@ -58,7 +58,7 @@ class WordyTest < Minitest::Test
   end
 
   def test_multiple_subtraction
-    skip
+    # skip
     question = 'What is 20 minus 4 minus 13?'
     assert_equal(3, WordProblem.new(question).answer)
   end
@@ -128,5 +128,5 @@ class WordyTest < Minitest::Test
   end
 end
 #
-
+# 
 #
