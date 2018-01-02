@@ -11,5 +11,9 @@ class WordProblem
     if mathematic_parser.nil?
       raise ArgumentError
     end
-  end 
+  end
+
+  def mathematic_parser
+    question.scan(/\-?\d+|plus|minus|divided by|multiplied by/)
+  end
 end
