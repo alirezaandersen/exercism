@@ -34,7 +34,7 @@ class WordyTest < Minitest::Test
   end
 
   def test_multiplication
-    skip
+    # skip
     question = 'What is -3 multiplied by 25?'
     assert_equal(-75, WordProblem.new(question).answer)
   end
@@ -129,5 +129,5 @@ class WordyTest < Minitest::Test
 end
 #
 #
+
 #
-# 
