@@ -4,8 +4,8 @@ require_relative 'wordy'
 # Common test data version: 1.0.0 5b8ad58
 class WordyTest < Minitest::Test
   def test_addition
-    # skip
-    question = 'What is -1 plus 1?'
+    skip
+    question = 'What is 1 plus 1?'
     assert_equal(2, WordProblem.new(question).answer)
   end
 
@@ -76,7 +76,7 @@ class WordyTest < Minitest::Test
   end
 
   def test_addition_and_multiplication
-    skip
+    # skip
     question = 'What is -3 plus 7 multiplied by -2?'
     answer = WordProblem.new(question).answer
     message = "You should ignore order of precedence. -3 + 7 * -2 = -8, not #{answer}"

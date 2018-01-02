@@ -1,6 +1,4 @@
-require 'pry'
 class WordProblem
-
   attr_reader :question
 
   def initialize(question)
@@ -8,31 +6,41 @@ class WordProblem
   end
 
   def answer
-    if mathematic_parser.nil?
-      raise ArgumentError
-    end
-    converter = []
-    mathematic_parser.select do |s|
-      converter << operators(s)
-      # binding.pry
-    end
-    binding.pry # mathematic_parser.map {|s| s.gsub(/plus/," +")}
+    template = equation(question)
+    soultion(template).to_i
   end
 
-  def mathematic_parser
-    question.scan(/\-?\d+|plus|minus|divided by|multiplied by/)
+  def equation(question)
+    question.gsub(/^What is (.*)\?$/, '\1')
   end
 
-  def operators(index)
-    if  index.include?("-") || index =~ /\A\d+\z/
-      return index.to_i
+  def soultion(template)
+    template.dup.tap do |current|
+      while !eval_complete?(current)
+        operator_validation(current) or raise ArgumentError
+      end
     end
+  end
 
-    case index
-    when 'plus' then :+
-    when 'minus' then :-
-    when 'multiplied by' then :*
-    when 'divided by' then :/
+  def eval_complete?(template)
+    template == template.to_i.to_s
+  end
+
+  def operator_validation(template)
+    operators.any? do |word, symbol|
+      template.gsub!(/^([-0-9]+) #{word} ([-0-9]+)/) do
+        first, second = $1.to_i, $2.to_i
+        first.send(symbol, second)
+      end
     end
+  end
+
+  def operators
+    {
+      'plus'          => '+',
+      'minus'         => '-',
+      'multiplied by' => '*',
+      'divided by'    => '/'
+    }
   end
 end
