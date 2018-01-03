@@ -111,5 +111,3 @@ class WordyTest < Minitest::Test
     assert_equal 1, BookKeeping::VERSION
   end
 end
-#
-#
