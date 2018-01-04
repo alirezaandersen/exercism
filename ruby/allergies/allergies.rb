@@ -9,5 +9,8 @@ class Allergies
   def allergic_to?(item)
     0 != @flags & 1 << ALLERGENS.find_index(item)
   end
-  
+
+  def list
+    ALLERGENS.select { |i| allergic_to?(i) }
+  end
 end
