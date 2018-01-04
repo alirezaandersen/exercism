@@ -6,4 +6,8 @@ class Allergies
     @score = score
   end
 
+  def allergic_to?(item)
+    0 != @flags & 1 << ALLERGENS.find_index(item)
+  end
+  
 end
