@@ -44,7 +44,7 @@ class AllergiesTest < Minitest::Test
   end
 
   def test_allergic_to_just_strawberries
-    skip
+    # skip
     allergies = Allergies.new(8)
     assert_equal %w(strawberries), allergies.list
   end
