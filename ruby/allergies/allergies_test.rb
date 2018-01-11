@@ -74,7 +74,7 @@ class AllergiesTest < Minitest::Test
   end
 
   def test_ignore_non_allergen_score_parts
-    skip
+    # skip
     allergies = Allergies.new(509)
     assert_equal %w(eggs shellfish strawberries tomatoes chocolate pollen cats), allergies.list
   end
