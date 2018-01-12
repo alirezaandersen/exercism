@@ -1,5 +1,6 @@
 require 'minitest/autorun'
 require_relative 'allergies'
+require 'minitest/pride'
 
 # Common test data version: 1.0.0 879bc89
 class AllergiesTest < Minitest::Test
