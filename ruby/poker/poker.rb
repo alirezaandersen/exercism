@@ -4,6 +4,10 @@ class Poker
       @hands = hand_arrays.map { |hand_array| Hand.new(hand_array) }
   end
 
+  def best_hand
+    hands.select { |hand| hand.score == highest_score }.map(&:to_a)
+  end
+
 end
 
 
@@ -92,7 +96,11 @@ class Hand
   def rank_values
     cards.map(&:rank_value).sort
   end
-  
+
+  def suits
+    cards.map(&:suit)
+  end
+
 end
 
 class Card
