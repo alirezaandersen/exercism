@@ -72,6 +72,12 @@ class Hand
   def full_house?
     rank_count_totals == [2, 3]
   end
+
+  def four_of_a_kind?
+    rank_count_totals.max == 4
+  end
+
+  
 end
 
 class Card
