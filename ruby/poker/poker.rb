@@ -56,6 +56,10 @@ class Hand
   def three_of_a_kind?
     rank_count_totals.max == 3
   end
+
+  def five_high_straight?
+    rank_values == [2, 3, 4, 5, 14]
+  end
 end
 
 class Card
