@@ -60,6 +60,11 @@ class Hand
   def five_high_straight?
     rank_values == [2, 3, 4, 5, 14]
   end
+
+  def straight?
+    rank_values.each_cons(2).all? { |a, b| a + 1 == b }
+  end
+
 end
 
 class Card
