@@ -41,6 +41,10 @@ class Hand
      straight?, flush?, full_house?, four_of_a_kind?, straight_flush?]
   end
 
+  def high_card?
+      rank_count_totals.max == 1
+  end
+
 end
 
 class Card
