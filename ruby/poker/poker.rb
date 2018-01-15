@@ -65,6 +65,9 @@ class Hand
     rank_values.each_cons(2).all? { |a, b| a + 1 == b }
   end
 
+  def flush?
+      suits.uniq.count == 1
+  end
 end
 
 class Card
