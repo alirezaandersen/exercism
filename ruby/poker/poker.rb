@@ -85,6 +85,9 @@ class Hand
      rank_count_hash.values.sort
   end
 
+  def rank_count_hash
+    rank_values.each_with_object(Hash.new(0)) { |value, count| count[value] += 1 }
+  end
 end
 
 class Card
