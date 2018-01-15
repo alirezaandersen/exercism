@@ -66,7 +66,11 @@ class Hand
   end
 
   def flush?
-      suits.uniq.count == 1
+    suits.uniq.count == 1
+  end
+
+  def full_house?
+    rank_count_totals == [2, 3]
   end
 end
 
