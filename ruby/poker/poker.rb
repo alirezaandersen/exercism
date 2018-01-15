@@ -77,7 +77,10 @@ class Hand
     rank_count_totals.max == 4
   end
 
-  
+  def straight_flush?
+    straight? && flush?
+  end
+
 end
 
 class Card
