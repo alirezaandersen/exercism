@@ -5,3 +5,8 @@ class Poker
   end
 
 end
+
+
+class Hand
+
+end
