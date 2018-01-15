@@ -49,6 +49,10 @@ class Hand
     rank_count_totals.max == 2
   end
 
+  def two_pair?
+    rank_count_totals == [1, 2, 2]
+  end
+
   
 end
 
