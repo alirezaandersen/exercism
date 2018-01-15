@@ -9,9 +9,21 @@ end
 
 class Hand
 
+  attr_reader :hand_array, :cards
+
   def initialize(hand_array)
     @hand_array = hand_array
     @cards = hand_array.map { |rank_and_suit| Card.new(rank_and_suit) }
+  end
+
+  def score
+    [hand_score, card_score].flatten
+  end
+
+  private
+
+  def hand_score
+    scoring_hands.map.with_index { |scoring_hand, i| i if scoring_hand }.compact.max
   end
   
 end
