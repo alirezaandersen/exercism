@@ -1,5 +1,6 @@
 require 'minitest/autorun'
 require_relative 'poker'
+rquire 'minitest/pride'
 
 class PokerTest < Minitest::Test
   def test_one_hand
