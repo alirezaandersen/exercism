@@ -9,6 +9,11 @@ end
 
 class Hand
 
+  def initialize(hand_array)
+    @hand_array = hand_array
+    @cards = hand_array.map { |rank_and_suit| Card.new(rank_and_suit) }
+  end
+  
 end
 
 class Card
@@ -27,5 +32,5 @@ class Card
   def rank_values
     RANK_VALUES[rank]
   end
-  
+
 end
