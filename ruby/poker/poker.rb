@@ -45,6 +45,11 @@ class Hand
       rank_count_totals.max == 1
   end
 
+  def one_pair?
+    rank_count_totals.max == 2
+  end
+
+  
 end
 
 class Card
