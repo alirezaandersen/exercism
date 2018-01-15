@@ -53,7 +53,9 @@ class Hand
     rank_count_totals == [1, 2, 2]
   end
 
-  
+  def three_of_a_kind?
+    rank_count_totals.max == 3
+  end
 end
 
 class Card
