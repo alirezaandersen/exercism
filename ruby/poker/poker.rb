@@ -25,6 +25,10 @@ class Hand
   def hand_score
     scoring_hands.map.with_index { |scoring_hand, i| i if scoring_hand }.compact.max
   end
+
+  def card_score
+    five_high_straight? ? [5, 4, 3, 2, 1] : card_score_array
+  end
   
 end
 
