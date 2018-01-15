@@ -1,11 +1,19 @@
 class Poker
 
+  attr_reader :hands
+
   def initialize(hand_arrays)
       @hands = hand_arrays.map { |hand_array| Hand.new(hand_array) }
   end
 
   def best_hand
-    hands.select { |hand| hand.score == highest_score }.map(&:to_a)
+    hands.select { |hand| hand.score == highest_score }.map(&:hand_array)
+  end
+
+  private
+
+  def highest_score
+    hands.map(&:score).max
   end
 
 end
@@ -116,8 +124,12 @@ class Card
                  '7' => 7, '8' => 8, '9' => 9, '10' => 10,
                  'J' => 11, 'Q' => 12, 'K' => 13, 'A' => 14}
 
-  def rank_values
+  def rank_value
     RANK_VALUES[rank]
   end
 
 end
+
+module BookKeeping
+  VERSION = 2
+end 
