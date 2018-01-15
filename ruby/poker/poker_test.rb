@@ -105,7 +105,7 @@ class PokerTest < Minitest::Test
   end
 
   def test_5_high_straight_vs_other_straight
-    skip
+    # skip
     straight_to_jack = %w(8H 7C 10D 9D JH)
     straight_to_5 = %w(4S AH 3S 2D 5H)
     game = Poker.new([straight_to_jack, straight_to_5])
