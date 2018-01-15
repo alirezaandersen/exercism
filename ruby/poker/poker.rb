@@ -29,6 +29,13 @@ class Hand
   def card_score
     five_high_straight? ? [5, 4, 3, 2, 1] : card_score_array
   end
+
+  def card_score_array
+    rank_count_hash
+        .sort_by { |rank, count| [-count, -rank] }
+        .map { |count_rank_array| count_rank_array[0] }
+  end
+
   
 end
 
