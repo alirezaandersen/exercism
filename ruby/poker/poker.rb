@@ -1,8 +1,7 @@
 class Poker
 
-  def initialize(player_hand, dealer_hand)
-    @player_hand = player_hand
-    @dealer_hand = dealer_hand
-  end 
+  def initialize(hand_arrays)
+      @hands = hand_arrays.map { |hand_array| Hand.new(hand_array) }
+  end
 
 end
