@@ -81,6 +81,10 @@ class Hand
     straight? && flush?
   end
 
+  def rank_count_totals
+     rank_count_hash.values.sort
+  end
+
 end
 
 class Card
