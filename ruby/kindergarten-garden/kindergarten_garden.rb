@@ -6,4 +6,8 @@ class Garden
     assign_pots
   end
 
+  def default_children
+    %w(Alice Bob Charlie David Eve Fred Ginny Harriet Ileana Joseph Kincaid Larry)
+  end
+
 end
