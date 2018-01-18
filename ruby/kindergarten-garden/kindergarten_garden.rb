@@ -1,5 +1,7 @@
 class Garden
 
+  attr_reader :pots, :students
+  
   def initialize(diagram, students = default_children)
     @pots = parse(diagram)
     @students = students.sort
@@ -11,7 +13,7 @@ class Garden
   end
 
   private
-  
+
   def parse(diagram)
     diagram.split("\n").map do |row|
       row.split('').map do |sign|
