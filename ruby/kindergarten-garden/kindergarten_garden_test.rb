@@ -42,7 +42,7 @@ class TestFullGarden < Minitest::Test
   end
 
   def test_bob
-    skip
+    # skip
     assert_equal [:clover, :grass, :clover, :clover], garden.bob
   end
 
