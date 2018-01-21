@@ -118,7 +118,7 @@ class DisorderedTest < Minitest::Test
   end
 
   def test_samantha
-    skip
+    # skip
     assert_equal [:grass, :violets, :clover, :grass], garden.samantha
   end
 
