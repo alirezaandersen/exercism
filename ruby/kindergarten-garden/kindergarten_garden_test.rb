@@ -82,7 +82,7 @@ class TestFullGarden < Minitest::Test
   end
 
   def test_joseph
-    skip
+    # skip
     assert_equal [:violets, :clover, :violets, :grass], garden.joseph
   end
 
