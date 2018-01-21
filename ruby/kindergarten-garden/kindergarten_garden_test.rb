@@ -99,7 +99,7 @@ end
 
 class DisorderedTest < Minitest::Test
   def setup
-    skip
+    # skip
     diagram = "VCRRGVRG\nRVGCCGCV"
     students = %w(Samantha Patricia Xander Roger)
     @garden = Garden.new(diagram, students)
