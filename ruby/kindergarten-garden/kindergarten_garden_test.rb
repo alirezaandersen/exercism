@@ -123,7 +123,7 @@ class DisorderedTest < Minitest::Test
   end
 
   def test_xander
-    skip
+    # skip
     assert_equal [:radishes, :grass, :clover, :violets], garden.xander
   end
 end
