@@ -108,7 +108,7 @@ class DisorderedTest < Minitest::Test
   attr_reader :garden
 
   def test_patricia
-    skip
+    # skip
     assert_equal [:violets, :clover, :radishes, :violets], garden.patricia
   end
 
