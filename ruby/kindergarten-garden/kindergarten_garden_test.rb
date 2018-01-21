@@ -29,7 +29,7 @@ end
 
 class TestFullGarden < Minitest::Test
   def setup
-    skip
+    # skip
     diagram = "VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV"
     @garden = Garden.new(diagram)
   end
