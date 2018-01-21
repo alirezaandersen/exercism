@@ -37,7 +37,7 @@ class TestFullGarden < Minitest::Test
   attr_reader :garden
 
   def test_alice
-    skip
+    # skip
     assert_equal [:violets, :radishes, :violets, :radishes], garden.alice
   end
 
