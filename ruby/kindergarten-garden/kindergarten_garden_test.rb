@@ -1,5 +1,6 @@
 require 'minitest/autorun'
 require_relative 'kindergarten_garden'
+require 'minitest/pride'
 
 class GardenTest < Minitest::Test
   def test_alices_garden
