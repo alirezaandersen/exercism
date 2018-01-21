@@ -87,7 +87,7 @@ class TestFullGarden < Minitest::Test
   end
 
   def test_kincaid
-    skip
+    # skip
     assert_equal [:grass, :clover, :clover, :grass], garden.kincaid
   end
 
