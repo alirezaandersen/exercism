@@ -77,7 +77,7 @@ class TestFullGarden < Minitest::Test
   end
 
   def test_ileana
-    skip
+    # skip
     assert_equal [:grass, :clover, :violets, :clover], garden.ileana
   end
 
