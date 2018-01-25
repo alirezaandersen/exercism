@@ -15,6 +15,11 @@ class Deque
     end
   end
 
+  def unshift(value)
+    push(value)
+    @front = @front.prev
+  end 
+
 end
 
 class Element
