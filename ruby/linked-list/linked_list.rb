@@ -14,6 +14,7 @@ class Element
 
   attr_accessor :prev
   attr_accessor :next
-  
+  attr_reader :datum
 
+  
 end
