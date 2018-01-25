@@ -62,7 +62,7 @@ class DequeTest < Minitest::Test
   end
 
   def test_shift_to_empty
-    skip
+    # skip
     deque = Deque.new
     deque.unshift(10)
     assert_equal 10, deque.shift
