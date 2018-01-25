@@ -9,3 +9,8 @@ class Deque
   end
 
 end
+
+class Element
+
+
+end 
