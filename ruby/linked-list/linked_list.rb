@@ -13,5 +13,7 @@ end
 class Element
 
   attr_accessor :prev
+  attr_accessor :next
+  
 
 end
