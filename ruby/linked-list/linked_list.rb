@@ -1,4 +1,7 @@
 class Deque
 
-
-end 
+  def initialize
+    @front = nil
+  end
+  
+end
