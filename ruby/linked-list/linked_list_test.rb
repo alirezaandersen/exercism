@@ -38,7 +38,7 @@ class DequeTest < Minitest::Test
   end
 
   def test_example
-    skip
+    # skip
     deque = Deque.new
     deque.push(10)
     deque.push(20)
