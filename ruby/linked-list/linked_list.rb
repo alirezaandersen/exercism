@@ -5,7 +5,14 @@ class Deque
   end
 
   def push(value)
-
+    if @front.nil?
+      @front = Element.new(value)
+    else
+      back = @front.prev
+      n = Element.new(value, @front, back)
+      back.next = n
+      @front.prev = n
+    end
   end
 
 end
