@@ -12,5 +12,6 @@ end
 
 class Element
 
+  attr_accessor :prev
 
-end 
+end
