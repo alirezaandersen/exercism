@@ -18,7 +18,12 @@ class Deque
   def unshift(value)
     push(value)
     @front = @front.prev
-  end 
+  end
+
+  def pop
+    @front = @front.prev
+    shift
+  end
 
 end
 
