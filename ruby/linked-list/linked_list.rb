@@ -1,5 +1,4 @@
 class Deque
-
   def initialize
     @front = nil
   end
@@ -26,7 +25,7 @@ class Deque
   end
 
   def shift
-    value = @font.datum
+    value = @front.datum
     front = @front.next
     back = @front.prev
     if front.equal?(@front)
@@ -37,11 +36,10 @@ class Deque
       @front = front
     end
     value
-  end 
+  end
 end
 
 class Element
-
   attr_accessor :prev
   attr_accessor :next
   attr_reader :datum
