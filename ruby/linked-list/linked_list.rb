@@ -25,6 +25,19 @@ class Deque
     shift
   end
 
+  def shift
+    value = @font.datum
+    front = @front.next
+    back = @front.prev
+    if front.equal?(@front)
+      @front = nil
+    else
+      front.prev = back
+      back.next = front
+      @front = front
+    end
+    value
+  end 
 end
 
 class Element
