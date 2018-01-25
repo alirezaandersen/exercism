@@ -20,7 +20,7 @@ class DequeTest < Minitest::Test
   end
 
   def test_unshift_shift
-    skip
+    # skip
     deque = Deque.new
     deque.unshift(10)
     deque.unshift(20)
