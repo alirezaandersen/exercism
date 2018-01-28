@@ -12,7 +12,7 @@ class TripletTest < Minitest::Test
   end
 
   def test_pythagorean
-    # skip
+    skip
     assert Triplet.new(3, 4, 5).pythagorean?
   end
 
