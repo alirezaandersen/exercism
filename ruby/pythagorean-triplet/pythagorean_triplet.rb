@@ -1,11 +1,15 @@
 class Triplet
-
-  def initalize(a, b, c)
+  
+  def initialize(a, b, c)
     @sides = [a, b, c]
   end
 
   def sum
     @sides.inject(0, :+)
+  end
+
+  def product
+    @sides.inject(1, :*)
   end
 
   def pythagorean?
@@ -25,9 +29,8 @@ class Triplets
     min_factor = params[:min_factor] || 1
     max_factor = params[:max_factor]
     sum        = params[:sum] || false
-    @list = (min_factor..max_factor).to_a.combination(3)
-      .each_with_index([]) do |(a, b, c) , acc|
-      t = Triplet.new(a, b , c)
+    @list = (min_factor..max_factor).to_a.combination(3).each_with_object([]) do |(a, b, c), acc|
+      t = Triplet.new(a, b, c)
       acc.push t if t.pythagorean? && (!sum || t.sum == sum)
     end
   end
