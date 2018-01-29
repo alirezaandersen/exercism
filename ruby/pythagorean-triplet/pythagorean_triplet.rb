@@ -1,0 +1,3 @@
+class Triplet
+
+end 
