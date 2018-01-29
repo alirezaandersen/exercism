@@ -13,5 +13,8 @@ class Triplet
     a**2 + b**2 == c**2
   end
 
-  def sef.where
+  def sef.where(params)
+    Triplets.new(params).to_a
+  end
+
 end
