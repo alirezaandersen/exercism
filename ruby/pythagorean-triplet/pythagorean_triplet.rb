@@ -23,7 +23,7 @@ class Triplets
 
   def initialize(params)
     min_factor = params[:min_factor] || 1
-    
+    max_factor = params[:max_factor]
   end
 
 end
