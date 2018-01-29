@@ -6,6 +6,11 @@ class Triplet
 
   def sum
     @sides.inject(0, :+)
+  end
+
+  def pythagorean?
+    (a, b, c) = @sides
+    a**2 + b**2 == c**2
   end 
 
 end
