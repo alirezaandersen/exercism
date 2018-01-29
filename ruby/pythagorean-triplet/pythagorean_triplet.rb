@@ -32,6 +32,8 @@ class Triplets
     end
   end
 
-  
+  def to_a
+    @list
+  end 
 
 end
