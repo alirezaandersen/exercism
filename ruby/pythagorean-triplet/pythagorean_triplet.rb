@@ -1,3 +1,6 @@
 class Triplet
 
-end 
+  def initalize(a, b, c)
+
+  end 
+end
