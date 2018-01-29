@@ -18,3 +18,8 @@ class Triplet
   end
 
 end
+
+class Triplets
+
+
+end 
