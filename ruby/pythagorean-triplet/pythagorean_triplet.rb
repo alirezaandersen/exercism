@@ -22,7 +22,8 @@ end
 class Triplets
 
   def initialize(params)
-
+    min_factor = params[:min_factor] || 1
+    
   end
 
 end
