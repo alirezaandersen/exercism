@@ -11,6 +11,7 @@ class Triplet
   def pythagorean?
     (a, b, c) = @sides
     a**2 + b**2 == c**2
-  end 
+  end
 
+  def sef.where
 end
