@@ -21,5 +21,8 @@ end
 
 class Triplets
 
+  def initialize(params)
 
-end 
+  end
+
+end
