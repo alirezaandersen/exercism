@@ -1,6 +1,7 @@
 class Triplet
 
   def initalize(a, b, c)
-
-  end 
+    @sides = [a, b, c]
+  end
+   
 end
