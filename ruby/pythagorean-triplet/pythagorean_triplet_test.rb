@@ -1,5 +1,6 @@
 require 'minitest/autorun'
 require_relative 'pythagorean_triplet'
+require 'minitest/pride'
 
 class TripletTest < Minitest::Test
   def test_sum
