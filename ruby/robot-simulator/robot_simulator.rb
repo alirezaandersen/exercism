@@ -7,4 +7,8 @@ class Robot
     self.y = y
   end
 
+  def coordinates
+    [x, y]
+  end
+
 end
