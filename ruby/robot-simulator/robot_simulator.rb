@@ -1,3 +1,6 @@
 class Robot
 
-end 
+  attr_accessor :x, :y, :bearing
+
+
+end
