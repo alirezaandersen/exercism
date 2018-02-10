@@ -11,4 +11,9 @@ class Robot
     [x, y]
   end
 
+  def orient(direction)
+    fail ArgumentError unless cardinal_directions.include?(direction)
+    self.bearing = direction
+  end
+
 end
