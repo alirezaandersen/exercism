@@ -17,15 +17,15 @@ class Robot
   end
 
   def advance
-     if bearing == :north
-       self.y += 1
-     elsif bearing == :south
-       self.y -= 1
-     elsif bearing == :west
-       self.x -= 1
-     else
-       self.x += 1
-     end
+   if bearing == :north
+     self.y += 1
+   elsif bearing == :south
+     self.y -= 1
+   elsif bearing == :west
+     self.x -= 1
+   else
+     self.x += 1
    end
+ end
 
 end
