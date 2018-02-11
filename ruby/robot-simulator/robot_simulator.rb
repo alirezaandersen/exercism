@@ -35,4 +35,6 @@ class Robot
  def turn_left
    turn(:-)
  end
+
+ private
 end
