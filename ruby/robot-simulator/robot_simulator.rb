@@ -28,4 +28,7 @@ class Robot
    end
  end
 
+ def turn_right
+   turn(:+)
+ end
 end
