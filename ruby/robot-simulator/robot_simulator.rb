@@ -46,4 +46,12 @@ class Robot
  def cardinal_directions
   [:north, :east, :south, :west]
  end
+
+end
+
+
+class Simulator
+
+
+
 end
