@@ -49,7 +49,6 @@ class Robot
 
 end
 
-
 class Simulator
 
   def instructions(text)
@@ -77,4 +76,5 @@ class Simulator
       'A' => :advance
     }[char]
   end
+
 end
