@@ -24,7 +24,7 @@ class RobotTurningTest < Minitest::Test
   end
 
   def test_turn_right_from_north
-    skip
+    # skip
     robot.orient(:north)
     robot.turn_right
     assert_equal :east, robot.bearing
