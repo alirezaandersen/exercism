@@ -68,4 +68,13 @@ class Simulator
   end
 
   private
+
+
+  def command(char)
+    {
+      'R' => :turn_right,
+      'L' => :turn_left,
+      'A' => :advance
+    }[char]
+  end
 end
