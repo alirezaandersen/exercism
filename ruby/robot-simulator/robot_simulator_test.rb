@@ -80,7 +80,7 @@ class RobotTurningTest < Minitest::Test
   end
 
   def test_robot_coordinates
-    skip
+    # skip
     robot.at(3, 0)
     assert_equal [3, 0], robot.coordinates
   end
