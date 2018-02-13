@@ -130,7 +130,7 @@ class RobotSimulatorTest < Minitest::Test
   end
 
   def test_instructions_for_turning_left
-    skip
+    # skip
     assert_equal [:turn_left], simulator.instructions('L')
   end
 
