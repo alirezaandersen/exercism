@@ -67,5 +67,5 @@ class Simulator
     end
   end
 
-  
+  private
 end
