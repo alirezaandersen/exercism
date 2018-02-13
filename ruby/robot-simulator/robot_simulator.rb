@@ -56,4 +56,9 @@ class Simulator
     text.split('').map { |char| command(char) }
   end
 
+  def place(robot, position)
+    robot.at(position[:x], position[:y])
+    robot.orient(position[:direction])
+  end
+  
 end
