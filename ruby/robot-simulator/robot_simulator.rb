@@ -60,5 +60,12 @@ class Simulator
     robot.at(position[:x], position[:y])
     robot.orient(position[:direction])
   end
+
+  def evaluate(robot, text)
+    instructions(text).each do |command|
+      robot.send(command)
+    end
+  end
+
   
 end
