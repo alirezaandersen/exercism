@@ -52,6 +52,8 @@ end
 
 class Simulator
 
-
+  def instructions(text)
+    text.split('').map { |char| command(char) }
+  end
 
 end
