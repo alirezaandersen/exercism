@@ -16,7 +16,10 @@ module TwelveDays
       "On the first day of Christmas my true love gave to me, a Partridge in a Pear Tree.\n"
     when 2
       "On the second day of Christmas my true love gave to me, two Turtle Doves, and a Partridge in a Pear Tree.\n"
-
+    when 3
+      "On the third day of Christmas my true love gave to me, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.\n"
+    when 4
+      "On the fourth day of Christmas my true love gave to me, four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.\n"
     end
   end
 end
