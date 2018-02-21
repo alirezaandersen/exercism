@@ -12,7 +12,6 @@ class TwelveDaysTest < Minitest::Test
   # There's no need to submit the tests you write, unless you
   # specifically want feedback on them.
   def test_the_whole_song
-    # skip
     song_file = File.expand_path('../song.txt', __FILE__)
     expected = IO.read(song_file)
     assert_equal expected, TwelveDays.song
