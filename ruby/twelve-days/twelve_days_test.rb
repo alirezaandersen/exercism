@@ -1,5 +1,6 @@
 require 'minitest/autorun'
 require_relative 'twelve_days'
+require 'minitest/pride'
 
 class TwelveDaysTest < Minitest::Test
   # This test is an acceptance test.
