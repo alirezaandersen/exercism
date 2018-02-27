@@ -7,4 +7,4 @@ TwoFer.prototype.twoFer = function (who) {
   return 'One for you, one for me.';
 };
 
-// module.exports = TwoFer;
+module.exports = TwoFer;
