@@ -13,7 +13,7 @@ describe('ReverseString', function () {
     expect(actual).toEqual(expected);
   });
 
-  xit('a capitalized word', function () {
+  it('a capitalized word', function () {
     var expected = 'nemaR';
     var actual = reverseString('Ramen');
     expect(actual).toEqual(expected);
