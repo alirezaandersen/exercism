@@ -4,8 +4,11 @@ var reverseString = function(input){
 
   return '';
 
-  }else {
+  }
+  else {
+
   return input.split('').reverse().join('');
+
   }
 }
 module.exports = reverseString;
