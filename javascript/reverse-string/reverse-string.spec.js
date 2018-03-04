@@ -25,7 +25,7 @@ describe('ReverseString', function () {
     expect(actual).toEqual(expected);
   });
 
-  xit('a palindrome', function () {
+  it('a palindrome', function () {
     var expected = 'racecar';
     var actual = reverseString('racecar');
     expect(actual).toEqual(expected);
