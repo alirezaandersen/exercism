@@ -2,7 +2,7 @@ var reverseString = function(input){
 
   if (input == '' || input == undefined) {
 
-  return '';
+  // return '';
 
   }
   else {
