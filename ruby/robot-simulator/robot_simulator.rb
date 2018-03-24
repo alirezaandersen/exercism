@@ -39,7 +39,7 @@ class Robot
  private
 
  def turn(sign)
-  # i = cardinal_directions.index(bearing)
+  i = cardinal_directions.index(bearing)
   self.bearing = cardinal_directions[i.send(sign, 1) % 4]
  end
 
