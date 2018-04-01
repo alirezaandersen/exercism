@@ -32,9 +32,9 @@ class Robot
    turn(:+)
  end
 
- # def turn_left
- #   turn(:-)
- # end
+ def turn_left
+   turn(:-)
+ end
 
  private
 
