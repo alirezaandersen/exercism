@@ -26,7 +26,7 @@ class Robot
    else
      self.x += 1
    end
- end
+  end
 
  def turn_right
    turn(:+)
