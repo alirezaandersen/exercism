@@ -6,17 +6,17 @@ class Robot
     self.x = x
     self.y = y
   end
-  #
-  # def coordinates
-  #   [x, y]
-  # end
-  #
-  # def orient(direction)
-  #   fail ArgumentError unless cardinal_directions.include?(direction)
-  #   self.bearing = direction
-  # end
-  #
-  # def advance
+
+  def coordinates
+    [x, y]
+  end
+
+  def orient(direction)
+    fail ArgumentError unless cardinal_directions.include?(direction)
+    self.bearing = direction
+  end
+
+  def advance
    if bearing == :north
      self.y += 1
    elsif bearing == :south
