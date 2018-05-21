@@ -16,7 +16,7 @@ class Robot
     self.bearing = direction
   end
 
-  # def advance
+  def advance
    if bearing == :north
      self.y += 1
    elsif bearing == :south
