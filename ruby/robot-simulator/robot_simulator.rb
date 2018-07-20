@@ -22,7 +22,7 @@ class Robot
    elsif bearing == :south
      self.y -= 1
    elsif bearing == :west
-     # self.x -= 1
+     self.x -= 1
    else
      self.x += 1
    end
