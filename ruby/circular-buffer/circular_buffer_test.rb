@@ -15,15 +15,15 @@ class CircularBufferTest < Minitest::Test
     assert_raises(CircularBuffer::BufferEmptyException) { buffer.read }
   end
 
-  def test_write_and_read_back_multiple_items
-    skip
-    buffer = CircularBuffer.new(2)
-    buffer.write '1'
-    buffer.write '2'
-    assert_equal '1', buffer.read
-    assert_equal '2', buffer.read
-    assert_raises(CircularBuffer::BufferEmptyException) { buffer.read }
-  end
+  # def test_write_and_read_back_multiple_items
+  #   skip
+  #   buffer = CircularBuffer.new(2)
+  #   buffer.write '1'
+  #   buffer.write '2'
+  #   assert_equal '1', buffer.read
+  #   assert_equal '2', buffer.read
+  #   assert_raises(CircularBuffer::BufferEmptyException) { buffer.read }
+  # end
 
   def test_clearing_buffer
     skip
