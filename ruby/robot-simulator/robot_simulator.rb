@@ -15,22 +15,22 @@ class Robot
     fail ArgumentError unless cardinal_directions.include?(direction)
     self.bearing = direction
   end
- # 
- #  def advance
- #   if bearing == :north
- #     self.y += 1
- #   elsif bearing == :south
- #     self.y -= 1
- #   elsif bearing == :west
- #     self.x -= 1
- #   else
- #     self.x += 1
- #   end
- #  end
- #
- # def turn_right
- #   turn(:+)
- # end
+
+  def advance
+   if bearing == :north
+     self.y += 1
+   elsif bearing == :south
+     self.y -= 1
+   elsif bearing == :west
+     # self.x -= 1
+   else
+     self.x += 1
+   end
+  end
+
+ def turn_right
+   turn(:+)
+ end
 
  def turn_left
    turn(:-)
