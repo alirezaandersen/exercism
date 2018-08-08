@@ -1,4 +1,5 @@
 require 'minitest/autorun'
+require 'minitest/pride'
 require_relative 'two_fer'
 
 # Common test data version: 1.1.0 c080bdf
