@@ -34,11 +34,10 @@ class CircularBuffer
   def write!(value)
     if full?
       @start = (@start + 1) % @size
-    else
-      @full = true if @end == @start
     end
     @buffer[@end] = value
     @end = (@end + 1) % @size
+    @full = (@start == @end)
   end
 
   def clear
@@ -47,6 +46,8 @@ class CircularBuffer
     @end = 0
     @full = false
   end
+
+  private
 
   def full?
     @full
